@@ -1,5 +1,9 @@
-<b>Test <u>PHP</u> file</b><br/>
-
-<?php
-echo(date('d.m.Y'));
-?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>Vector.Dark backend service</h1>
+    </body>
+</html>
