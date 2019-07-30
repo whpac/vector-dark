@@ -15,10 +15,14 @@ function outputFile($file){
     if(checkETag($file_etag)){
         header($_SERVER['SERVER_PROTOCOL'].' 304 Not Modified');
         header('ETag: "'.$file_etag.'"');
+        header('Cache-Control: no-cache');
+        header('Vary: Cookie');
         return;
     }
     
     header('ETag: "'.$file_etag.'"');
+    header('Cache-Control: no-cache');
+    header('Vary: Cookie');
     echo(file_get_contents($file));
 }
 
