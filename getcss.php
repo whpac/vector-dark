@@ -14,11 +14,11 @@ function outputFile($file){
     $file_etag = calculateETag($file);
     if(checkETag($file_etag)){
         header($_SERVER['SERVER_PROTOCOL'].' 304 Not Modified');
-        header('ETag: '.$file_etag);
+        header('ETag: "'.$file_etag.'"');
         return;
     }
     
-    header('ETag: '.$file_etag);
+    header('ETag: "'.$file_etag.'"');
     echo(file_get_contents($file));
 }
 
