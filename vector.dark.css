@@ -303,8 +303,8 @@
     html:not(.disable-dark-skin) #content div.cytat {background:transparent !important;}
     html:not(.disable-dark-skin) div.cytat blockquote {background:#222 !important; color:#d8d8d8 !important; border-color:#777 !important;}
     html:not(.disable-dark-skin) div.cytat::before {filter:invert(1);}
-    html:not(.disable-dark-skin) #content table.cytat-d {background:transparent !important;}
-    html:not(.disable-dark-skin) div.cytat-box {background:#222 !important; color:#d8d8d8 !important; border-color:#666 !important;}
+    html:not(.disable-dark-skin) #content div.cytat.cudzysłów {background:transparent !important;}
+    html:not(.disable-dark-skin) div.cytat.box {background:#222 !important; color:#d8d8d8 !important; border-color:#666 !important;}
     
     /* Pola tekstowe */
     html:not(.disable-dark-skin) input,
