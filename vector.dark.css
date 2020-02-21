@@ -328,7 +328,8 @@
         html:not(.disable-dark-skin) .content table.infobox {background:#333; border-color:#666; color:#d8d8d8;}
     html:not(.disable-dark-skin) .infobox > * > tr:first-child,
         html:not(.disable-dark-skin) .infobox > tr:first-child {background:#444 !important; color:#fff !important;} /* Nagłówek */
-    html:not(.disable-dark-skin) .infobox tr td:first-child:not([colspan])[style*=eee] {background:#222 !important; color:#d8d8d8;} /* Lewa kolumna */
+    html:not(.disable-dark-skin) .infobox tr td:first-child:not([colspan])[style*=eee],
+        html:not(.disable-dark-skin) .infobox tr th:first-child:not([style]) {background:#222 !important; color:#d8d8d8;} /* Lewa kolumna */
     html:not(.disable-dark-skin) .infobox tr[style*=background][style*=white] > td:not(.naglowek):only-child {background:#222; color:#d8d8d8;} /* Wiersz z linkiem, kolor biały */
     html:not(.disable-dark-skin) .infobox tr[style*=background]:not([style*=white]) > td:not(.naglowek):only-child {background:#333 !important; color:#d8d8d8;} /* Wiersz z linkiem, kolor #eee */
     html:not(.disable-dark-skin) .infobox td[style*=background],
@@ -349,7 +350,12 @@
         html:not(.disable-dark-skin) .infobox .mapa-lokalizacyjna img {background:transparent !important;filter:none !important;}
     html:not(.disable-dark-skin) .content table.infobox th,
         html:not(.disable-dark-skin) .content table.infobox td {border-color:#999;}
-    
+
+    html:not(.disable-dark-skin) .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333; color:#d8d8d8; border-color:#666;}
+    html:not(.disable-dark-skin) .mw-parser-output .wwikipedii th,
+        html:not(.disable-dark-skin) .mw-parser-output .wwikipedii td {border-top-color:#666;}
+    html:not(.disable-dark-skin) .mw-parser-output .maf-info {background-color:#444; border-color:#666; text-align:center;}
+
     /* Pole oznaczania jako przejrzane */
     html:not(.disable-dark-skin) fieldset {border-color:#5d6d8d;}
     html:not(.disable-dark-skin) .flaggedrevs_reviewform {background-color:#222;}
