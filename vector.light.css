@@ -328,7 +328,8 @@
         html.enable-dark-skin .content table.infobox {background:#333; border-color:#666; color:#d8d8d8;}
     html.enable-dark-skin .infobox > * > tr:first-child,
         html.enable-dark-skin .infobox > tr:first-child {background:#444 !important; color:#fff !important;} /* Nagłówek */
-    html.enable-dark-skin .infobox tr td:first-child:not([colspan])[style*=eee] {background:#222 !important; color:#d8d8d8;} /* Lewa kolumna */
+    html.enable-dark-skin .infobox tr td:first-child:not([colspan])[style*=eee],
+        html.enable-dark-skin .infobox tr th:first-child:not([style]) {background:#222 !important; color:#d8d8d8;} /* Lewa kolumna */
     html.enable-dark-skin .infobox tr[style*=background][style*=white] > td:not(.naglowek):only-child {background:#222; color:#d8d8d8;} /* Wiersz z linkiem, kolor biały */
     html.enable-dark-skin .infobox tr[style*=background]:not([style*=white]) > td:not(.naglowek):only-child {background:#333 !important; color:#d8d8d8;} /* Wiersz z linkiem, kolor #eee */
     html.enable-dark-skin .infobox td[style*=background],
@@ -349,7 +350,14 @@
         html.enable-dark-skin .infobox .mapa-lokalizacyjna img {background:transparent !important;filter:none !important;}
     html.enable-dark-skin .content table.infobox th,
         html.enable-dark-skin .content table.infobox td {border-color:#999;}
-    
+    html.enable-dark-skin .infobox > tbody > .iboxs {border-color:#666;}
+    html.enable-dark-skin .mw-parser-output .wwikipedii tr {background:#222;}
+
+    html.enable-dark-skin .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333 !important; color:#d8d8d8; border-color:#666;}
+    html.enable-dark-skin .mw-parser-output .wwikipedii th,
+        html.enable-dark-skin .mw-parser-output .wwikipedii td {border-top-color:#666;}
+    html.enable-dark-skin .mw-parser-output .maf-info {background-color:#444; border-color:#666; text-align:center;}
+
     /* Pole oznaczania jako przejrzane */
     html.enable-dark-skin fieldset {border-color:#5d6d8d;}
     html.enable-dark-skin .flaggedrevs_reviewform {background-color:#222;}
@@ -665,15 +673,15 @@
     html.enable-dark-skin .mw-highlight span.nc {color:#58a5f8;}
     html.enable-dark-skin .mw-highlight span.nd {color:#c973ff;}
     html.enable-dark-skin .mw-highlight span.s2 {color:#ff6464;}
-    } /* Koniec @media */
+} /* Koniec @media */
     
-    @media only screen and (min-width: 1165px){
+@media only screen and (min-width: 1165px){
     /* Flow */
     html.enable-dark-skin .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header:before {background:#222;}
     html.enable-dark-skin .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {background:transparent; border:none;}
-    }
+}
     
-    @keyframes unseen-fade-out-to-read-dark {
-        0% {background:#5f5f5f;}
-        100% {background:#4f4f4f;}
-    }
+@keyframes unseen-fade-out-to-read-dark {
+    0% {background:#5f5f5f;}
+    100% {background:#4f4f4f;}
+}
