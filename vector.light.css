@@ -237,6 +237,7 @@
     html.enable-dark-skin .mw-mmv-image-links li:before {filter:brightness(1.5);}
     html.enable-dark-skin .mw-mmv-about-links {color:#aaa;}
     html.enable-dark-skin .mw-mmv-credit {color:#aaa;}
+    html.enable-dark-skin .mw-graph {background:#fff;}
     
     /* Spis treści */
     html.enable-dark-skin .toc,
