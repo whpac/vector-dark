@@ -335,7 +335,7 @@
     html:not(.disable-dark-skin) .infobox tr[style*=background]:not([style*=white]) > td:not(.naglowek):only-child {background:#333 !important; color:#d8d8d8;} /* Wiersz z linkiem, kolor #eee */
     html:not(.disable-dark-skin) .infobox td[style*=background],
         html:not(.disable-dark-skin) .infobox th[style*=background] {background:#444 !important; color:#d8d8d8;}
-    html:not(.disable-dark-skin) .infobox td:only-child[style*=background][style*=white] {background:#222 !important; border-color:#666 !important; color:#d8d8d8;} /* Wiersz z obrazkiem */
+    html:not(.disable-dark-skin) .infobox td:only-child[style*=background][style*=white] {background:#222 !important; border-color:#666 !important; color:#d8d8d8 !important;} /* Wiersz z obrazkiem */
     html:not(.disable-dark-skin) .infobox td:only-child[style*=background][style*=FFF] {background: #222 !important; color:#d8d8d8;}
     html:not(.disable-dark-skin) .infobox tr[style*=border],
         html:not(.disable-dark-skin) .infobox td[style*=border],
@@ -351,10 +351,8 @@
         html:not(.disable-dark-skin) .infobox .mapa-lokalizacyjna img {background:transparent !important;filter:none !important;}
     html:not(.disable-dark-skin) .content table.infobox th,
         html:not(.disable-dark-skin) .content table.infobox td {border-color:#999;}
-    html:not(.disable-dark-skin) .infobox > tbody > .iboxs {border-color:#666;}
-    html:not(.disable-dark-skin) .mw-parser-output .wwikipedii tr {background:#222;}
 
-    html:not(.disable-dark-skin) .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333 !important; color:#d8d8d8; border-color:#666;}
+    html:not(.disable-dark-skin) .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333; color:#d8d8d8; border-color:#666;}
     html:not(.disable-dark-skin) .mw-parser-output .wwikipedii th,
         html:not(.disable-dark-skin) .mw-parser-output .wwikipedii td {border-top-color:#666;}
     html:not(.disable-dark-skin) .mw-parser-output .maf-info {background-color:#444; border-color:#666; text-align:center;}
