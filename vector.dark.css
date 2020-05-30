@@ -1,4 +1,6 @@
 @media only screen{
+    .mw-ui-icon-element {color:transparent !important} /* Powielenie reguły z domyślego arkusza, tym razem z !important */
+
     html:not(.disable-dark-skin).overlay-enabled {background:#333;}
     html:not(.disable-dark-skin),
         html:not(.disable-dark-skin) body {background-color:#222; color:#d8d8d8;}
@@ -68,7 +70,7 @@
     /* Mobilny nagłówek */
     html:not(.disable-dark-skin) .header-container.header-chrome {background-color:#222;}
     html:not(.disable-dark-skin) .search-box .search {background-color:#444; border-color:#555;}
-    html:not(.disable-dark-skin) header div.branding-box img {filter:brightness(2.3);}
+    html:not(.disable-dark-skin) header div.branding-box img {filter:invert(1) brightness(0.8);}
     html:not(.disable-dark-skin) header .mw-ui-icon {filter:brightness(1.8);}
     html:not(.disable-dark-skin) #mw-mf-viewport,
         html:not(.disable-dark-skin) #mw-mf-page-left {background:#333;}
@@ -160,7 +162,7 @@
     html:not(.disable-dark-skin) .last-modified-bar a,
     html:not(.disable-dark-skin) .last-modified-bar a:visited {color:#aaa;}
     html:not(.disable-dark-skin) .last-modified-bar.active a {color:#fff;}
-    html:not(.disable-dark-skin) .minerva-footer .footer-content h2 img {filter:brightness(2);}
+    html:not(.disable-dark-skin) .minerva-footer .footer-content h2 img {filter:invert(1) brightness(0.8);}
     
     /* Kolory linków */
     html:not(.disable-dark-skin) a,
@@ -188,7 +190,9 @@
         html:not(.disable-dark-skin) #content {background:#303030; color:#d8d8d8; border-color:#777;}
     html:not(.disable-dark-skin) body.skin-minerva #content {border-color:#444;} /* Mobilne */
     html:not(.disable-dark-skin) #main-page #main-page-footer h2 {color:#222; background-image:url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" height=\"25\" width=\"100%\" style=\"background:%23303030;\"><rect x=\"0\" y=\"0\" width=\"100%\" height=\"25\" rx=\"7\" ry=\"12\" style=\"fill:%23c6fec8;\"/></svg>");}
+    html:not(.disable-dark-skin) body.skin-minerva #main-page #main-page-footer h2 {color:#222; background-image:none;}
     html:not(.disable-dark-skin) #main-page #main-page-content h2 {color:#222;}
+    html:not(.disable-dark-skin) body.skin-minerva #main-page #main-page-content h2 {color:white;}
     html:not(.disable-dark-skin) #main-page #main-page-header {background-image:url(https://upload.wikimedia.org/wikipedia/commons/9/96/MP-open-book4-dark.png);}
     html:not(.disable-dark-skin) .page-actions-menu__list-item .mw-ui-icon-element {filter:brightness(1.5);}
     html:not(.disable-dark-skin) .page-actions-menu {border-color:#888;}
