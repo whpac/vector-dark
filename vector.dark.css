@@ -120,7 +120,7 @@
     
     /* Panel boczny */
     html:not(.disable-dark-skin) a.mw-wiki-logo {filter:drop-shadow(0px 0px 4px white) drop-shadow(0px 0px 2px white);} /* Logo Wikipedii */
-    html:not(.disable-dark-skin) #mw-panel .portal h3 {color:#ddd;}
+    html:not(.disable-dark-skin) #mw-panel .portal h3 {color:#ddd; background-image:none;}
     html:not(.disable-dark-skin) #mw-panel .portal .body {background-image:none; border-top:1px solid #777;}
     html:not(.disable-dark-skin) #mw-panel #p-logo + .portal .body {border:none}
     html:not(.disable-dark-skin) .mw-ui-button {background-color:#282828; color:#ccc; border-color:#777;}
