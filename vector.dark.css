@@ -162,6 +162,7 @@
     html:not(.disable-dark-skin) .last-modified-bar a,
     html:not(.disable-dark-skin) .last-modified-bar a:visited {color:#aaa;}
     html:not(.disable-dark-skin) .last-modified-bar.active a {color:#fff;}
+    html:not(.disable-dark-skin) .mw-footer ul {list-style-image:none;}
     html:not(.disable-dark-skin) .minerva-footer .footer-content h2 img {filter:invert(1) brightness(0.8);}
     
     /* Kolory linków */
