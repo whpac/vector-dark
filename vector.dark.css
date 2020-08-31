@@ -15,6 +15,7 @@
     html:not(.disable-dark-skin) #pt-notifications-notice .mw-echo-notifications-badge {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E tray %3C/title%3E %3Cpath d=%22M17 1H3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 12h-4l-1 2H8l-1-2H3V3h14z%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
     html:not(.disable-dark-skin) #pt-notifications-alert .mw-echo-notifications-badge:after,
         html:not(.disable-dark-skin) #pt-notifications-notice .mw-echo-notifications-badge:after {background:#444; color:#f0f0f0; border-color:#aaa;}
+    html:not(.disable-dark-skin) .vector-menu ul {list-style-image:none;}
     
     /* Wyszukiwarka */
     html:not(.disable-dark-skin) #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
