@@ -31,21 +31,21 @@
     html.enable-dark-skin .suggestions-special .special-query {color:#d8d8d8;}
     
     /* Karty w nagłówku */
-    html.enable-dark-skin #mw-head .vectorTabs {background-image:none; padding-left:0;}
-    html.enable-dark-skin #mw-head .vectorTabs ul {background-image:none;}
-    html.enable-dark-skin #mw-head .vectorTabs li {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #777;
+    html.enable-dark-skin .vector-menu-tabs {background-image:none; padding-left:0;}
+    html.enable-dark-skin .vector-menu-tabs ul {background-image:none;}
+    html.enable-dark-skin .vector-menu-tabs li {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #777;
+        border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1; margin-top:-1px;}
+    html.enable-dark-skin .vector-menu-tabs li:first-child {border-left:1px solid #777;}
+    html.enable-dark-skin .vector-menu-tabs li.selected {background-image:none; background:linear-gradient(0deg, #303030 50%, transparent); border-bottom:none; margin-top:0;}
+    html.enable-dark-skin .vector-menu-tabs li span {background-image:none;}
+    html.enable-dark-skin .vector-menu-tabs li.selected a,
+        html.enable-dark-skin .vector-menu-tabs li.selected a:visited {color:#ddd;}
+    html.enable-dark-skin .vector-menu-tabs a {background-image:none;}
+    html.enable-dark-skin #mw-head .vector-menu-dropdown h3 {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #666;
         border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1;}
-    html.enable-dark-skin #mw-head .vectorTabs li:first-child {border-left:1px solid #777;}
-    html.enable-dark-skin #mw-head .vectorTabs li.selected {background-image:none; background:linear-gradient(0deg, #303030 50%, transparent); border-bottom:none;}
-    html.enable-dark-skin #mw-head .vectorTabs li span {background-image:none;}
-    html.enable-dark-skin #mw-head .vectorTabs li.selected a,
-        html.enable-dark-skin .vectorTabs li.selected a:visited {color:#ddd;}
-    html.enable-dark-skin .vectorTabs a {background-image:none;}
-    html.enable-dark-skin #mw-head .vectorMenu h3 {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #666;
-        border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1;}
-    html.enable-dark-skin #mw-head .vectorMenu h3 span {color:#aaa;}
-    html.enable-dark-skin #mw-head .vectorMenu h3::after {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E %3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
-    html.enable-dark-skin #mw-head .vectorMenu .menu {background:#4e4e4e; border-color:#777; margin-top:-1px;}
+    html.enable-dark-skin #mw-head .vector-menu-dropdown h3 span {color:#aaa;}
+    html.enable-dark-skin #mw-head .vector-menu-dropdown h3::after {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E %3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
+    html.enable-dark-skin .vector-menu-dropdown .vector-menu-content-list {background:#4e4e4e; border-color:#777; margin-top:-1px;}
     
     /* Panel powiadomień */
     html.enable-dark-skin .mw-echo-ui-notificationItemWidget {background-color:#333; border-color:#666;}
@@ -173,15 +173,20 @@
         html.enable-dark-skin .mw-parser-output a.external,
         html.enable-dark-skin .vectorTabs li a,
         html.enable-dark-skin .toctogglelabel,
-        html.enable-dark-skin .uls-language-block a {color:#76acff;}
+        html.enable-dark-skin .uls-language-block a,
+        html.enable-dark-skin .vector-menu-portal .body li a,
+        html.enable-dark-skin .vector-menu-portal .vector-menu-content li a {color:#76acff}
     html.enable-dark-skin a:visited,
         html.enable-dark-skin #mw-panel .portal .body li a:visited,
         html.enable-dark-skin .mw-parser-output a.extiw:visited,
-        html.enable-dark-skin .mw-parser-output a.external:visited {color:#ba8fe7;}
+        html.enable-dark-skin .mw-parser-output a.external:visited,
+        html.enable-dark-skin .vector-menu-portal .body li a:visited,
+        html.enable-dark-skin .vector-menu-portal .vector-menu-content li a:visited {color:#ba8fe7}
     html.enable-dark-skin a.new,
-        html.enable-dark-skin .vectorTabs li.new a,
+        html.enable-dark-skin .vector-menu-tabs li.new a,
         html.enable-dark-skin #p-personal a.new {color:#ef5252;}
     html.enable-dark-skin a.new:visited,
+        html.enable-dark-skin .vector-menu-tabs .new a:visited,
         html.enable-dark-skin #p-personal a.new:visited {color:#cc5b5b}
     html.enable-dark-skin .vectorMenu li a {color:#9dc2fa;}
     html.enable-dark-skin .mwe-popups .mwe-popups-extract {color:#222;}
@@ -361,7 +366,7 @@
     html.enable-dark-skin .infobox > tbody > .iboxs {border-color:#666;}
     html.enable-dark-skin .mw-parser-output .wwikipedii tr {background:#222;}
 
-    html.enable-dark-skin .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333 !important; color:#d8d8d8; border-color:#666;}
+    html.enable-dark-skin .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333; color:#d8d8d8; border-color:#666;}
     html.enable-dark-skin .mw-parser-output .wwikipedii th,
         html.enable-dark-skin .mw-parser-output .wwikipedii td {border-top-color:#666;}
     html.enable-dark-skin .mw-parser-output .maf-info {background-color:#444; border-color:#666; text-align:center;}
