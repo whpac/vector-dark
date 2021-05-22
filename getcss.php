@@ -1,14 +1,26 @@
 <?php
 header('Content-Type:text/css');
 
+$default_css = 'vector.css';
+$additional_css = [
+    'popups' => 'popups.css',
+    'user_colors' => 'user_colors.css'
+];
+
+if(isset($_GET['f'])) $file_id = $_GET['f'];
+else $file_id = '';
+
+$file = $default_css;
+if(isset($additional_css[$file_id])) $file = $additional_css[$file_id];
+
 if(isset($_COOKIE['vector-dark_enable']) && !isset($_GET['force_css'])){
     if($_COOKIE['vector-dark_enable'] == '0'){
-        outputFile('vector.light.css');
+        outputFile('css/light/'.$file);
         return;
     }
 }
 
-outputFile('vector.dark.css');
+outputFile('css/dark/'.$file);
 
 function outputFile($file){
     $file_etag = calculateETag($file);

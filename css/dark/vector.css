@@ -20,7 +20,7 @@
     /* Wyszukiwarka */
     html:not(.disable-dark-skin) #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
     html:not(.disable-dark-skin) #simpleSearch input[type=search] {color:#d8d8d8; background:unset;}
-    html:not(.disable-dark-skin) #simpleSearch #searchButton {filter:brightness(1.7);}
+    html:not(.disable-dark-skin) #simpleSearch #searchButton {filter:invert(1);}
     html:not(.disable-dark-skin) #searchInput {border-color:#777;}
     html:not(.disable-dark-skin) #searchInput:focus,
         html:not(.disable-dark-skin) #simpleSearch:hover #searchInput:focus {border-color:#76acff; -webkit-box-shadow:none; box-shadow:none;}
@@ -45,7 +45,7 @@
         border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1;}
     html:not(.disable-dark-skin) #mw-head .vector-menu-dropdown h3 span {color:#aaa;}
     html:not(.disable-dark-skin) #mw-head .vector-menu-dropdown h3::after {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E %3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
-    html:not(.disable-dark-skin) .vector-menu-dropdown .vector-menu-content-list {background:#4e4e4e; border-color:#777; margin-top:-1px;}
+    html:not(.disable-dark-skin) .vector-menu-dropdown .vector-menu-content {background:#4e4e4e; border-color:#777; margin-top:-1px;}
     
     /* Panel powiadomień */
     html:not(.disable-dark-skin) .mw-echo-ui-notificationItemWidget {background-color:#333; border-color:#666;}
@@ -67,6 +67,7 @@
     html:not(.disable-dark-skin) .mw-echo-ui-notificationBadgeButtonPopupWidget-popup span.oo-ui-icon-bell,
         html:not(.disable-dark-skin) .mw-echo-ui-notificationBadgeButtonPopupWidget-popup span.oo-ui-icon-tray {filter:invert(1);}
     html:not(.disable-dark-skin) .notification-count {background:transparent;}
+    html:not(.disable-dark-skin)  .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {color:#bbb;}
     
     /* Mobilny nagłówek */
     html:not(.disable-dark-skin) .header-container.header-chrome {background-color:#222;}
@@ -279,7 +280,8 @@
     html:not(.disable-dark-skin) table.navbox.v2 .navbox-subgroup .navbox-group {background-color:#555;}
     html:not(.disable-dark-skin) table.navbox.v2 tr+tr > td,
         html:not(.disable-dark-skin) table.navbox.v2 tr+tr > th {border-top-color:#222;}
-    html:not(.disable-dark-skin) .navbox-even {background-color:#333;}
+    html:not(.disable-dark-skin) .navbox-even,
+        html:not(.disable-dark-skin) .mw-parser-output .navbox .navbox-even {background-color:#333;}
     html:not(.disable-dark-skin) .navbox-title .noprint a:not([class]) span,
         html:not(.disable-dark-skin) .navbox-title .noprint a.external span {color:#76acff !important}
     html:not(.disable-dark-skin) .navbox-title .noprint a.new span {color:#ef5252 !important;}
@@ -462,7 +464,8 @@
     html:not(.disable-dark-skin) #mw-indicator-mw-helplink a {background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E help %3C/title%3E %3Cpath fill=%22%23d8d8d8%22 d=%22M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm1 16H9v-2h2zm2.71-7.6a2.64 2.64 0 0 1-.33.74 3.16 3.16 0 0 1-.48.55l-.54.48c-.21.18-.41.35-.58.52a2.54 2.54 0 0 0-.47.56A2.3 2.3 0 0 0 11 12a3.79 3.79 0 0 0-.11 1H9.08a8.9 8.9 0 0 1 .07-1.25 3.28 3.28 0 0 1 .25-.9 2.79 2.79 0 0 1 .41-.67 4 4 0 0 1 .58-.58c.17-.16.34-.3.51-.44a3 3 0 0 0 .43-.44 1.83 1.83 0 0 0 .3-.55 2 2 0 0 0 .11-.72 2.06 2.06 0 0 0-.17-.86 1.71 1.71 0 0 0-1-.9 1.7 1.7 0 0 0-.5-.1 1.77 1.77 0 0 0-1.53.68 3 3 0 0 0-.5 1.82H6.16a4.74 4.74 0 0 1 .28-1.68 3.56 3.56 0 0 1 .8-1.29 3.88 3.88 0 0 1 1.28-.83A4.59 4.59 0 0 1 10.18 4a4.44 4.44 0 0 1 1.44.23 3.51 3.51 0 0 1 1.15.65 3.08 3.08 0 0 1 .78 1.06 3.54 3.54 0 0 1 .29 1.45 3.39 3.39 0 0 1-.13 1.01z%22/%3E %3C/svg%3E");}
     
     /* Ostatnie zmiany */
-    html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle {background-color:#383838;}
+    html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle,
+        html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined {background-color:#383838;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {border-color:#777;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-title {color:#d8d8d8;}
     html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled {background-color:#222; color:#d8d8d8; border-color:#999;}
@@ -477,6 +480,7 @@
     html:not(.disable-dark-skin) .mw-rcfilters-ui-filterMenuOptionWidget.oo-ui-flaggedElement-muted:not(.oo-ui-optionWidget-selected).oo-ui-optionWidget-highlighted {background-color:#282828;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-filterMenuSectionOptionWidget {background:#4f4f4f;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-filterMenuSectionOptionWidget-header-title.oo-ui-labelElement-label {color:#bbb;}
+    html:not(.disable-dark-skin) .mw-rcfilters-ui-itemMenuOptionWidget-view-namespaces {border-top-color:#777;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-itemMenuOptionWidget:not(:last-child):not(.mw-rcfilters-ui-itemMenuOptionWidget-identifier-talk) {border-bottom:1px solid #777;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-itemMenuOptionWidget-label-title {color:#d8d8d8;}
     html:not(.disable-dark-skin) .mw-rcfilters-ui-itemMenuOptionWidget-label-desc,
@@ -496,7 +500,9 @@
     html:not(.disable-dark-skin) .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {background:#282828;}
     html:not(.disable-dark-skin) .oo-ui-menuOptionWidget.oo-ui-optionWidget-selected {background:#282828;}
     html:not(.disable-dark-skin) .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted.oo-ui-optionWidget-selected {background:#282828; color:#fff;}
+    html:not(.disable-dark-skin) .oo-ui-indicatorElement-indicator.oo-ui-indicator-down {filter:invert(1);}
     html:not(.disable-dark-skin) .not-patrolled {background-color:#440;}
+    html:not(.disable-dark-skin) .mw-changesList-watchlistExpiry.oo-ui-iconElement-icon {filter:invert(1);}
     
     /* Kalendarz */
     html:not(.disable-dark-skin) .mw-widget-dateInputWidget-handle {background:#333; border-color:#777;}
@@ -668,7 +674,9 @@
     html:not(.disable-dark-skin) body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
     html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
     html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
-    
+    html:not(.disable-dark-skin) body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
+    html:not(.disable-dark-skin) body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-sekcja {border-color:#666;}
+
     /* Pola z kodem */
     html:not(.disable-dark-skin) pre,
         html:not(.disable-dark-skin) .mw-code,
@@ -687,13 +695,13 @@
     html:not(.disable-dark-skin) .mw-highlight span.nd {color:#c973ff;}
     html:not(.disable-dark-skin) .mw-highlight span.s2 {color:#ff6464;}
 } /* Koniec @media */
-    
+
 @media only screen and (min-width: 1165px){
     /* Flow */
     html:not(.disable-dark-skin) .flow-component.flow-board-page.flow-full-height-side-rail .flow-board-header:before {background:#222;}
     html:not(.disable-dark-skin) .flow-component.flow-board-page .flow-board-header .side-rail-toggle-button {background:transparent; border:none;}
 }
-    
+
 @keyframes unseen-fade-out-to-read-dark {
     0% {background:#5f5f5f;}
     100% {background:#4f4f4f;}

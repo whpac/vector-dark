@@ -1,0 +1,9 @@
+@media only screen {
+    /* Gadżet Popups */
+    html:not(.disable-dark-skin) .navpopup {background:#222; border-color:#777;}
+    html:not(.disable-dark-skin) .navpopup hr {border-color:#666 !important;}
+    html:not(.disable-dark-skin) .navpopup .popup_drop:hover {background:#444;}
+    html:not(.disable-dark-skin) .navpopup .popup_menu {background:#282828; border-color:#555;}
+    html:not(.disable-dark-skin) .navpopup .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover {background:#282828;}
+    html:not(.disable-dark-skin) .navpopup .popup_history_row_even {background:#383838;}
+}
