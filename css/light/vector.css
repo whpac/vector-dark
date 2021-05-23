@@ -634,6 +634,10 @@
     html.enable-dark-skin [data-diff-action='remove'] > code,
     html.enable-dark-skin table[data-diff-action='remove'] > caption,
     html.enable-dark-skin figure[data-diff-action='remove'] > figcaption {background:#7a0600 !important; box-shadow:0 0 0 1px #7a0600;}
+    html.enable-dark-skin .ve-ce-linkAnnotation.ve-ce-annotation-active {background:#003578; box-shadow:0 0 1px #003578;}
+    html.enable-dark-skin .ve-ui-context-menu .oo-ui-iconWidget {filter:invert(1);}
+    html.enable-dark-skin .ve-ui-desktopContext .ve-ui-linkContextItem .ve-ui-linkContextItem-label {border-color:#666;}
+    html.enable-dark-skin .ve-ui-desktopContext .ve-ui-linkContextItem .ve-ui-linkContextItem-label .ve-ui-linkContextItem-label-preview {color:#aaa;}
 
     html.enable-dark-skin textarea {background-color:#222; color:#d8d8d8; border-color:#777;}
     html.enable-dark-skin .CodeMirror {background-color:#222 !important; color:#d8d8d8 !important;}
