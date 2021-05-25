@@ -1,0 +1,14 @@
+@media only screen {
+    /* Gadżet Alternatywny sposób kolorowania stron dyskusji */
+    html:not(.disable-dark-skin) .ns-talk #bodyContent dl {border-color:#505000;}
+    html:not(.disable-dark-skin) .ns-talk #bodyContent dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl dl dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl dl dl dl dl dl {background:#303000;}
+    html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl dl dl dl dl,
+        html:not(.disable-dark-skin) .ns-talk #bodyContent dl dl dl dl dl dl dl dl dl dl {background:#282828;}
+}

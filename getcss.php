@@ -4,7 +4,8 @@ header('Content-Type:text/css');
 $default_css = 'vector.css';
 $additional_css = [
     'popups' => 'popups.css',
-    'user_colors' => 'user_colors.css'
+    'user_colors' => 'user_colors.css',
+    'talk_colors' => 'talk_colors.css'
 ];
 
 if(isset($_GET['f'])) $file_id = $_GET['f'];
