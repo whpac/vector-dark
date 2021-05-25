@@ -1,5 +1,5 @@
 <?php
-if(!isRightOrigin()) return;
+// if(!isRightOrigin()) return;
 
 if($_SERVER['REQUEST_METHOD'] == 'OPTIONS'){
     header('Access-Control-Allow-Origin: '.$_SERVER['HTTP_ORIGIN']);
