@@ -15,8 +15,9 @@ if(!isset($_GET['is_on'])) return;
 header('Access-Control-Allow-Origin: '.$_SERVER['HTTP_ORIGIN']);
 header('Access-Control-Allow-Credentials: true');
 
-if($_GET['is_on'] == 'true') setcookie('vector-dark_enable', '1', 0);
-if($_GET['is_on'] == 'false') setcookie('vector-dark_enable', '0', 0);
+$value = '1';
+if($_GET['is_on'] == 'false') $value = '0';
+header('Set-Cookie: vector-dark_enable='.$value.'; SameSite=None; Secure');
 
 
 function isRightOrigin(){
