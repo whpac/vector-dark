@@ -753,6 +753,9 @@
     html:not(.disable-dark-skin) .mw-highlight span.nc {color:#58a5f8;}
     html:not(.disable-dark-skin) .mw-highlight span.nd {color:#c973ff;}
     html:not(.disable-dark-skin) .mw-highlight span.s2 {color:#ff6464;}
+    html:not(.disable-dark-skin) .mw-content-ltr.mw-highlight-lines pre,
+        html:not(.disable-dark-skin) .mw-content-ltr.content .mw-highlight-lines pre {box-shadow:inset 2.75em 0 0 #333;}
+    html:not(.disable-dark-skin) .mw-highlight .linenos {color:#bbb}
 } /* Koniec @media */
 
 @media only screen and (min-width: 1165px){
