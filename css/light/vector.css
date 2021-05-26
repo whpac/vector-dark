@@ -3,7 +3,7 @@
 
     html.enable-dark-skin.overlay-enabled {background:#333;}
     html.enable-dark-skin,
-        html.enable-dark-skin body {background-color:#222; color:#d8d8d8;}
+        html.enable-dark-skin body {background-color:#222; color:#d8d8d8; color-scheme:dark;}
     html.enable-dark-skin *[style*=background] {color:black;} /* Ogólne zabezpieczenie przed jasnym tekstem na jasnym tle */
     html.enable-dark-skin *[style*=transparent],
         html.enable-dark-skin *[style*=inherit] {color:unset;}
