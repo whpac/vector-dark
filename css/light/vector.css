@@ -561,6 +561,8 @@
     html.enable-dark-skin .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {border-bottom-color:#333;}
     html.enable-dark-skin .mw-diff-movedpara-left:after,
         html.enable-dark-skin .mw-diff-movedpara-right:after {color:#d8d8d8;}
+    html.enable-dark-skin .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {background:#0c224e; border-color:#4169bb}
+    html.enable-dark-skin .oo-ui-buttonElement-active.oo-ui-widget-enabled > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {filter:none;}
     
     /* Okno edycji */
     html.enable-dark-skin .wikiEditor-ui .wikiEditor-ui-view {border-color:#777;}
