@@ -1,0 +1,17 @@
+@media only screen {
+    /* Przenieś do brudnopisu */
+    html.enable-dark-skin .ui-widget-overlay {background:rgba(0,0,0,0.7);}
+    html.enable-dark-skin .ui-widget-content {background:#333; color:#eee;}
+    html.enable-dark-skin .ui-dialog {border-color:#777;}
+    html.enable-dark-skin .ui-widget-header,
+        html.enable-dark-skin .ui-dialog .ui-widget-header {border-color:#666; background:#222; color:#eee;}
+    html.enable-dark-skin .ui-dialog .ui-dialog-titlebar-close {filter:invert(1)}
+    html.enable-dark-skin .ui-dialog .ui-dialog-titlebar-close.ui-state-hover {border-color:#aaa;}
+    html.enable-dark-skin .moveToSandboxDialog .ui-widget-content {border:none;}
+    html.enable-dark-skin .moveToSandboxDialog .ui-widget-content.text {border:1px solid #888; background:#222;}
+    html.enable-dark-skin .moveToSandboxDialog .ui-widget-content.text:hover {border-color:#666;}
+    html.enable-dark-skin .moveToSandboxDialog .ui-button {background:#222; border-color:#777 !important; color:#d8d8d8;}
+    html.enable-dark-skin .moveToSandboxDialog .ui-button.ui-state-hover,
+        html.enable-dark-skin .moveToSandboxDialog .ui-button:hover {background:#444 !important; color:#d8d8d8;}
+    html.enable-dark-skin .moveToSandboxDialog .ui-button:active {background:#282828 !important;}
+}
