@@ -176,7 +176,9 @@
     html:not(.disable-dark-skin) .mw-ui-button.mw-ui-progressive:disabled,
         html:not(.disable-dark-skin) .mw-ui-button.mw-ui-progressive:disabled:hover,
         html:not(.disable-dark-skin) .mw-ui-button.mw-ui-progressive:disabled:active {background-color:#000; color:#777; border-color:#666;}
-    html:not(.disable-dark-skin) .uls-ui-languages p {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .uls-ui-languages p,
+        html:not(.disable-dark-skin) .checkbox,
+        html:not(.disable-dark-skin) .checkbox strong {color:#d8d8d8;}
     html:not(.disable-dark-skin) .language-settings-buttons {border-color:#777;}
     html:not(.disable-dark-skin) .languagesettings-menu .menu-section {color:#d8d8d8;}
     html:not(.disable-dark-skin) .languagesettings-menu .menu-section .settings-text {color:#aaa;}
