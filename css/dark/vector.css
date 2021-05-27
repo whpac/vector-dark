@@ -309,7 +309,7 @@
     html:not(.disable-dark-skin) .table-no {background:#640000 !important; color:#fff !important;}
     html:not(.disable-dark-skin) .table-partial {background:#737300 !important; color:#fff !important;}
     html:not(.disable-dark-skin) .table-unknown {background:#444444 !important; color:#fff !important;}
-    html:not(.disable-dark-skin) table:not(.wikitable):not(.infobox) tr:first-of-type:not(:last-of-type)[style*=background] {background: #555 !important;} /* Ma na celu przyciemnienie jasnych nagłówków ze style="..." */
+    html:not(.disable-dark-skin) table:not(.wikitable):not(.infobox) tr:first-of-type:not(:last-of-type)[style*=background] {background:#555 !important; color:#d8d8d8;} /* Ma na celu przyciemnienie jasnych nagłówków ze style="..." */
     /* Przywraca formatowanie elementom tabeli, które używają style="background:..." albo style="color:..." */
     html:not(.disable-dark-skin) .wikitable tbody[style*=background],
         html:not(.disable-dark-skin) .wikitable tr[style*=background],
@@ -396,7 +396,11 @@
     html:not(.disable-dark-skin) #documentation-meta-data.fmbox {background-color:#3f4e47 !important; color:#d8d8d8;}
     html:not(.disable-dark-skin) table.babel {background:#222 !important;}
     html:not(.disable-dark-skin) table.familytree td {border-color:#999 !important;}
-    
+    html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-nieparzysty {background:#333 !important; color:#d8d8d8;}
+    html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-parzysty {background:#222 !important; color:#d8d8d8;}
+    html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-naglowek {background:#222 !important; color:#d8d8d8;}
+    html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-tytul {background:#555; color:#d8d8d8; border-color:#777 !important;}
+
     html:not(.disable-dark-skin) img[src*=icon_check\.svg], html:not(.disable-dark-skin) img[src*=icon_imageAdd-ltr\.svg],
         html:not(.disable-dark-skin) img[src*=icon_close-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_listBullet-ltr\.svg],
         html:not(.disable-dark-skin) img[src*=icon_external-link-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_link-ltr\.svg],
@@ -693,6 +697,8 @@
         html:not(.disable-dark-skin) #userSummaryButtons a:first-child {background-color:#4d5338 !important;}
     html:not(.disable-dark-skin) table.flaggedrevs_editnotice,
         html:not(.disable-dark-skin) table.flaggedrevs_viewnotice {background:#333; border:1px solid #777;}
+    html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-disabled {background:transparent}
+    html:not(.disable-dark-skin) .oo-ui-dropdownWidget.oo-ui-widget-disabled .oo-ui-dropdownWidget-handle {background:#000; border-color:#555; color:#666; text-shadow:0 1px 1px #222;}
     
     /* Flow */
     html:not(.disable-dark-skin) .flow-topic-titlebar {background:#181818;}
@@ -741,23 +747,35 @@
     /* Pola z kodem */
     html:not(.disable-dark-skin) pre,
         html:not(.disable-dark-skin) .mw-code,
-        html:not(.disable-dark-skin) code {background-color:#222; color:#d8d8d8; border-color:#666;}
-    html:not(.disable-dark-skin) .mw-highlight span.nt {color:#31e331;}
-    html:not(.disable-dark-skin) .mw-highlight span.p {color:inherit;}
-    html:not(.disable-dark-skin) .mw-highlight span.k {color:#31e331;}
-    html:not(.disable-dark-skin) .mw-highlight span.kc {color:#31e331;}
-    html:not(.disable-dark-skin) .mw-highlight span.mh {color:#919191;}
-    html:not(.disable-dark-skin) .mw-highlight span.c {color:#6ac7c7;}
-    html:not(.disable-dark-skin) .mw-highlight span.nn {color:#58a5f8;}
-    html:not(.disable-dark-skin) .mw-highlight span.nb {color:#31e331;}
-    html:not(.disable-dark-skin) .mw-highlight span.mi {color:#919191;}
-    html:not(.disable-dark-skin) .mw-highlight span.kt {color:#fc4185;}
-    html:not(.disable-dark-skin) .mw-highlight span.nc {color:#58a5f8;}
-    html:not(.disable-dark-skin) .mw-highlight span.nd {color:#c973ff;}
-    html:not(.disable-dark-skin) .mw-highlight span.s2 {color:#ff6464;}
+        html:not(.disable-dark-skin) code {background-color:#181818; color:#d8d8d8; border-color:#666;}
+    html:not(.disable-dark-skin) .mw-highlight .p {color:inherit;}
+    html:not(.disable-dark-skin) .mw-highlight .mh {color:#919191;}
+    html:not(.disable-dark-skin) .mw-highlight .c {color:#6ac7c7;}
+    html:not(.disable-dark-skin) .mw-highlight .nn {color:#58a5f8;}
+    html:not(.disable-dark-skin) .mw-highlight .mi {color:#919191;}
+    html:not(.disable-dark-skin) .mw-highlight .nd {color:#c973ff;}
+    html:not(.disable-dark-skin) .mw-highlight .k,
+        html:not(.disable-dark-skin) .mw-highlight .kt,
+        html:not(.disable-dark-skin) .mw-highlight .kc,
+        html:not(.disable-dark-skin) .mw-highlight .kd {color:#569cd6;}
+    html:not(.disable-dark-skin) .mw-highlight .nb,
+        html:not(.disable-dark-skin) .mw-highlight .nc {color:#4ec9b0;}
+    html:not(.disable-dark-skin) .mw-highlight .c1
+        html:not(.disable-dark-skin) .mw-highlight .cm {color:#6a9955;}
+    html:not(.disable-dark-skin) .mw-highlight .nf {color:#dcdcaa;}
+    html:not(.disable-dark-skin) .mw-highlight .n,
+        html:not(.disable-dark-skin) .mw-highlight .nx {color:#9cdcfe;}
+    html:not(.disable-dark-skin) .mw-highlight .s,
+        html:not(.disable-dark-skin) .mw-highlight .s1,
+        html:not(.disable-dark-skin) .mw-highlight .s2 {color:#ce9178;}
+    html:not(.disable-dark-skin) .mw-highlight .m,
+        html:not(.disable-dark-skin) .mw-highlight .mf {color:#b5cea8;}
+    html:not(.disable-dark-skin) .mw-highlight .o {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .mw-highlight .nt {color:#d7ba7d;}
     html:not(.disable-dark-skin) .mw-content-ltr.mw-highlight-lines pre,
         html:not(.disable-dark-skin) .mw-content-ltr.content .mw-highlight-lines pre {box-shadow:inset 2.75em 0 0 #333;}
     html:not(.disable-dark-skin) .mw-highlight .linenos {color:#bbb}
+
 } /* Koniec @media */
 
 @media only screen and (min-width: 1165px){
