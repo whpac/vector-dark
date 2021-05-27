@@ -172,6 +172,10 @@
     html.enable-dark-skin .uls-language-settings-close-block {background:#222;}
     html.enable-dark-skin .ext-uls-sub-panel {border-color:#777;}
     html.enable-dark-skin #languagesettings-settings-panel h4 {color:#d8d8d8;}
+    html.enable-dark-skin #languagesettings-settings-panel {color:#d8d8d8;}
+    html.enable-dark-skin .mw-ui-button.mw-ui-progressive:disabled,
+        html.enable-dark-skin .mw-ui-button.mw-ui-progressive:disabled:hover,
+        html.enable-dark-skin .mw-ui-button.mw-ui-progressive:disabled:active {background-color:#000; color:#777; border-color:#666;}
     html.enable-dark-skin .uls-ui-languages p {color:#d8d8d8;}
     html.enable-dark-skin .language-settings-buttons {border-color:#777;}
     html.enable-dark-skin .languagesettings-menu .menu-section {color:#d8d8d8;}
@@ -183,6 +187,7 @@
     html.enable-dark-skin #languagesettings-settings-panel h3 {color:#d8d8d8;}
     html.enable-dark-skin .uls-input-settings .uls-input-settings-inputmethods-list {background:#222;}
     html.enable-dark-skin .uls-menu.callout.selector-left:before {border-right-color:#777;}
+    html.enable-dark-skin .uls-menu.callout.selector-left:after {border-right-color:#222;}
     
     /* Stopka */
     html.enable-dark-skin #footer #footer-info li {color:#d8d8d8;} /* Tekst w stopce na komputerze */
