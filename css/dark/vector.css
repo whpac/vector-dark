@@ -166,6 +166,23 @@
     html:not(.disable-dark-skin) .language-searcher .site-link-list a {border-color:#666;}
     html:not(.disable-dark-skin) .language-searcher .site-link-list a .autonym {color:#d8d8d8;}
     html:not(.disable-dark-skin) .language-searcher .list-header {background-color:#3f3f3f;}
+    html:not(.disable-dark-skin) .language-settings-dialog {background:#222;}
+    html:not(.disable-dark-skin) .uls-icon-close {filter:invert(1);}
+    html:not(.disable-dark-skin) #languagesettings-settings-panel {background:#222;}
+    html:not(.disable-dark-skin) .uls-language-settings-close-block {background:#222;}
+    html:not(.disable-dark-skin) .ext-uls-sub-panel {border-color:#777;}
+    html:not(.disable-dark-skin) #languagesettings-settings-panel h4 {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .uls-ui-languages p {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .language-settings-buttons {border-color:#777;}
+    html:not(.disable-dark-skin) .languagesettings-menu .menu-section {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .languagesettings-menu .menu-section .settings-text {color:#aaa;}
+    html:not(.disable-dark-skin) .languagesettings-menu .menu-section:hover {background:#333;}
+    html:not(.disable-dark-skin) .languagesettings-menu .menu-section:hover .settings-text {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .languagesettings-menu .menu-section.active {background:#333; color:#d8d8d8;}
+    html:not(.disable-dark-skin) .languagesettings-menu .menu-section.active .settings-text {color:#d8d8d8;}
+    html:not(.disable-dark-skin) #languagesettings-settings-panel h3 {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .uls-input-settings .uls-input-settings-inputmethods-list {background:#222;}
+    html:not(.disable-dark-skin) .uls-menu.callout.selector-left:before {border-right-color:#777;}
     
     /* Stopka */
     html:not(.disable-dark-skin) #footer #footer-info li {color:#d8d8d8;} /* Tekst w stopce na komputerze */
