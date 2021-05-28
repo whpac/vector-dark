@@ -291,6 +291,8 @@
         html:not(.disable-dark-skin) .content .thumbcaption {color:#aaa;}
     html:not(.disable-dark-skin) body.skin-minerva .content a > img {margin:1px;}
     html:not(.disable-dark-skin) body.skin-minerva .content .thumbcaption {padding:0 2px 2px 2px !important;}
+
+    /* Media Viewer */
     html:not(.disable-dark-skin) .mw-mmv-post-image {background:#222; color:#d8d8d8;}
     html:not(.disable-dark-skin) .mw-mmv-image-metadata {background:#282828; border-color:#555;}
     html:not(.disable-dark-skin) .mw-mmv-image-links li {color:#bbb;}
@@ -298,7 +300,24 @@
     html:not(.disable-dark-skin) .mw-mmv-about-links {color:#aaa;}
     html:not(.disable-dark-skin) .mw-mmv-credit {color:#aaa;}
     html:not(.disable-dark-skin) .mw-graph {background:#fff;}
-    
+    html:not(.disable-dark-skin) .mw-mmv-label {background-color:#444; color:#d8d8d8; border:1px solid #777;}
+    html:not(.disable-dark-skin) .mw-mmv-labe:hover {background-color:#222;}
+    html:not(.disable-dark-skin) .mw-mmv-image-desc {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .mw-mmv-info-box {background:#222; border-color:#666;}
+    html:not(.disable-dark-skin) .mw-mmv-permission-box .mw-mmv-permission-text {color:#aaa;}
+    html:not(.disable-dark-skin) .mw-mmv-dialog {background:#333; box-shadow:0 2px 2px rgba(0,0,0,0.7);}
+    html:not(.disable-dark-skin) .mw-mmv-dialog .mw-mmv-dialog-down-arrow {background:#333;}
+    html:not(.disable-dark-skin) .mw-mmv-options-text-header {color:#aaa;}
+    html:not(.disable-dark-skin) .mw-mmv-options-text-body {color:#aaa;}
+    html:not(.disable-dark-skin) .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input[readonly]:not(.oo-ui-pendingElement-pending) {background:#222;}
+    html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-area .mw-mmv-download-preview-link {color:#d8d8d8;}
+    html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-area .mw-mmv-download-preview-link:before {filter:brightness(1.8);}
+    html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-attribution {background:#333; color:#d8d8d8;}
+    html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-attribution:hover {background:#222; color:#d8d8d8;}
+    html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-attribution-cta-invite {color:#aaa;}
+    html:not(.disable-dark-skin) .mw-mmv-download-dialog .mw-mmv-dialog-down-arrow {background:#333;}
+    html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-attribution-how .mw-mmv-download-attribution-close-button {filter:brightness(1.3);}
+
     /* Spis treści */
     html:not(.disable-dark-skin) .toc,
         html:not(.disable-dark-skin) .mw-warning,
