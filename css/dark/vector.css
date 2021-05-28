@@ -317,6 +317,10 @@
     html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-attribution-cta-invite {color:#aaa;}
     html:not(.disable-dark-skin) .mw-mmv-download-dialog .mw-mmv-dialog-down-arrow {background:#333;}
     html:not(.disable-dark-skin) .mw-mmv-download-pane .mw-mmv-download-attribution-how .mw-mmv-download-attribution-close-button {filter:brightness(1.3);}
+    html:not(.disable-dark-skin) .mw-mmv-title-para .mw-mmv-ttf-ellipsis {background-color:#222;}
+    html:not(.disable-dark-skin) .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis:hover,
+        html:not(.disable-dark-skin) .mw-mmv-ttf-ellipsis-container .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis:hover,
+        html:not(.disable-dark-skin) .mw-mmv-ttf-ellipsis-container:hover .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis {background-color:#111;}
 
     /* Spis treści */
     html:not(.disable-dark-skin) .toc,
