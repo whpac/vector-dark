@@ -507,6 +507,7 @@
 
     html.enable-dark-skin .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
     html.enable-dark-skin .portal-sekcja {border-color:#666;}
+    html.enable-dark-skin .portal-regulamin div.portal-naglowek {background-image: linear-gradient(to right,#222,#333);}
 
     html.enable-dark-skin h1,
         html.enable-dark-skin h2,
