@@ -321,6 +321,8 @@
     html.enable-dark-skin .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis:hover,
         html.enable-dark-skin .mw-mmv-ttf-ellipsis-container .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis:hover,
         html.enable-dark-skin .mw-mmv-ttf-ellipsis-container:hover .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis {background-color:#111;}
+    html.enable-dark-skin .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis {box-shadow:none;}
+    html.enable-dark-skin .mw-mmv-ttf-container .mw-mmv-ttf-ellipsis:before {background-image:-webkit-linear-gradient(to right,rgba(34,34,34,0) 0%,#222 100%); background-image:linear-gradient(to right,rgba(34,34,34,0) 0%,#222 100%);}
 
     /* Spis treści */
     html.enable-dark-skin .toc,
