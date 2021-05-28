@@ -225,7 +225,6 @@
         html.enable-dark-skin .vector-menu-tabs .new a:visited,
         html.enable-dark-skin #p-personal a.new:visited {color:#cc5b5b}
     html.enable-dark-skin .vectorMenu li a {color:#9dc2fa;}
-    html.enable-dark-skin .mwe-popups .mwe-popups-extract {color:#222;}
     html.enable-dark-skin a.mw-selflink {color:inherit;}
     
     /* Główna część strony */
@@ -266,11 +265,23 @@
         html.enable-dark-skin span.citation:target {background-color:#4f4f4f;} /* Wyróżniony przypis */
     html.enable-dark-skin div.flaggedrevs_preview,
         html.enable-dark-skin div.flaggedrevs_short {background-color:#444; color:#d8d8d8; border-color:#777;}
-    html.enable-dark-skin ul.referencetooltip {color:#222; list-style-image:none}
     html.enable-dark-skin #mw-mf-page-center {background:#222;}
     html.enable-dark-skin #contentSub,
         html.enable-dark-skin #contentSub2 {color:#999}
-    
+
+    /* Podgląd przypisów */
+    html.enable-dark-skin ul.referencetooltip {list-style-image:none}
+    html.enable-dark-skin .referencetooltip li:first-child {background:#181818; border-color:#4f4b8d; -webkit-box-shadow:2px 4px 8px rgba(0, 0, 0, 0.7); -moz-box-shadow:2px 4px 8px rgba(0, 0, 0, 0.7); box-shadow:2px 4px 8px rgb(0, 0, 0, 0.7);}
+    html.enable-dark-skin .referencetooltip li+li {border-top-color:#4f4b8d;}
+    html.enable-dark-skin .referencetooltip>li+li::after {border-top-color:#181818;}
+
+    /* Popups (nie gadżet) */
+    html.enable-dark-skin .mwe-popups {background:#181818; box-shadow:0 30px 90px -20px rgba(0, 0, 0, 0.7), 0 0 10px 1px rgba(0, 0, 0,0.7), 0 0 0px 1px #aaa;}
+    html.enable-dark-skin .mwe-popups .mwe-popups-container {background:#181818; color:#d8d8d8;}
+    html.enable-dark-skin .mwe-popups .mwe-popups-extract {color:#d8d8d8;}
+    html.enable-dark-skin .mwe-popups .mwe-popups-extract[dir='ltr']:after {background-image: -webkit-linear-gradient(to right,rgba(30,30,30,0),#181818 50%); background-image: linear-gradient(to right,rgba(30,30,30,0),#181818 50%);}
+    html.enable-dark-skin .mwe-popups .mwe-popups-settings-icon {filter:invert(1);}
+
     /* Obrazki */
     html.enable-dark-skin div.thumbinner {background:#222; border:1px solid #666;}
     html.enable-dark-skin .thumbimage {border-color:#777; background:white;}
@@ -777,6 +788,20 @@
     html.enable-dark-skin body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
     html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
     html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-sekcja {border-color:#666;}
+
+    /* Okienka jQuery */
+    html.enable-dark-skin .ui-widget-overlay {background:rgba(0,0,0,0.7);}
+    html.enable-dark-skin .ui-widget-content {background:#333; color:#eee;}
+    html.enable-dark-skin .ui-dialog {border-color:#777;}
+    html.enable-dark-skin .ui-widget-header,
+        html.enable-dark-skin .ui-dialog .ui-widget-header {border-color:#666; background:#222 !important; color:#eee;}
+    html.enable-dark-skin .ui-dialog .ui-dialog-titlebar-close {filter:invert(1)}
+    html.enable-dark-skin .ui-dialog .ui-dialog-titlebar-close.ui-state-hover {border-color:#aaa;}
+    html.enable-dark-skin .ui-dialog .ui-button {background:#222 !important; border-color:#777 !important; color:#d8d8d8;}
+    html.enable-dark-skin .ui-dialog .ui-button.ui-state-hover,
+        html.enable-dark-skin .ui-dialog .ui-button:hover {background:#444 !important; color:#d8d8d8;}
+    html.enable-dark-skin .ui-dialog .ui-button:active {background:#282828 !important;}
+
 
     /* Pola z kodem */
     html.enable-dark-skin pre,

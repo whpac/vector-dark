@@ -1,17 +1,6 @@
 @media only screen {
     /* Przenieś do brudnopisu */
-    html:not(.disable-dark-skin) .ui-widget-overlay {background:rgba(0,0,0,0.7);}
-    html:not(.disable-dark-skin) .ui-widget-content {background:#333; color:#eee;}
-    html:not(.disable-dark-skin) .ui-dialog {border-color:#777;}
-    html:not(.disable-dark-skin) .ui-widget-header,
-        html:not(.disable-dark-skin) .ui-dialog .ui-widget-header {border-color:#666; background:#222 !important; color:#eee;}
-    html:not(.disable-dark-skin) .ui-dialog .ui-dialog-titlebar-close {filter:invert(1)}
-    html:not(.disable-dark-skin) .ui-dialog .ui-dialog-titlebar-close.ui-state-hover {border-color:#aaa;}
     html:not(.disable-dark-skin) .moveToSandboxDialog .ui-widget-content {border:none;}
     html:not(.disable-dark-skin) .moveToSandboxDialog .ui-widget-content.text {border:1px solid #888; background:#222;}
     html:not(.disable-dark-skin) .moveToSandboxDialog .ui-widget-content.text:hover {border-color:#666;}
-    html:not(.disable-dark-skin) .moveToSandboxDialog .ui-button {background:#222 !important; border-color:#777 !important; color:#d8d8d8;}
-    html:not(.disable-dark-skin) .moveToSandboxDialog .ui-button.ui-state-hover,
-        html:not(.disable-dark-skin) .moveToSandboxDialog .ui-button:hover {background:#444 !important; color:#d8d8d8;}
-    html:not(.disable-dark-skin) .moveToSandboxDialog .ui-button:active {background:#282828 !important;}
 }
