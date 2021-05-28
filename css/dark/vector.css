@@ -504,7 +504,10 @@
     html:not(.disable-dark-skin) table.fmbox-warning {background-color:#845353; border-color:#dd5757;}
     html:not(.disable-dark-skin) table.ambox img,
         html:not(.disable-dark-skin) table.fmbox img {filter:drop-shadow(0 0 6px white);}
-    
+
+    html:not(.disable-dark-skin) .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
+    html:not(.disable-dark-skin) .portal-sekcja {border-color:#666;}
+
     html:not(.disable-dark-skin) h1,
         html:not(.disable-dark-skin) h2,
         html:not(.disable-dark-skin) h3,
@@ -812,8 +815,6 @@
     html:not(.disable-dark-skin) body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
     html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
     html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
-    html:not(.disable-dark-skin) body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
-    html:not(.disable-dark-skin) body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-sekcja {border-color:#666;}
 
     /* Okienka jQuery */
     html:not(.disable-dark-skin) .ui-widget-overlay {background:rgba(0,0,0,0.7);}
@@ -827,7 +828,6 @@
     html:not(.disable-dark-skin) .ui-dialog .ui-button.ui-state-hover,
         html:not(.disable-dark-skin) .ui-dialog .ui-button:hover {background:#444 !important; color:#d8d8d8;}
     html:not(.disable-dark-skin) .ui-dialog .ui-button:active {background:#282828 !important;}
-
 
     /* Pola z kodem */
     html:not(.disable-dark-skin) pre,

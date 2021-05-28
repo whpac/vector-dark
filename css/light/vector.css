@@ -504,7 +504,10 @@
     html.enable-dark-skin table.fmbox-warning {background-color:#845353; border-color:#dd5757;}
     html.enable-dark-skin table.ambox img,
         html.enable-dark-skin table.fmbox img {filter:drop-shadow(0 0 6px white);}
-    
+
+    html.enable-dark-skin .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
+    html.enable-dark-skin .portal-sekcja {border-color:#666;}
+
     html.enable-dark-skin h1,
         html.enable-dark-skin h2,
         html.enable-dark-skin h3,
@@ -812,8 +815,6 @@
     html.enable-dark-skin body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
     html.enable-dark-skin body.page-Pomoc_FAQ div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
     html.enable-dark-skin body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
-    html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-naglowek {border-color:#666; background-image:linear-gradient(to right,#4b5763,#303030);}
-    html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_propozycje .portal-sekcja {border-color:#666;}
 
     /* Okienka jQuery */
     html.enable-dark-skin .ui-widget-overlay {background:rgba(0,0,0,0.7);}
@@ -827,7 +828,6 @@
     html.enable-dark-skin .ui-dialog .ui-button.ui-state-hover,
         html.enable-dark-skin .ui-dialog .ui-button:hover {background:#444 !important; color:#d8d8d8;}
     html.enable-dark-skin .ui-dialog .ui-button:active {background:#282828 !important;}
-
 
     /* Pola z kodem */
     html.enable-dark-skin pre,
