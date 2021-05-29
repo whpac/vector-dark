@@ -278,12 +278,13 @@
         html:not(.disable-dark-skin) .minerva__tab-container .minerva__tab.new:hover {color:#aaa;}
     html:not(.disable-dark-skin) .minerva__tab-container .minerva__tab.selected {border-color:#83a5d8; color:#83a5d8;}
     html:not(.disable-dark-skin) .toggle-list__list {background:#222; box-shadow:0 5px 17px 0 rgba(0, 0, 0, 0.6), 0 0 1px #a2a9b1;}
+    html:not(.disable-dark-skin) .toggle-list-item:hover {background:#333;}
     html:not(.disable-dark-skin) .toggle-list-item__label {color:#bbb;}
     html:not(.disable-dark-skin) .toggle-list-item__anchor::before {filter:invert(1);}
     html:not(.disable-dark-skin) .minerva-talk-full-page-button {background:#222; border-color:#777; color:#76acff;}
     html:not(.disable-dark-skin) .minerva-talk-content-explained {color:#aaa; border-color:#777;}
     html:not(.disable-dark-skin) body.skin-minerva .category-header li {border-color:#777;}
-    html:not(.disable-dark-skin) body.skin-minerva.action-history .mw-history-compareselectedversions {background:transparent;}
+    html:not(.disable-dark-skin) body.skin-minerva.action-history .mw-history-compareselectedversions {background:#303030;}
     html:not(.disable-dark-skin) body.skin-minerva .mw-history-undo a,
         html:not(.disable-dark-skin) body.skin-minerva .mw-rollback-link a {background:#222; border-color:#777;}
     html:not(.disable-dark-skin) body.skin-minerva .mw-history-undo a:hover,
