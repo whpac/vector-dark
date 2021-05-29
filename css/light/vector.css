@@ -78,8 +78,9 @@
     html.enable-dark-skin .mw-echo-ui-notificationBadgeButtonPopupWidget-popup span.oo-ui-icon-bell,
         html.enable-dark-skin .mw-echo-ui-notificationBadgeButtonPopupWidget-popup span.oo-ui-icon-tray {filter:invert(1);}
     html.enable-dark-skin .notification-count {background:transparent;}
-    html.enable-dark-skin  .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {color:#bbb;}
-    
+    html.enable-dark-skin .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {color:#bbb;}
+    html.enable-dark-skin .mw-echo-ui-notificationsInboxWidget-toolbarWrapper {background:#303030; box-shadow:0 2px 0 0 #666;}
+
     /* Mobilny nagłówek */
     html.enable-dark-skin .header-container.header-chrome {background-color:#222;}
     html.enable-dark-skin .search-box .search {background-color:#444; border-color:#555;}
