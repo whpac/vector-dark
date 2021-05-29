@@ -237,8 +237,8 @@
     html.enable-dark-skin body.skin-minerva #main-page #main-page-content h2 {color:white;}
     html.enable-dark-skin #main-page #main-page-header {background-image:url(https://upload.wikimedia.org/wikipedia/commons/9/96/MP-open-book4-dark.png);}
     html.enable-dark-skin body.skin-minerva #main-page #main-page-header {background-image:none;}
-    html.enable-dark-skin .page-actions-menu__list-item .mw-ui-icon-element {filter:brightness(1.5);}
-    html.enable-dark-skin .page-actions-menu {border-color:#888;}
+    html.enable-dark-skin .page-actions-menu__list-item .mw-ui-icon-element {filter:brightness(2);}
+    html.enable-dark-skin .page-actions-menu {border-color:#777;}
     html.enable-dark-skin .page-actions-menu a {color:transparent;}
     html.enable-dark-skin .content .mw-parser-output > h2,
         html.enable-dark-skin .content .section-heading {border-color:#888;}
@@ -268,6 +268,30 @@
     html.enable-dark-skin #mw-mf-page-center {background:#222;}
     html.enable-dark-skin #contentSub,
         html.enable-dark-skin #contentSub2 {color:#999}
+    html.enable-dark-skin .minerva__tab-container .minerva__tab,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab:visited,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab:hover,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab:active,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab.new,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab.new:visited,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab.new:active,
+        html.enable-dark-skin .minerva__tab-container .minerva__tab.new:hover {color:#aaa;}
+    html.enable-dark-skin .minerva__tab-container .minerva__tab.selected {border-color:#83a5d8; color:#83a5d8;}
+    html.enable-dark-skin .toggle-list__list {background:#222; box-shadow:0 5px 17px 0 rgba(0, 0, 0, 0.6), 0 0 1px #a2a9b1;}
+    html.enable-dark-skin .toggle-list-item__label {color:#bbb;}
+    html.enable-dark-skin .toggle-list-item__anchor::before {filter:invert(1);}
+    html.enable-dark-skin .minerva-talk-full-page-button {background:#222; border-color:#777; color:#76acff;}
+    html.enable-dark-skin .minerva-talk-content-explained {color:#aaa; border-color:#777;}
+    html.enable-dark-skin body.skin-minerva .category-header li {border-color:#777;}
+    html.enable-dark-skin body.skin-minerva .action-history .mw-history-compareselectedversions {background:transparent;}
+    html.enable-dark-skin body.skin-minerva .mw-history-undo a,
+        html.enable-dark-skin body.skin-minerva .mw-rollback-link a {background:#222; border-color:#777;}
+    html.enable-dark-skin body.skin-minerva .mw-history-undo a:hover,
+        html.enable-dark-skin body.skin-minerva .mw-rollback-link a:hover,
+        html.enable-dark-skin body.skin-minerva .mw-history-undo a:active,
+        html.enable-dark-skin body.skin-minerva .mw-rollback-link a:active,
+        html.enable-dark-skin body.skin-minerva .mw-history-undo a.is-on,
+        html.enable-dark-skin body.skin-minerva .mw-rollback-link a.is-on {background:#333; color:#d8d8d8; border-color:#888;}
 
     /* Podgląd przypisów */
     html.enable-dark-skin ul.referencetooltip {list-style-image:none}
