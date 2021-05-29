@@ -283,7 +283,7 @@
     html:not(.disable-dark-skin) .minerva-talk-full-page-button {background:#222; border-color:#777; color:#76acff;}
     html:not(.disable-dark-skin) .minerva-talk-content-explained {color:#aaa; border-color:#777;}
     html:not(.disable-dark-skin) body.skin-minerva .category-header li {border-color:#777;}
-    html:not(.disable-dark-skin) body.skin-minerva .action-history .mw-history-compareselectedversions {background:transparent;}
+    html:not(.disable-dark-skin) body.skin-minerva.action-history .mw-history-compareselectedversions {background:transparent;}
     html:not(.disable-dark-skin) body.skin-minerva .mw-history-undo a,
         html:not(.disable-dark-skin) body.skin-minerva .mw-rollback-link a {background:#222; border-color:#777;}
     html:not(.disable-dark-skin) body.skin-minerva .mw-history-undo a:hover,
