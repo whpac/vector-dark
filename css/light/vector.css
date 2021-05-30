@@ -706,6 +706,7 @@
     html.enable-dark-skin .codeEditor-status-message {border-color:#777;}
     html.enable-dark-skin .ace_gutter-cell.ace_info {background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4wUODy4RHtBVLAAAAIBJREFUOMvt0DEOAWEYhOHnF3EDhYhCo6BTi9u4BNfQOYMrOIKaqEUjEq1mNNtuYrcRiam+L5N5kxl+Qkn6dV7ng/Aaqzq/WxMallKu1Tv+Wu9tkkOSfZJFmw022FX3vDGglPLECDccGwOSTDHDHec2FQZ44YFeG8AJF0yw9Fet3vfWJpJuCm6lAAAAAElFTkSuQmCC") !important;}
     html.enable-dark-skin #mw-fr-stablediff {background:transparent;}
+    html.enable-dark-skin pre.CodeMirror-line span::selection {background:#305685 !important; color:#fff;}
     
     /* Edytor wizualny */
     html.enable-dark-skin .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {filter:invert(1);}
