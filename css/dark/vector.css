@@ -411,7 +411,12 @@
     html:not(.disable-dark-skin) .jquery-tablesorter th.headerSortUp {background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%222…21 4%22%3E %3Cpath d=%22M6.5 4l4-4 4 4z%22 fill=%22white%22/%3E %3C/svg%3E");}
     html:not(.disable-dark-skin) .jquery-tablesorter th.headerSortDown {background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2221%22 height=%224%22 viewBox=%220 0 21 4%22%3E %3Cpath d=%22M14.5 0l-4 4-4-4z%22 fill=%22white%22/%3E %3C/svg%3E");}
     html:not(.disable-dark-skin) table:not(.userbox):not(.infobox)[style*=background]:not([style*=transparent]) {background:#222 !important; color:#d8d8d8 !important;}
-    
+    html:not(.disable-dark-skin) .mw-datatable td,
+        html:not(.disable-dark-skin) .mw-datatable th {border-color:#666;}
+    html:not(.disable-dark-skin) .mw-datatable th {background:#444;}
+    html:not(.disable-dark-skin) .mw-datatable td {background:#282828;}
+    html:not(.disable-dark-skin) .mw-datatable tr:hover td {background:#383838;}
+
     /* Cytat */
     html:not(.disable-dark-skin) div.cytat {background:transparent !important;}
     html:not(.disable-dark-skin) div.cytat blockquote {background:#222 !important; color:#d8d8d8 !important; border-color:#777 !important;}
