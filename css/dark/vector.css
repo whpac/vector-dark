@@ -19,6 +19,7 @@
     html:not(.disable-dark-skin) .cx-callout {background:#222; border-color:#777;}
     html:not(.disable-dark-skin) .cx-callout:before {border-bottom-color:#777;}
     html:not(.disable-dark-skin) .cx-callout:after {border-bottom-color:#222;}
+    html:not(.disable-dark-skin) .cx-callout li:hover {background:#383838;}
 
     /* Wyszukiwarka */
     html:not(.disable-dark-skin) #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
