@@ -312,6 +312,7 @@
     html.enable-dark-skin .mwe-popups .mwe-popups-extract[dir='ltr']:after {background-image: -webkit-linear-gradient(to right,rgba(30,30,30,0),#181818 50%); background-image: linear-gradient(to right,rgba(30,30,30,0),#181818 50%);}
     html.enable-dark-skin .mwe-popups .mwe-popups-settings-icon {filter:invert(1);}
     html.enable-dark-skin .mwe-popups .mwe-popups-thumbnail {filter: drop-shadow(0px 0px 0px #fff);}
+    html.enable-dark-skin .mwe-popups.mwe-popups-type-reference .mwe-popups-title .mw-ui-icon.mw-ui-icon-element:before {filter:invert(1);}
 
     /* Obrazki */
     html.enable-dark-skin div.thumbinner {background:#222; border:1px solid #666;}
