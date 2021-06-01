@@ -780,6 +780,15 @@
         html.enable-dark-skin figure[typeof~='mw:Image/Frame'] > figcaption,
         html.enable-dark-skin figure[typeof~='mw:Video/Frame'] > figcaption,
         html.enable-dark-skin figure[typeof~='mw:Audio/Frame'] > figcaption {background:#222; border-color:#777;}
+    html.enable-dark-skin .ve-ui-targetWidget {border-color:#777;}
+    html.enable-dark-skin .ve-ui-targetWidget:not(.oo-ui-pendingElement-pending) {background:#222;}
+    html.enable-dark-skin .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice {background:#222; border-color:#777;}
+    html.enable-dark-skin .ext-discussiontools-ui-replyWidget-preview {background:#282828;}
+    html.enable-dark-skin .ext-discussiontools-ui-replyWidget-preview:before {color:#aaa;}
+    html.enable-dark-skin .oo-ui-panelLayout-framed {border-color:#666;}
+    html.enable-dark-skin .ext-discussiontools-ui-replyWidget-footer {color:#aaa;}
+    html.enable-dark-skin .ext-discussiontools-ui-replyWidget-modeTabs .ext-discussiontools-ui-modeTab.oo-ui-widget-disabled {color:#83a5d8; box-shadow:inset 0 -2px 0 0 #83a5d8;}
+    html.enable-dark-skin .ext-discussiontools-ui-replyWidget-modeTabs .ext-discussiontools-ui-modeTab.oo-ui-optionWidget-highlighted {color:#83a5d8; border-radius:2px;box-shadow:inset 0 -2px 0 0 #83a5d8;}
 
     html.enable-dark-skin textarea {background-color:#222; color:#d8d8d8; border-color:#777;}
     html.enable-dark-skin .CodeMirror {background-color:#222 !important; color:#d8d8d8 !important;}
