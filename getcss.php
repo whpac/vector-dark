@@ -15,8 +15,8 @@ else $file_id = '';
 $file = $default_css;
 if(isset($additional_css[$file_id])) $file = $additional_css[$file_id];
 
-if(isset($_COOKIE['vector-dark_enable']) && !isset($_GET['force_css'])){
-    if($_COOKIE['vector-dark_enable'] == '0'){
+if(isset($_COOKIE['vectorDark_enable']) && !isset($_GET['force_css'])){
+    if($_COOKIE['vectorDark_enable'] == '0'){
         outputFile('css/light/'.$file);
         return;
     }
