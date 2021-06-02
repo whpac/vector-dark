@@ -1,6 +1,6 @@
 @media only screen {
-    /* Przenieś do brudnopisu */
-    html.enable-dark-skin .moveToSandboxDialog .ui-widget-content {border:none;}
-    html.enable-dark-skin .moveToSandboxDialog .ui-widget-content.text {border:1px solid #888; background:#222;}
-    html.enable-dark-skin .moveToSandboxDialog .ui-widget-content.text:hover {border-color:#666;}
+	/* Przenieś do brudnopisu */
+	html.enable-dark-skin .moveToSandboxDialog .ui-widget-content {border:none;}
+	html.enable-dark-skin .moveToSandboxDialog .ui-widget-content.text {border:1px solid #888; background:#222;}
+	html.enable-dark-skin .moveToSandboxDialog .ui-widget-content.text:hover {border-color:#666;}
 }
