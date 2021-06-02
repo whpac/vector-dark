@@ -439,6 +439,8 @@
     html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {background:#333;}
     html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget-handle {border-color:#777;}
     html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {color:#d8d8d8;}
+    html:not(.disable-dark-skin) input:-webkit-autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
+    html:not(.disable-dark-skin) input:autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
     
     /* Klawisz z klawiatury */
     html:not(.disable-dark-skin) .keyboard-key {border:1px solid #666 !important; -moz-box-shadow: 0.1em 0.2em 0.2em #222 !important; -webkit-box-shadow: 0.1em 0.2em 0.2em #222 !important;
@@ -882,6 +884,7 @@
     html:not(.disable-dark-skin) body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
     html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
     html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
+    html:not(.disable-dark-skin) body.page-Wikiprojekt_Gry_komputerowe table:not([class]) tr:last-child td:only-child[style*=background] {background-color:#222 !important; color:#d8d8d8;}
 
     /* Okienka jQuery */
     html:not(.disable-dark-skin) .ui-widget-overlay {background:rgba(0,0,0,0.7);}
