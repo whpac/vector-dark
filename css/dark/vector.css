@@ -520,7 +520,7 @@
 		html:not(.disable-dark-skin) img[src*=Logo_AutoBot2\.svg], html:not(.disable-dark-skin) img[src*=Icon_-_Help\.svg],
 		html:not(.disable-dark-skin) img[src*=icon_block\.svg], html:not(.disable-dark-skin) img[src*=icon_speechBubbles-ltr\.svg],
 		html:not(.disable-dark-skin) img[src*=icon_templateAdd-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_trash\.svg],
-		html:not(.disable-dark-skin) img[src*=icon_clock\.svg], html:not(.disable-dark-skin) img[src*=icon_printer-ltr\.svg],
+		html:not(.disable-dark-skin) img[src*=icon_clock\.svg], html:not(.disable-dark-skin) img[src*=icon_printer\.svg],
 		html:not(.disable-dark-skin) img[src*=icon_editUndo-ltr\.svg], html:not(.disable-dark-skin) img[src*=Badminton_pictogram\.svg],
 		html:not(.disable-dark-skin) img[src*=Gymnastics_\%28artistic\%29_pictogram\.svg], html:not(.disable-dark-skin) img[src*=Golf_pictogram\.svg],
 		html:not(.disable-dark-skin) img[src*=Judo_pictogram\.svg], html:not(.disable-dark-skin) img[src*=Basketball_pictogram\.svg],
@@ -535,7 +535,7 @@
 		html:not(.disable-dark-skin) img[src*=Neptune_symbol\.svg], html:not(.disable-dark-skin) img[src*=Saturn_symbol\.svg],
 		html:not(.disable-dark-skin) img[src*=Sun_symbol\.svg], html:not(.disable-dark-skin) img[src*=Uranus_symbol\.svg],
 		html:not(.disable-dark-skin) img[src*=Venus_symbol\.svg], html:not(.disable-dark-skin) img[src*=Earth_symbol\.svg],
-		html:not(.disable-dark-skin) img[src*=icon_tag\.svg], html:not(.disable-dark-skin) img[src*=icon_die-ltr\.svg],
+		html:not(.disable-dark-skin) img[src*=icon_tag-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_die\.svg],
 		html:not(.disable-dark-skin) img[src*=icon_caret-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_caret-rtl\.svg],
 		html:not(.disable-dark-skin) img[src*=Icon_-_Search-big\.svg] {filter:invert(1) !important;}
 	
