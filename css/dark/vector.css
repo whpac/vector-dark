@@ -369,22 +369,30 @@
 	html:not(.disable-dark-skin) .navbox,
 		html:not(.disable-dark-skin) .navbox-subgroup {background-color:#222;}
 	html:not(.disable-dark-skin) .navbox-title,
-		html:not(.disable-dark-skin) table.navbox th {background-color:#383838;}
-	html:not(.disable-dark-skin) .navbox-list {border-left-color:#222 !important;}
+		html:not(.disable-dark-skin) .navbox th,
+		html:not(.disable-dark-skin) .navbox .opis,
+		html:not(.disable-dark-skin) .navbox > .caption {background-color:#3f3f3f;}
+	html:not(.disable-dark-skin) .navbox-list,
+		html:not(.disable-dark-skin) .navbox .inner-standard > tbody > tr > .opis + .spis {border-left-color:#222 !important;}
 	html:not(.disable-dark-skin) .navbox-abovebelow,
 		html:not(.disable-dark-skin) .navbox-group,
 		html:not(.disable-dark-skin) .navbox-subgroup .navbox-title,
 		html:not(.disable-dark-skin) .navbox-columns-table th.navbox-abovebelow,
-		html:not(.disable-dark-skin) table.navbox.v2 .navbox-group {background-color:#383838;}
+		html:not(.disable-dark-skin) .navbox.v2 .navbox-group {background-color:#383838;}
 	html:not(.disable-dark-skin) .navbox-subgroup .navbox-group,
 		html:not(.disable-dark-skin) .navbox-subgroup .navbox-abovebelow,
 		html:not(.disable-dark-skin) .navbox-subgroup .navbox-columns-table th.navbox-abovebelow,
 		html:not(.disable-dark-skin) .navbox-subgroup .navbox-subgroup .navbox-title {background-color:#4f4f4f;}
-	html:not(.disable-dark-skin) table.navbox.v2 .navbox-subgroup .navbox-group {background-color:#555;}
-	html:not(.disable-dark-skin) table.navbox.v2 tr+tr > td,
-		html:not(.disable-dark-skin) table.navbox.v2 tr+tr > th {border-top-color:#222;}
+	html:not(.disable-dark-skin) .navbox.v2 .navbox-subgroup .navbox-group {background-color:#555;}
+	html:not(.disable-dark-skin) .navbox .inner-standard>tbody>tr+tr>th,
+		html:not(.disable-dark-skin) .navbox .inner-standard>tbody>tr+tr>td,
+		html:not(.disable-dark-skin) .navbox .inner-columns>tbody>tr+tr>td {border-top-color:#222;}
 	html:not(.disable-dark-skin) .navbox-even,
 		html:not(.disable-dark-skin) .mw-parser-output .navbox .navbox-even {background-color:#333;}
+	html:not(.disable-dark-skin) .mw-parser-output .navbox>.mw-collapsible-content>.above,
+		html:not(.disable-dark-skin) .mw-parser-output .navbox>.mw-collapsible-content>.below {background:#2f2f2f;}
+	html:not(.disable-dark-skin) .mw-parser-output .navbox .inner-columns>tbody>tr>th,
+		html:not(.disable-dark-skin) .mw-parser-output .navbox .inner-columns>tbody>tr>td {border-left-color:#222; border-right-color:#222;}
 	html:not(.disable-dark-skin) .navbox-title .noprint a:not([class]) span,
 		html:not(.disable-dark-skin) .navbox-title .noprint a.external span {color:#76acff !important}
 	html:not(.disable-dark-skin) .navbox-title .noprint a.new span {color:#ef5252 !important;}
