@@ -465,7 +465,7 @@
 	html.enable-dark-skin .infobox > * > tr:first-child,
 		html.enable-dark-skin .infobox > tr:first-child {background:#444 !important; color:#fff !important;} /* Nagłówek */
 	html.enable-dark-skin .infobox tr td:first-child:not([colspan])[style*=eee],
-		html.enable-dark-skin .infobox tr th:first-child:not([style]) {background:#222 !important; color:#d8d8d8;} /* Lewa kolumna */
+		html.enable-dark-skin .infobox tr th:first-child:not([style]) {background:#222 !important; color:#d8d8d8 !important;} /* Lewa kolumna */
 	html.enable-dark-skin .infobox tr[style*=background][style*=white] > td:not(.naglowek):only-child {background:#222; color:#d8d8d8;} /* Wiersz z linkiem, kolor biały */
 	html.enable-dark-skin .infobox tr[style*=background]:not([style*=white]) > td:not(.naglowek):only-child {background:#333 !important; color:#d8d8d8;} /* Wiersz z linkiem, kolor #eee */
 	html.enable-dark-skin .infobox td[style*=background],
