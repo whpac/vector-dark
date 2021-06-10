@@ -17,3 +17,8 @@ interface Window {
     /** Pozwala skonfigurować, czy pingować ToolForge po zmianie trybu */
     Msz2001_vectorDark_pingujCookie: boolean | undefined;
 }
+
+enum Mode {
+    Light,
+    Dark
+}
