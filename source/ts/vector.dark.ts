@@ -1,6 +1,6 @@
 /* Nie dołączaj skryptu ponownie */
 if(window.Msz2001_vectorDark === undefined){
-    $(document).ready(function () {
+    $(function () {
         Msz2001_vectorDark_uruchom();
     });
     
@@ -41,18 +41,18 @@ if(window.Msz2001_vectorDark === undefined){
         var link_faq = document.getElementById("n-FAQ");
     
         if(link_faq) {
-            link_faq.parentNode.insertBefore(link_jasny, link_faq.nextSibling);
-            link_faq.parentNode.insertBefore(link_ciemny, link_faq.nextSibling);
+            link_faq?.parentNode?.insertBefore(link_jasny, link_faq.nextSibling);
+            link_faq?.parentNode?.insertBefore(link_ciemny, link_faq.nextSibling);
         } else {
             setTimeout(function () {
                 var elAboutWikipediaLink = document.querySelector("#mw-mf-page-left ul.hlist li:first-child");
                 var elNavLeft = document.getElementById("mw-mf-page-left");
                 if(elAboutWikipediaLink) {
-                    elAboutWikipediaLink.parentNode.insertBefore(link_jasny, elAboutWikipediaLink);
-                    elAboutWikipediaLink.parentNode.insertBefore(link_ciemny, elAboutWikipediaLink);
+                    elAboutWikipediaLink?.parentNode?.insertBefore(link_jasny, elAboutWikipediaLink);
+                    elAboutWikipediaLink?.parentNode?.insertBefore(link_ciemny, elAboutWikipediaLink);
                 } else {
-                    elNavLeft.appendChild(link_jasny);
-                    elNavLeft.appendChild(link_ciemny);
+                    elNavLeft?.appendChild(link_jasny);
+                    elNavLeft?.appendChild(link_ciemny);
                 }
             }, 1000);
         }
@@ -83,11 +83,11 @@ if(window.Msz2001_vectorDark === undefined){
     
     /**
      * Zapisuje tryb wybrany przez użytkownika i ustawia widoczność elementów
-     * @param {boolean} czy_wlaczony 
+     * @param wlaczony 
      */
-    var Msz2001_vectorDark_zapiszCzyWlaczony = function(czy_wlaczony){
+    var Msz2001_vectorDark_zapiszCzyWlaczony = function(wlaczony: boolean){
         /* Zamienia wartość logiczną na liczbę - pomaga w adresowaniu tablic */
-        czy_wlaczony = czy_wlaczony ? 1 : 0;
+        let czy_wlaczony = wlaczony ? 1 : 0;
     
         /* Ustawia odpowiednią klasę CSS na znaczniku <html> */
         var klasa_do_ustawienia = [ /* jasny: */ "disable-dark-skin", /* ciemny: */ "enable-dark-skin"];
@@ -118,11 +118,11 @@ if(window.Msz2001_vectorDark === undefined){
     
     /**
      * Tworzy element <li> z linkiem w środku
-     * @param {string} tekst Tekst do umieszczenia w linku
-     * @param {() => void} klik Procedura obsługi kliknięcia
+     * @param tekst Tekst do umieszczenia w linku
+     * @param klik Procedura obsługi kliknięcia
      * @returns Element listy
      */
-    var Msz2001_vectorDark_nowyLink = function(tekst, klik){
+    var Msz2001_vectorDark_nowyLink = function(tekst: string, klik: (() => void)){
         var li = document.createElement("li");
         var link = document.createElement("a");
         link.href = "javascript:void(0)";
@@ -134,14 +134,15 @@ if(window.Msz2001_vectorDark === undefined){
 
     /**
      * Pinguje serwer z plikami CSS, aby ustawił odpowiedni plik cookie
-     * @param {number} czy_wlaczony Liczba 0 lub 1, określająca, czy tryb ciemny jest włączony
+     * @param czy_wlaczony Liczba 0 lub 1, określająca, czy tryb ciemny jest włączony
      */
-    var Msz2001_vectorDark_zapiszCookie = function(czy_wlaczony){
+    var Msz2001_vectorDark_zapiszCookie = function(czy_wlaczony: number){
         /* Nie pinguj jeśli trwa inicjalizacja (nie było zmiany) ani jeśli użytkownik sobie nie życzy */
         if(window.Msz2001_vectorDark.inicjalizacja) return;
         if(!window.Msz2001_vectorDark_pingujCookie) return;
 
         /* Wysyła żądanie do serwera z plikami CSS, by ustawił cookie dla siebie */
-        window.Msz2001_vectorDark.obrazek_cors.src = "https://vector-dark.toolforge.org/setcookie.php?is_on=" + (czy_wlaczony ? "true" : "false");
+        if(window.Msz2001_vectorDark.obrazek_cors !== null)
+            window.Msz2001_vectorDark.obrazek_cors.src = "https://vector-dark.toolforge.org/setcookie.php?is_on=" + (czy_wlaczony ? "true" : "false");
     }
 }
