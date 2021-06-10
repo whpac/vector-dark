@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "system",
+        "moduleResolution": "node",
+        "outFile": "dist/vector.dark.js"
+    },
+    "include": [
+        "source/ts"
+    ]
+}

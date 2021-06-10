@@ -1,6 +1,6 @@
 /* Nie dołączaj skryptu ponownie */
 if(window.Msz2001_vectorDark === undefined){
-    jQuery(document).ready(function () {
+    $(document).ready(function () {
         Msz2001_vectorDark_uruchom();
     });
     
