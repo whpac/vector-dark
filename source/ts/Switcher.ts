@@ -19,6 +19,7 @@ class Switcher {
         this.ToDarkModeLink = document.createElement('a');
         this.ToDarkModeLink.href = 'javascript:void(0)';
         this.ToDarkModeLink.innerText = 'Tryb ciemny';
+        this.ToDarkModeLink.style.display = 'none';
         this.ToDarkModeLink.addEventListener('click', this.OnToDarkClick.bind(this));
         this.SwitcherWrapper.appendChild(this.ToDarkModeLink);
 
@@ -26,19 +27,17 @@ class Switcher {
         this.ToLightModeLink = document.createElement('a');
         this.ToLightModeLink.href = 'javascript:void(0)';
         this.ToLightModeLink.innerText = 'Tryb jasny';
+        this.ToLightModeLink.style.display = 'none';
         this.ToLightModeLink.addEventListener('click', this.OnToLightClick.bind(this));
         this.SwitcherWrapper.appendChild(this.ToLightModeLink);
 
-        // Rejestruje nasłuchiwanie zmian trybu
+        // Rejestruje nasłuchiwanie zmian trybu i umieszcza przełącznik w dokumencie
         this.Controller.SetNotificationOnModeChange(this.AdjustToCurrentMode.bind(this));
-
-        // Dostosowuje treść przełącznika do trybu i umieszcza w dokumencie
-        this.AdjustToCurrentMode();
         this.AttachToDocument();
     }
 
     /** Dopasowuje treść przełącznika do aktualnego trybu */
-    protected AdjustToCurrentMode() {
+    public AdjustToCurrentMode() {
         let current_mode = this.Controller.GetCurrentMode();
 
         switch(current_mode) {
