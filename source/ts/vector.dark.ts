@@ -8,6 +8,6 @@ if(window.Msz2001_vectorDark_loaded === undefined) {
 
     // Utwór kontroler po załadowaniu się strony
     $(function () {
-        new Controller();
+        new Msz2001.VectorDark.Controller();
     });
 }

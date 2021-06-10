@@ -6,7 +6,10 @@ interface Window {
     Msz2001_vectorDark_pingujCookie: boolean | undefined;
 }
 
-enum Mode {
-    Light,
-    Dark
+namespace Msz2001.VectorDark {
+    /** Opisuje dostępne tryby */
+    export enum Mode {
+        Light,
+        Dark
+    }
 }
