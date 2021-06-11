@@ -3,7 +3,7 @@ namespace Msz2001.VectorDark {
         protected ModeChangeListeners: (() => void)[];
         protected CurrentMode: Mode;
         protected Storage: DataStorage;
-        protected ThemeSwitcher: Switcher;
+        protected Switchers: ThemeSwitcher[];
         protected ThemeAdapter: ThemeAdapter;
 
         public constructor() {
@@ -14,12 +14,19 @@ namespace Msz2001.VectorDark {
 
             // Przygotuj warstwę interakcji z użytkownikiem
             this.ThemeAdapter = new ThemeAdapter();
-            this.ThemeSwitcher = new Switcher(this);
+
+            // Przełączników może być więcej niż jeden
+            this.Switchers = [
+                new InMenuSwitcher(this),
+                new FloatingSwitcher(this)
+            ];
 
             this.CurrentMode = this.Storage.GetMode();
 
-            // Wywołaj, kiedy odczytano początkowy tryb
-            this.ThemeSwitcher.AdjustToCurrentMode();
+            // Zastosuj bieżący tryb do przełączników i całej strony
+            for(let switcher of this.Switchers) {
+                switcher.AdjustToCurrentMode();
+            }
             this.ThemeAdapter.ApplyMode(this.CurrentMode);
         }
 
