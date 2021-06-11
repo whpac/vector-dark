@@ -81,10 +81,18 @@ namespace Msz2001.VectorDark {
                     return;
                 }
 
-                // Link "O Wikipedii" nie istnieje, więc być może wystąpił inny problem.
-                // Wrzuć przełącznik na koniec lewego menu (desktop).
-                let elNavLeft = document.getElementById("mw-panel");
-                elNavLeft?.appendChild(this.SwitcherWrapper);
+                // Link "O Wikipedii" nie istnieje, więc być może wystąpił jakiś problem.
+                // Umieść przełącznik po prostu w wysuwanym menu
+                let elMobileLeftNav = document.getElementById("mw-mf-page-left");
+                if(elMobileLeftNav !== null) {
+                    elMobileLeftNav.appendChild(this.SwitcherWrapper);
+                    return;
+                }
+
+                // Jeśli nadal się nie udało, to może użytkownik jest na innej wiki na desktopie.
+                // Wrzuć przełącznik na koniec lewego menu.
+                let elLeftMenu = document.getElementById("mw-panel");
+                elLeftMenu?.appendChild(this.SwitcherWrapper);
             }, 1000);
         }
     }
