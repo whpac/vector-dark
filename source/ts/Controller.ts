@@ -20,6 +20,7 @@ namespace Msz2001.VectorDark {
 
             // Wywołaj, kiedy odczytano początkowy tryb
             this.ThemeSwitcher.AdjustToCurrentMode();
+            this.ThemeAdapter.ApplyMode(this.CurrentMode);
         }
 
         /** Zwraca aktualnie ustawiony motyw */
@@ -33,6 +34,7 @@ namespace Msz2001.VectorDark {
             if(mode == this.CurrentMode) return;
 
             this.CurrentMode = mode;
+            this.ThemeAdapter.ApplyMode(mode);
             this.InvokeModeChangeListeners();
             this.Storage.SaveMode(mode);
         }
