@@ -83,7 +83,7 @@ namespace Msz2001.VectorDark {
 
                 // Link "O Wikipedii" nie istnieje, więc być może wystąpił inny problem.
                 // Wrzuć przełącznik na koniec lewego menu (desktop).
-                let elNavLeft = document.getElementById("mw-mf-page-left");
+                let elNavLeft = document.getElementById("mw-panel");
                 elNavLeft?.appendChild(this.SwitcherWrapper);
             }, 1000);
         }
