@@ -1,135 +1,253 @@
 "use strict";
+var Msz2001;
+(function (Msz2001) {
+    var VectorDark;
+    (function (VectorDark) {
+        var Controller = /** @class */ (function () {
+            function Controller() {
+                this.ModeChangeListeners = [];
+                // Przygotuj interfejs do magazynu
+                this.Storage = new VectorDark.DataStorage();
+                // Przygotuj warstwę interakcji z użytkownikiem
+                this.ThemeAdapter = new VectorDark.ThemeAdapter();
+                this.ThemeSwitcher = new VectorDark.Switcher(this);
+                this.CurrentMode = this.Storage.GetMode();
+                // Wywołaj, kiedy odczytano początkowy tryb
+                this.ThemeSwitcher.AdjustToCurrentMode();
+                this.ThemeAdapter.ApplyMode(this.CurrentMode);
+            }
+            /** Zwraca aktualnie ustawiony motyw */
+            Controller.prototype.GetCurrentMode = function () {
+                return this.CurrentMode;
+            };
+            /** Zmienia tryb */
+            Controller.prototype.RequestMode = function (mode) {
+                // Nie rób nic, jeśli żądany tryb jest już ustawiony
+                if (mode == this.CurrentMode)
+                    return;
+                this.CurrentMode = mode;
+                this.ThemeAdapter.ApplyMode(mode);
+                this.InvokeModeChangeListeners();
+                this.Storage.SaveMode(mode);
+            };
+            /**
+             * Rejestruje funkcję do wywołania po zmianie trybu
+             * @param func Funkcja do wywołania przy zmianie trybu
+             */
+            Controller.prototype.SetNotificationOnModeChange = function (func) {
+                this.ModeChangeListeners.push(func);
+            };
+            /** Wywołuje procedury obsługi zmiany trybu */
+            Controller.prototype.InvokeModeChangeListeners = function () {
+                for (var _i = 0, _a = this.ModeChangeListeners; _i < _a.length; _i++) {
+                    var listener = _a[_i];
+                    listener();
+                }
+            };
+            return Controller;
+        }());
+        VectorDark.Controller = Controller;
+    })(VectorDark = Msz2001.VectorDark || (Msz2001.VectorDark = {}));
+})(Msz2001 || (Msz2001 = {}));
+var Msz2001;
+(function (Msz2001) {
+    var VectorDark;
+    (function (VectorDark) {
+        /**
+         * Klasa odpowiedzialna za zapisywanie i odczytywanie ustawionego trybu
+         */
+        var DataStorage = /** @class */ (function () {
+            function DataStorage() {
+                this.CorsImage = document.createElement('img');
+                this.CorsImage.style.width = this.CorsImage.style.height = '0px';
+                this.CorsImage.style.display = 'none';
+                document.body.appendChild(this.CorsImage);
+            }
+            /** Zwraca aktualnie ustawiony tryb */
+            DataStorage.prototype.GetMode = function () {
+                var cookie_index = document.cookie.indexOf('disable_vectorDark_Msz2001=1');
+                if (cookie_index < 0) {
+                    return VectorDark.Mode.Dark;
+                }
+                else {
+                    return VectorDark.Mode.Light;
+                }
+            };
+            /**
+             * Zapisuje tryb
+             * @param mode Tryb do zapisania
+             */
+            DataStorage.prototype.SaveMode = function (mode) {
+                // Zapisuje ciastko widoczne tylko po stronie klienckiej (nie trafia do ToolForge)
+                var cookie_value = (mode == VectorDark.Mode.Light) ? 1 : 0;
+                document.cookie = 'disable_vectorDark_Msz2001=' + cookie_value + '; path=/';
+                this.PingForCookie(mode);
+            };
+            /**
+             * Pinguje serwer ToolForge w celu ustawienia ciasteczka
+             * @param mode Tryb do ustawienia
+             */
+            DataStorage.prototype.PingForCookie = function (mode) {
+                if (!window.Msz2001_vectorDark_pingujCookie)
+                    return;
+                var is_on = (mode == VectorDark.Mode.Light) ? 'false' : 'true';
+                /* Wysyła żądanie do serwera z plikami CSS, by ustawił cookie dla siebie */
+                this.CorsImage.src = 'https://vector-dark.toolforge.org/setcookie.php?is_on=' + is_on;
+            };
+            return DataStorage;
+        }());
+        VectorDark.DataStorage = DataStorage;
+    })(VectorDark = Msz2001.VectorDark || (Msz2001.VectorDark = {}));
+})(Msz2001 || (Msz2001 = {}));
+var Msz2001;
+(function (Msz2001) {
+    var VectorDark;
+    (function (VectorDark) {
+        /** Opisuje dostępne tryby */
+        var Mode;
+        (function (Mode) {
+            Mode[Mode["Light"] = 0] = "Light";
+            Mode[Mode["Dark"] = 1] = "Dark";
+        })(Mode = VectorDark.Mode || (VectorDark.Mode = {}));
+    })(VectorDark = Msz2001.VectorDark || (Msz2001.VectorDark = {}));
+})(Msz2001 || (Msz2001 = {}));
+var Msz2001;
+(function (Msz2001) {
+    var VectorDark;
+    (function (VectorDark) {
+        /**
+         * Klasa odpowiedzialna za przełącznik trybów
+         */
+        var Switcher = /** @class */ (function () {
+            /**
+             * Tworzy przełącznik trybów
+             * @param controller Odwołanie do kontrolera
+             */
+            function Switcher(controller) {
+                this.Controller = controller;
+                this.SwitcherWrapper = document.createElement('li');
+                // Tworzy link do przełączenia na tryb ciemny
+                this.ToDarkModeLink = document.createElement('a');
+                this.ToDarkModeLink.href = 'javascript:void(0)';
+                this.ToDarkModeLink.innerText = 'Tryb ciemny';
+                this.ToDarkModeLink.style.display = 'none';
+                this.ToDarkModeLink.addEventListener('click', this.OnToDarkClick.bind(this));
+                this.SwitcherWrapper.appendChild(this.ToDarkModeLink);
+                // Tworzy link do przełączenia na tryb jasny
+                this.ToLightModeLink = document.createElement('a');
+                this.ToLightModeLink.href = 'javascript:void(0)';
+                this.ToLightModeLink.innerText = 'Tryb jasny';
+                this.ToLightModeLink.style.display = 'none';
+                this.ToLightModeLink.addEventListener('click', this.OnToLightClick.bind(this));
+                this.SwitcherWrapper.appendChild(this.ToLightModeLink);
+                // Rejestruje nasłuchiwanie zmian trybu i umieszcza przełącznik w dokumencie
+                this.Controller.SetNotificationOnModeChange(this.AdjustToCurrentMode.bind(this));
+                this.AttachToDocument();
+            }
+            /** Dopasowuje treść przełącznika do aktualnego trybu */
+            Switcher.prototype.AdjustToCurrentMode = function () {
+                var current_mode = this.Controller.GetCurrentMode();
+                switch (current_mode) {
+                    case VectorDark.Mode.Light:
+                        this.ToLightModeLink.style.display = 'none';
+                        this.ToDarkModeLink.style.display = '';
+                        break;
+                    case VectorDark.Mode.Dark:
+                        this.ToLightModeLink.style.display = '';
+                        this.ToDarkModeLink.style.display = 'none';
+                        break;
+                }
+            };
+            /** Obsługuje kliknięcie na link "tryb jasny" */
+            Switcher.prototype.OnToLightClick = function () {
+                this.Controller.RequestMode(VectorDark.Mode.Light);
+            };
+            /** Obsługuje kliknięcie na link "tryb ciemny" */
+            Switcher.prototype.OnToDarkClick = function () {
+                this.Controller.RequestMode(VectorDark.Mode.Dark);
+            };
+            /** Dołącza przełącznik do dokumentu */
+            Switcher.prototype.AttachToDocument = function () {
+                var _this = this;
+                var _a;
+                // Spróbuj dołączyć link w menu po lewej, pod pozycją FAQ (desktop)
+                var link_faq = document.getElementById("n-FAQ");
+                if (link_faq !== null) {
+                    (_a = link_faq.parentNode) === null || _a === void 0 ? void 0 : _a.insertBefore(this.SwitcherWrapper, link_faq.nextSibling);
+                    return;
+                }
+                // Jeśli nie ma linku FAQ, jest to prawdopodobnie wersja mobilna.
+                // Poczekaj na zainicjalizowanie menu, a następnie dodaj link.
+                setTimeout(function () {
+                    var _a;
+                    var elAboutWikipediaLink = document.querySelector("#mw-mf-page-left ul.hlist li:first-child");
+                    if (elAboutWikipediaLink !== null) {
+                        (_a = elAboutWikipediaLink.parentNode) === null || _a === void 0 ? void 0 : _a.insertBefore(_this.SwitcherWrapper, elAboutWikipediaLink);
+                        return;
+                    }
+                    // Link "O Wikipedii" nie istnieje, więc być może wystąpił jakiś problem.
+                    // Umieść przełącznik po prostu w wysuwanym menu
+                    var elMobileLeftNav = document.getElementById("mw-mf-page-left");
+                    if (elMobileLeftNav !== null) {
+                        elMobileLeftNav.appendChild(_this.SwitcherWrapper);
+                        return;
+                    }
+                    // Jeśli nadal się nie udało, to może użytkownik jest na innej wiki na desktopie.
+                    // Wrzuć przełącznik na koniec lewego menu.
+                    var elLeftMenu = document.getElementById("mw-panel");
+                    elLeftMenu === null || elLeftMenu === void 0 ? void 0 : elLeftMenu.appendChild(_this.SwitcherWrapper);
+                }, 1000);
+            };
+            return Switcher;
+        }());
+        VectorDark.Switcher = Switcher;
+    })(VectorDark = Msz2001.VectorDark || (Msz2001.VectorDark = {}));
+})(Msz2001 || (Msz2001 = {}));
+var Msz2001;
+(function (Msz2001) {
+    var VectorDark;
+    (function (VectorDark) {
+        /**
+         * Klasa pośrednicząca przy wpływaniu na wygląd strony
+         */
+        var ThemeAdapter = /** @class */ (function () {
+            /** Tworzy egzemplarz klasy i odwołania do wykorzystywanych obiektów */
+            function ThemeAdapter() {
+                this.MetaTheme = document.querySelector("meta[name=theme-color]");
+            }
+            /**
+             * Stosuje wybrany tryb do strony
+             * @param mode Bieżący tryb
+             */
+            ThemeAdapter.prototype.ApplyMode = function (mode) {
+                var _a, _b;
+                var root_cl = document.documentElement.classList;
+                switch (mode) {
+                    case VectorDark.Mode.Light:
+                        root_cl.add('disable-dark-skin');
+                        root_cl.remove('enable-dark-skin');
+                        (_a = this.MetaTheme) === null || _a === void 0 ? void 0 : _a.setAttribute("content", "#eaecf0");
+                        break;
+                    case VectorDark.Mode.Dark:
+                        root_cl.remove('disable-dark-skin');
+                        root_cl.add('enable-dark-skin');
+                        (_b = this.MetaTheme) === null || _b === void 0 ? void 0 : _b.setAttribute("content", "#222");
+                        break;
+                }
+            };
+            return ThemeAdapter;
+        }());
+        VectorDark.ThemeAdapter = ThemeAdapter;
+    })(VectorDark = Msz2001.VectorDark || (Msz2001.VectorDark = {}));
+})(Msz2001 || (Msz2001 = {}));
 /* Nie dołączaj skryptu ponownie */
-if (window.Msz2001_vectorDark === undefined) {
-    $(document).ready(function () {
-        Msz2001_vectorDark_uruchom();
-    });
-    window.Msz2001_vectorDark = {
-        obrazek_cors: null,
-        link_ciemny: null,
-        link_jasny: null,
-        inicjalizacja: true
-    };
+if (window.Msz2001_vectorDark_loaded === undefined) {
+    window.Msz2001_vectorDark_loaded = true;
     if (window.Msz2001_vectorDark_pingujCookie === undefined) {
         window.Msz2001_vectorDark_pingujCookie = false;
     }
-    var Msz2001_vectorDark_uruchom = function () {
-        /* Wstaw obrazek do realizowania żądań bez CORS */
-        var obrazek_cors = document.createElement("img");
-        obrazek_cors.style.width = obrazek_cors.style.height = '0px';
-        obrazek_cors.style.display = 'none';
-        document.body.appendChild(obrazek_cors);
-        window.Msz2001_vectorDark.obrazek_cors = obrazek_cors;
-        var ciemny_wlaczony = Msz2001_vectorDark_czyWlaczony();
-        /* Wyłącz tryb ciemny, jeśli użytkownik go nie chce */
-        if (!ciemny_wlaczony)
-            Msz2001_vectorDark_wylacz();
-        else
-            Msz2001_vectorDark_wlacz();
-        /* Dodaj linki do przełączania trybu */
-        var link_jasny = Msz2001_vectorDark_nowyLink("Tryb jasny", Msz2001_vectorDark_wylacz);
-        if (!ciemny_wlaczony)
-            link_jasny.style.display = "none";
-        window.Msz2001_vectorDark.link_jasny = link_jasny;
-        var link_ciemny = Msz2001_vectorDark_nowyLink("Tryb ciemny", Msz2001_vectorDark_wlacz);
-        if (ciemny_wlaczony)
-            link_ciemny.style.display = "none";
-        window.Msz2001_vectorDark.link_ciemny = link_ciemny;
-        var link_faq = document.getElementById("n-FAQ");
-        if (link_faq) {
-            link_faq.parentNode.insertBefore(link_jasny, link_faq.nextSibling);
-            link_faq.parentNode.insertBefore(link_ciemny, link_faq.nextSibling);
-        }
-        else {
-            setTimeout(function () {
-                var elAboutWikipediaLink = document.querySelector("#mw-mf-page-left ul.hlist li:first-child");
-                var elNavLeft = document.getElementById("mw-mf-page-left");
-                if (elAboutWikipediaLink) {
-                    elAboutWikipediaLink.parentNode.insertBefore(link_jasny, elAboutWikipediaLink);
-                    elAboutWikipediaLink.parentNode.insertBefore(link_ciemny, elAboutWikipediaLink);
-                }
-                else {
-                    elNavLeft.appendChild(link_jasny);
-                    elNavLeft.appendChild(link_ciemny);
-                }
-            }, 1000);
-        }
-        window.Msz2001_vectorDark.inicjalizacja = false;
-    };
-    /**
-     * Włącza ciemny motyw
-     */
-    var Msz2001_vectorDark_wlacz = function () {
-        Msz2001_vectorDark_zapiszCzyWlaczony(true);
-    };
-    /**
-     * Wyłącza ciemny motyw
-     */
-    var Msz2001_vectorDark_wylacz = function () {
-        Msz2001_vectorDark_zapiszCzyWlaczony(false);
-    };
-    /**
-     * Sprawdza, czy ciemny motyw jest ustawiony
-     * @returns Czy ciemny motyw jest ustawiony
-     */
-    var Msz2001_vectorDark_czyWlaczony = function () {
-        return (document.cookie.indexOf("disable_vectorDark_Msz2001=1") < 0);
-    };
-    /**
-     * Zapisuje tryb wybrany przez użytkownika i ustawia widoczność elementów
-     * @param {boolean} czy_wlaczony
-     */
-    var Msz2001_vectorDark_zapiszCzyWlaczony = function (czy_wlaczony) {
-        /* Zamienia wartość logiczną na liczbę - pomaga w adresowaniu tablic */
-        czy_wlaczony = czy_wlaczony ? 1 : 0;
-        /* Ustawia odpowiednią klasę CSS na znaczniku <html> */
-        var klasa_do_ustawienia = [/* jasny: */ "disable-dark-skin", /* ciemny: */ "enable-dark-skin"];
-        var klasa_do_usuniecia = [/* jasny: */ "enable-dark-skin", /* ciemny: */ "disable-dark-skin"];
-        document.documentElement.classList.add(klasa_do_ustawienia[czy_wlaczony]);
-        document.documentElement.classList.remove(klasa_do_usuniecia[czy_wlaczony]);
-        /* Ustawia kolor paska adresu w przeglądarkach mobilnych */
-        var kolor_motywu = [/* jasny: */ "#eaecf0", /* ciemny: */ "#222"];
-        var metaThemeColor = document.querySelector("meta[name=theme-color]");
-        if (metaThemeColor)
-            metaThemeColor.setAttribute("content", kolor_motywu[czy_wlaczony]);
-        /* Wartości właściwości display dla linków w poszczególnych stanach */
-        var pokaz_link_ciemny = [/* jasny: */ "inherit", /* ciemny: */ "none"];
-        var pokaz_link_jasny = [/* jasny: */ "none", /* ciemny: */ "inherit"];
-        /* Ustawia widoczność linków do przełączania */
-        if (window.Msz2001_vectorDark.link_ciemny != null && window.Msz2001_vectorDark.link_jasny != null) {
-            window.Msz2001_vectorDark.link_ciemny.style.display = pokaz_link_ciemny[czy_wlaczony];
-            window.Msz2001_vectorDark.link_jasny.style.display = pokaz_link_jasny[czy_wlaczony];
-        }
-        /* Ustawia cookie, które jest dostępne tylko dla front-endu */
-        document.cookie = "disable_vectorDark_Msz2001=" + (1 - czy_wlaczony) + "; path=/";
-        Msz2001_vectorDark_zapiszCookie(czy_wlaczony);
-    };
-    /**
-     * Tworzy element <li> z linkiem w środku
-     * @param {string} tekst Tekst do umieszczenia w linku
-     * @param {() => void} klik Procedura obsługi kliknięcia
-     * @returns Element listy
-     */
-    var Msz2001_vectorDark_nowyLink = function (tekst, klik) {
-        var li = document.createElement("li");
-        var link = document.createElement("a");
-        link.href = "javascript:void(0)";
-        link.textContent = tekst;
-        link.addEventListener("click", klik);
-        li.appendChild(link);
-        return li;
-    };
-    /**
-     * Pinguje serwer z plikami CSS, aby ustawił odpowiedni plik cookie
-     * @param {number} czy_wlaczony Liczba 0 lub 1, określająca, czy tryb ciemny jest włączony
-     */
-    var Msz2001_vectorDark_zapiszCookie = function (czy_wlaczony) {
-        /* Nie pinguj jeśli trwa inicjalizacja (nie było zmiany) ani jeśli użytkownik sobie nie życzy */
-        if (window.Msz2001_vectorDark.inicjalizacja)
-            return;
-        if (!window.Msz2001_vectorDark_pingujCookie)
-            return;
-        /* Wysyła żądanie do serwera z plikami CSS, by ustawił cookie dla siebie */
-        window.Msz2001_vectorDark.obrazek_cors.src = "https://vector-dark.toolforge.org/setcookie.php?is_on=" + (czy_wlaczony ? "true" : "false");
-    };
+    // Utwórz kontroler po załadowaniu się strony
+    $(function () {
+        new Msz2001.VectorDark.Controller();
+    });
 }
