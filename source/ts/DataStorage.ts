@@ -16,9 +16,9 @@ namespace Msz2001.VectorDark {
         public GetMode(): Mode {
             let cookie_index = document.cookie.indexOf('disable_vectorDark_Msz2001=1');
             if(cookie_index < 0) {
-                return Mode.Light;
-            } else {
                 return Mode.Dark;
+            } else {
+                return Mode.Light;
             }
         }
 
@@ -30,8 +30,13 @@ namespace Msz2001.VectorDark {
             // Zapisuje ciastko widoczne tylko po stronie klienckiej (nie trafia do ToolForge)
             let cookie_value = (mode == Mode.Light) ? 1 : 0;
             document.cookie = 'disable_vectorDark_Msz2001=' + cookie_value + '; path=/';
+            this.PingForCookie(mode);
         }
 
+        /**
+         * Pinguje serwer ToolForge w celu ustawienia ciasteczka
+         * @param mode Tryb do ustawienia
+         */
         protected PingForCookie(mode: Mode) {
             if(!window.Msz2001_vectorDark_pingujCookie) return;
 
