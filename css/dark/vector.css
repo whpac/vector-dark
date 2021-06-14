@@ -898,7 +898,7 @@
 
 	/* Okienka jQuery */
 	html:not(.disable-dark-skin) .ui-widget-overlay {background:rgba(0,0,0,0.7);}
-	html:not(.disable-dark-skin) .ui-widget-content {background:#333; color:#eee;}
+	html:not(.disable-dark-skin) .ui-widget-content {background:#333; color:#eee; border-color:#666;}
 	html:not(.disable-dark-skin) .ui-dialog {border-color:#777;}
 	html:not(.disable-dark-skin) .ui-widget-header,
 		html:not(.disable-dark-skin) .ui-dialog .ui-widget-header {border-color:#666; background:#222 !important; color:#eee;}
