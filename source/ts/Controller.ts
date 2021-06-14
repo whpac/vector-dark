@@ -18,7 +18,7 @@ namespace Msz2001.VectorDark {
             // Przełączników może być więcej niż jeden
             this.Switchers = [
                 new InMenuSwitcher(this),
-                new FloatingSwitcher(this)
+                new FloatingSwitcher(this, new SettingsDialog())
             ];
 
             this.CurrentMode = this.Storage.GetMode();
