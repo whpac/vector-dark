@@ -15,6 +15,7 @@
         "outFile": "dist/vector.dark.js"
     },
     "include": [
-        "source/ts"
+        "./source/ts",
+        "./node_modules/types-mediawiki"
     ]
 }
