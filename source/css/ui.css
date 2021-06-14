@@ -1,0 +1,31 @@
+/* Lewy pasek ma 160px szerokości */
+.vector-dark-floating-switcher {
+    position:fixed; bottom:0; left:40px; background:#ddd;
+    border:1px solid #aaa; border-bottom:none; border-radius:4px 4px 0 0;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.2), 0 0 8px rgb(0, 0, 0, 0.15);
+
+    z-index:1000; /* Aby uniknąć konfliktów z gadżetem zwijającym pasek boczny */
+}
+
+/* Automatyczne ukrywanie przełącznika trybów */
+.vector-dark-floating-switcher.auto-hide {transition:bottom 0.2s; bottom:-27px;}
+.vector-dark-floating-switcher.auto-hide:hover {bottom:0;}
+
+html:not(.disable-dark-skin) .vector-dark-floating-switcher {
+    border-color:#777; background:#333;
+}
+
+.vector-dark-floating-switcher button {
+    background:transparent; border:none; appearance:none; font:inherit; color:inherit;
+    box-sizing:content-box; padding:8px; width:24px; height:24px;
+    vertical-align:bottom; transition:background-color 0.2s;
+}
+.vector-dark-floating-switcher button:hover {background-color:rgba(127,127,127,0.2);}
+.vector-dark-floating-switcher button:active {background-color:rgba(127,127,127,0.3);}
+
+.vector-dark-settings-secondary {font-size:0.9em; opacity:0.7;}
+.vector-dark-settings-inset-label {padding-left:1.5em; display:block;}
+
+@media screen and (min-width: 982px) {
+    .vector-dark-floating-switcher {left:calc(0.5rem + 40px);}
+}
