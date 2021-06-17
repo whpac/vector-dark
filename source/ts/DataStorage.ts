@@ -4,8 +4,11 @@ namespace Msz2001.VectorDark {
      */
     export class DataStorage {
         protected CorsImage: HTMLImageElement;
+        protected CurrentSettings: Settings;
 
         public constructor() {
+            this.CurrentSettings = this.ReadSettings();
+
             this.CorsImage = document.createElement('img');
             this.CorsImage.style.width = this.CorsImage.style.height = '0px';
             this.CorsImage.style.display = 'none';
@@ -52,6 +55,7 @@ namespace Msz2001.VectorDark {
          */
         public SaveSettings(settings: Settings) {
             let descriptors = this.PrepareSettingsDescriptors(settings);
+            this.CurrentSettings = settings;
 
             let params = {
                 action: 'options',
@@ -66,10 +70,18 @@ namespace Msz2001.VectorDark {
         }
 
         /**
-         * Odczytuje bieżące ustawienia
+         * Zwraca bieżące ustawienia
          * @returns Obiekt, zawierający bieżące ustawienia
          */
-        public ReadSettings() {
+        public GetSettings(): Readonly<Settings> {
+            return this.CurrentSettings;
+        }
+
+        /**
+         * Odczytuje ustawienia (w stanie z momentu załadowania strony)
+         * @returns Obiekt, zawierający ustawienia
+         */
+        protected ReadSettings() {
             let settings_desc_raw = mw.user.options.get('userjs-vectorDark-settings');
             let gadgets_desc_raw = mw.user.options.get('userjs-vectorDark-gadgets');
 

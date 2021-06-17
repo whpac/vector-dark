@@ -23,7 +23,7 @@ namespace Msz2001.VectorDark {
 
             this.CurrentMode = this.Storage.GetMode();
 
-            let current_settings = this.Storage.ReadSettings();
+            let current_settings = this.Storage.GetSettings();
 
             // Zastosuj bieżący tryb do przełączników i całej strony
             for(let switcher of this.Switchers) {

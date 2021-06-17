@@ -31,7 +31,7 @@ namespace Msz2001.VectorDark {
         /** Otwiera okienko */
         public Open() {
             let storage = this.Controller.GetDataStorage();
-            let settings = storage.ReadSettings();
+            let settings = storage.GetSettings();
             this.Form.PopulateWithSettings(settings);
             $('#vector-dark-settings-dialog').dialog('open');
         }
