@@ -2,6 +2,10 @@ namespace Msz2001.VectorDark {
     export class SettingsForm {
         protected AutohideCheckbox: HTMLInputElement;
         protected PingToolforgeCheckbox: HTMLInputElement;
+        protected GadgetPopupsCheckbox: HTMLInputElement;
+        protected GadgetUserColorsCheckbox: HTMLInputElement;
+        protected GadgetTalkColorsCheckbox: HTMLInputElement;
+        protected GadgetSandboxCheckbox: HTMLInputElement;
         protected Nodes: HTMLElement[];
 
         public constructor() {
@@ -53,36 +57,36 @@ namespace Msz2001.VectorDark {
             gadgets_subtitle.textContent = 'Dla niektórych gadżetów powstały dodatki, pozwalające na bezproblemową pracę w trybie ciemnym. Możesz je tutaj włączyć lub wyłączyć';
             gadgets_subtitle.classList.add('vector-dark-settings-secondary');
 
-            let gadget_popups_cb = document.createElement('input');
-            gadget_popups_cb.type = 'checkbox';
+            this.GadgetPopupsCheckbox = document.createElement('input');
+            this.GadgetPopupsCheckbox.type = 'checkbox';
 
             let gadget_popups_lbl = document.createElement('label');
             gadget_popups_lbl.classList.add('vector-dark-settings-inset-label');
-            gadget_popups_lbl.appendChild(gadget_popups_cb);
+            gadget_popups_lbl.appendChild(this.GadgetPopupsCheckbox);
             gadget_popups_lbl.appendChild(document.createTextNode(' Popups'));
 
-            let gadget_usercolors_cb = document.createElement('input');
-            gadget_usercolors_cb.type = 'checkbox';
+            this.GadgetUserColorsCheckbox = document.createElement('input');
+            this.GadgetUserColorsCheckbox.type = 'checkbox';
 
             let gadget_usercolors_lbl = document.createElement('label');
             gadget_usercolors_lbl.classList.add('vector-dark-settings-inset-label');
-            gadget_usercolors_lbl.appendChild(gadget_usercolors_cb);
+            gadget_usercolors_lbl.appendChild(this.GadgetUserColorsCheckbox);
             gadget_usercolors_lbl.appendChild(document.createTextNode(' Kolorowanie nazw użytkowników'));
 
-            let gadget_talkcolors_cb = document.createElement('input');
-            gadget_talkcolors_cb.type = 'checkbox';
+            this.GadgetTalkColorsCheckbox = document.createElement('input');
+            this.GadgetTalkColorsCheckbox.type = 'checkbox';
 
             let gadget_talkcolors_lbl = document.createElement('label');
             gadget_talkcolors_lbl.classList.add('vector-dark-settings-inset-label');
-            gadget_talkcolors_lbl.appendChild(gadget_talkcolors_cb);
+            gadget_talkcolors_lbl.appendChild(this.GadgetTalkColorsCheckbox);
             gadget_talkcolors_lbl.appendChild(document.createTextNode(' Alternatywny sposób kolorowania dyskusji'));
 
-            let gadget_sandbox_cb = document.createElement('input');
-            gadget_sandbox_cb.type = 'checkbox';
+            this.GadgetSandboxCheckbox = document.createElement('input');
+            this.GadgetSandboxCheckbox.type = 'checkbox';
 
             let gadget_sandbox_lbl = document.createElement('label');
             gadget_sandbox_lbl.classList.add('vector-dark-settings-inset-label');
-            gadget_sandbox_lbl.appendChild(gadget_sandbox_cb);
+            gadget_sandbox_lbl.appendChild(this.GadgetSandboxCheckbox);
             gadget_sandbox_lbl.appendChild(document.createTextNode(' Przenieś do brudnopisu'));
 
             this.Nodes = [
@@ -92,8 +96,36 @@ namespace Msz2001.VectorDark {
             ];
         }
 
+        /** Zwraca tablicę obiektów w formularzu */
         public GetElements() {
             return this.Nodes;
+        }
+
+        /**
+         * Wypełnia formularz ustawieniami
+         * @param settings Ustawienia użytkownika
+         */
+        public PopulateWithSettings(settings: Settings) {
+            this.AutohideCheckbox.checked = settings.AutoHideSwitcher;
+            this.PingToolforgeCheckbox.checked = settings.PingServer;
+            this.GadgetPopupsCheckbox.checked = settings.Gadgets.Popups;
+            this.GadgetUserColorsCheckbox.checked = settings.Gadgets.UserColors;
+            this.GadgetTalkColorsCheckbox.checked = settings.Gadgets.TalkColors;
+            this.GadgetSandboxCheckbox.checked = settings.Gadgets.Sandbox;
+        }
+
+        /** Zwraca ustawienia określone przez użytkownika */
+        public GetSettings(): Settings {
+            return {
+                AutoHideSwitcher: this.AutohideCheckbox.checked,
+                PingServer: this.PingToolforgeCheckbox.checked,
+                Gadgets: {
+                    Popups: this.GadgetPopupsCheckbox.checked,
+                    UserColors: this.GadgetUserColorsCheckbox.checked,
+                    TalkColors: this.GadgetTalkColorsCheckbox.checked,
+                    Sandbox: this.GadgetSandboxCheckbox.checked
+                }
+            };
         }
     }
 }
