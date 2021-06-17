@@ -5,10 +5,11 @@
     box-shadow: 0 0 4px rgb(0, 0, 0, 0.2), 0 0 8px rgb(0, 0, 0, 0.15);
 
     z-index:1000; /* Aby uniknąć konfliktów z gadżetem zwijającym pasek boczny */
+    transition:bottom 0.2s; /* Do ładnego ukrywania i pokazywania przełącznika */
 }
 
 /* Automatyczne ukrywanie przełącznika trybów */
-.vector-dark-floating-switcher.auto-hide {transition:bottom 0.2s; bottom:-27px;}
+.vector-dark-floating-switcher.auto-hide {bottom:-27px;}
 .vector-dark-floating-switcher.auto-hide:hover {bottom:0;}
 
 html:not(.disable-dark-skin) .vector-dark-floating-switcher {
