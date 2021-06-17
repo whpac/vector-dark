@@ -18,14 +18,17 @@ namespace Msz2001.VectorDark {
             // Przełączników może być więcej niż jeden
             this.Switchers = [
                 new InMenuSwitcher(this),
-                new FloatingSwitcher(this, new SettingsDialog())
+                new FloatingSwitcher(this, new SettingsDialog(this))
             ];
 
             this.CurrentMode = this.Storage.GetMode();
 
+            let current_settings = this.Storage.ReadSettings();
+
             // Zastosuj bieżący tryb do przełączników i całej strony
             for(let switcher of this.Switchers) {
                 switcher.AdjustToCurrentMode();
+                switcher.SetAutoHide(current_settings.AutoHideSwitcher);
             }
             this.ThemeAdapter.ApplyMode(this.CurrentMode);
         }
@@ -58,6 +61,24 @@ namespace Msz2001.VectorDark {
         protected InvokeModeChangeListeners() {
             for(let listener of this.ModeChangeListeners) {
                 listener();
+            }
+        }
+
+        /** Zwraca zarządcę pamięci */
+        public GetDataStorage() {
+            return this.Storage;
+        }
+
+        /**
+         * Zmienia ustawienia i aktualizuje odpowiednie obiekty
+         * @param new_settings Nowe ustawienia
+         */
+        public ChangeSettings(new_settings: Settings) {
+            this.Storage.SaveSettings(new_settings);
+
+            // Zastosować autoukrywanie
+            for(let switcher of this.Switchers) {
+                switcher.SetAutoHide(new_settings.AutoHideSwitcher);
             }
         }
     }
