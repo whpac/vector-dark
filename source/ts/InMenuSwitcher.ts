@@ -37,7 +37,6 @@ namespace Msz2001.VectorDark {
             this.AttachToDocument();
         }
 
-        /** Dopasowuje treść przełącznika do aktualnego trybu */
         public AdjustToCurrentMode() {
             let current_mode = this.Controller.GetCurrentMode();
 
@@ -94,6 +93,10 @@ namespace Msz2001.VectorDark {
                 let elLeftMenu = document.getElementById("mw-panel");
                 elLeftMenu?.appendChild(this.SwitcherWrapper);
             }, 1000);
+        }
+
+        public SetAutoHide(autohide: boolean) {
+            // Przełącznik nie obsługuje autoukrywania, więc nie rób nic
         }
     }
 }

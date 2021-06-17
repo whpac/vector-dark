@@ -54,7 +54,6 @@ namespace Msz2001.VectorDark {
             this.AttachToDocument();
         }
 
-        /** Dopasowuje treść przełącznika do aktualnego trybu */
         public AdjustToCurrentMode() {
             let current_mode = this.Controller.GetCurrentMode();
 
@@ -88,6 +87,14 @@ namespace Msz2001.VectorDark {
         /** Dołącza przełącznik do dokumentu */
         protected AttachToDocument() {
             document.body.appendChild(this.SwitcherWrapper);
+        }
+
+        public SetAutoHide(autohide: boolean) {
+            if(autohide) {
+                this.SwitcherWrapper.classList.add('auto-hide');
+            } else {
+                this.SwitcherWrapper.classList.remove('auto-hide');
+            }
         }
     }
 }
