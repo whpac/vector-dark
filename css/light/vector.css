@@ -598,6 +598,7 @@
 	html.enable-dark-skin div.flaggedrevs_notice {background:#222;}
 	html.enable-dark-skin .warningbox {background:#332000; color:#d8d8d8; border-color:#967100;}
 	html.enable-dark-skin span.fr-under-review {background-color:#4f3c00;}
+	html.enable-dark-skin .updatedmarker {background-color:#aeff00; color:#000;}
 
 	/* Ostatnie zmiany */
 	html.enable-dark-skin .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle,
