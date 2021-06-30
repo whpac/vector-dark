@@ -681,6 +681,13 @@
 		html:not(.disable-dark-skin) .mw-diff-movedpara-right:after {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {background:#0c224e; border-color:#4169bb}
 	html:not(.disable-dark-skin) .oo-ui-buttonElement-active.oo-ui-widget-enabled > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {filter:none;}
+	html:not(.disable-dark-skin) #mw-mf-diffview .mw-mf-diff-date {color:#aaa;}
+	html:not(.disable-dark-skin) #mw-mf-diffview #mw-mf-userinfo {background:#444; border-color:#777; z-index:1;}
+	html:not(.disable-dark-skin) #mw-mf-diffview #mw-mf-userinfo .mw-mf-edit-count {color:#aaa;}
+	html:not(.disable-dark-skin) #mw-mf-diffview #mw-mf-userinfo .mw-mf-edit-count div {color:#d8d8d8;}
+	html:not(.disable-dark-skin) #mw-mf-diffview .mw-diff-inline-moved {background:#5c4a2a;}
+	html:not(.disable-dark-skin) .mw-ui-icon-mf-userAvatar-base20:before {filter:invert(1);}
+	html:not(.disable-dark-skin) body.skin-minerva .minoredit {background:#222;}
 
 	/* Okno edycji */
 	html:not(.disable-dark-skin) .wikiEditor-ui .wikiEditor-ui-view {border-color:#777;}
