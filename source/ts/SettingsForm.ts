@@ -89,10 +89,15 @@ namespace Msz2001.VectorDark {
             gadget_sandbox_lbl.appendChild(this.GadgetSandboxCheckbox);
             gadget_sandbox_lbl.appendChild(document.createTextNode(' Przenieś do brudnopisu'));
 
+            let gadgets_ping_notice = document.createElement('p');
+            gadgets_ping_notice.classList.add('vector-dark-settings-inset-label', 'vector-dark-settings-secondary');
+            gadgets_ping_notice.textContent = 'Włączenie lub wyłączenie ww. dodatków spowoduje przesłanie informacji do serwera pomocniczego, niezależnie od zaznaczenia opcji „Informuj serwer pomocniczy o przełączeniu skórki”. Zmiana zestawu dodatków na inny niż domyślny skutkuje ustawieniem odpowiedniego pliku cookie.';
+
             this.Nodes = [
                 intro_par, autohide_lbl, autohide_expl, toolforge_lbl, toolforge_expl,
                 gadgets_header, gadgets_subtitle,
-                gadget_popups_lbl, gadget_usercolors_lbl, gadget_talkcolors_lbl, gadget_sandbox_lbl
+                gadget_popups_lbl, gadget_usercolors_lbl, gadget_talkcolors_lbl, gadget_sandbox_lbl,
+                gadgets_ping_notice
             ];
         }
 
