@@ -8,6 +8,9 @@ namespace Msz2001.VectorDark {
         protected GadgetSandboxCheckbox: HTMLInputElement;
         protected Nodes: HTMLElement[];
 
+        protected UsesDeprecatedPingSetting = false;
+        protected ToolforgeDeprecatedInfo: HTMLElement;
+
         public constructor() {
             let intro_par = document.createElement('p');
             intro_par.textContent = 'W tym miejscu możesz dostosować konfigurację ciemnej skórki. Poniższe ustawienia zostaną skojarzone z twoim kontem i synchronizowane między urządzeniami.';
@@ -37,6 +40,12 @@ namespace Msz2001.VectorDark {
                 ' Informuj serwer pomocniczy o przełączeniu skórki'
             ));
             toolforge_lbl.style.fontWeight = '700';
+
+            this.ToolforgeDeprecatedInfo = document.createElement('p');
+            this.ToolforgeDeprecatedInfo.innerHTML = 'Nie możesz zmienić tego ustawienia, ponieważ w swoim pliku <a href="/wiki/Specjalna:Moja_strona/common.js" target="_blank">common.js</a> ustawiłeś(-aś) opcję <code>window.Msz2001_vectorDark_pingujCookie</code>.';
+            this.ToolforgeDeprecatedInfo.style.display = 'none';
+            this.ToolforgeDeprecatedInfo.style.color = '#f00';
+            this.ToolforgeDeprecatedInfo.style.fontSize = '0.9em';
 
             let toolforge_expl = document.createElement('p');
             toolforge_expl.classList.add('vector-dark-settings-secondary');
@@ -94,8 +103,8 @@ namespace Msz2001.VectorDark {
             gadgets_ping_notice.textContent = 'Włączenie lub wyłączenie ww. dodatków spowoduje przesłanie informacji do serwera pomocniczego, niezależnie od zaznaczenia opcji „Informuj serwer pomocniczy o przełączeniu skórki”. Zmiana zestawu dodatków na inny niż domyślny skutkuje ustawieniem odpowiedniego pliku cookie.';
 
             this.Nodes = [
-                intro_par, autohide_lbl, autohide_expl, toolforge_lbl, toolforge_expl,
-                gadgets_header, gadgets_subtitle,
+                intro_par, autohide_lbl, autohide_expl, toolforge_lbl, this.ToolforgeDeprecatedInfo,
+                toolforge_expl, gadgets_header, gadgets_subtitle,
                 gadget_popups_lbl, gadget_usercolors_lbl, gadget_talkcolors_lbl, gadget_sandbox_lbl,
                 gadgets_ping_notice
             ];
@@ -117,6 +126,10 @@ namespace Msz2001.VectorDark {
             this.GadgetUserColorsCheckbox.checked = settings.Gadgets.UserColors;
             this.GadgetTalkColorsCheckbox.checked = settings.Gadgets.TalkColors;
             this.GadgetSandboxCheckbox.checked = settings.Gadgets.Sandbox;
+            this.UsesDeprecatedPingSetting = settings.UsesDeprecatedPingSetting;
+
+            this.PingToolforgeCheckbox.disabled = settings.UsesDeprecatedPingSetting;
+            this.ToolforgeDeprecatedInfo.style.display = settings.UsesDeprecatedPingSetting ? '' : 'none';
         }
 
         /** Zwraca ustawienia określone przez użytkownika */
@@ -129,7 +142,8 @@ namespace Msz2001.VectorDark {
                     UserColors: this.GadgetUserColorsCheckbox.checked,
                     TalkColors: this.GadgetTalkColorsCheckbox.checked,
                     Sandbox: this.GadgetSandboxCheckbox.checked
-                }
+                },
+                UsesDeprecatedPingSetting: this.UsesDeprecatedPingSetting
             };
         }
     }

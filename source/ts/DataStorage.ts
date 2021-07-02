@@ -113,8 +113,16 @@ namespace Msz2001.VectorDark {
                     UserColors: !!(gadgets_desc & GadgetValues.UserColors),
                     TalkColors: !!(gadgets_desc & GadgetValues.TalkColors),
                     Sandbox: !!(gadgets_desc & GadgetValues.Sandbox)
-                }
+                },
+                UsesDeprecatedPingSetting: false
             };
+
+            // Jeśli stara opcja konfiguracyjna została ustawiona, odczytaj ją
+            if(window.Msz2001_vectorDark_pingujCookie !== undefined) {
+                settings.PingServer = window.Msz2001_vectorDark_pingujCookie;
+                settings.UsesDeprecatedPingSetting = true;
+            }
+
             return settings;
         }
 
@@ -127,26 +135,15 @@ namespace Msz2001.VectorDark {
             let settings_desc = 0;
             let gadgets_desc = 0;
 
-            for(let setting in settings) {
-                // Gadżety są osobno zapisywane
-                if(setting == 'Gadgets') continue;
+            // Zapisz ustawienia
+            settings_desc |= (+settings.AutoHideSwitcher * SettingValues.AutoHideSwitcher);
+            settings_desc |= (+settings.PingServer * SettingValues.PingServer);
 
-                if(!(setting in SettingValues)) {
-                    console.error(`Ustawienie ${setting} nie ma przypisanej wartości`);
-                    continue;
-                }
-
-                settings_desc |= (+settings[setting as keyof Settings] * SettingValues[setting as keyof SettingValues]);
-            }
-
-            for(let gadget in settings.Gadgets) {
-                if(!(gadget in GadgetValues)) {
-                    console.error(`Gadżet ${gadget} nie ma przypisanej wartości`);
-                    continue;
-                }
-
-                gadgets_desc |= (+settings.Gadgets[gadget as keyof Gadgets] * GadgetValues[gadget as keyof GadgetValues]);
-            }
+            // Zapisz gadżety
+            gadgets_desc |= (+settings.Gadgets.Popups * GadgetValues.Popups);
+            gadgets_desc |= (+settings.Gadgets.UserColors * GadgetValues.UserColors);
+            gadgets_desc |= (+settings.Gadgets.TalkColors * GadgetValues.TalkColors);
+            gadgets_desc |= (+settings.Gadgets.Sandbox * GadgetValues.Sandbox);
 
             return {
                 Settings: settings_desc,
@@ -214,7 +211,7 @@ namespace Msz2001.VectorDark {
         protected IsPingEnabled(reason: PingReason) {
             switch(reason) {
                 case PingReason.GadgetsChange: return true;
-                case PingReason.ThemeChange: return window.Msz2001_vectorDark_pingujCookie;
+                case PingReason.ThemeChange: return this.CurrentSettings.PingServer;
             }
 
             // Jeśli reason jest spoza zbioru dopuszczalnych wartości, zgłoś błąd

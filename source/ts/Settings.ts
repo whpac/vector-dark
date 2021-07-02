@@ -7,14 +7,15 @@ namespace Msz2001.VectorDark {
         AutoHideSwitcher: boolean;
         PingServer: boolean;
         Gadgets: Gadgets;
+        UsesDeprecatedPingSetting: boolean;
     }
 
     /**
      * Przechowuje wartości odpowiadające ustawieniom
      */
-    export abstract class SettingValues {
-        public static AutoHideSwitcher = 1;
-        public static PingServer = 2;
+    export enum SettingValues {
+        AutoHideSwitcher = 1,
+        PingServer = 2
     }
 
     /**
@@ -30,10 +31,10 @@ namespace Msz2001.VectorDark {
     /**
      * Przechowuje wartości odpowiadające gadżetom
      */
-    export abstract class GadgetValues {
-        public static Popups = 1;
-        public static UserColors = 2;
-        public static TalkColors = 4;
-        public static Sandbox = 8;
+    export enum GadgetValues {
+        Popups = 1,
+        UserColors = 2,
+        TalkColors = 4,
+        Sandbox = 8
     }
 }
