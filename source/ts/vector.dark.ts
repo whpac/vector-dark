@@ -1,10 +1,6 @@
-/* Nie dołączaj skryptu ponownie */
+/* Nie wykonuj skryptu ponownie */
 if(window.Msz2001_vectorDark_loaded === undefined) {
     window.Msz2001_vectorDark_loaded = true;
-
-    if(window.Msz2001_vectorDark_pingujCookie === undefined) {
-        window.Msz2001_vectorDark_pingujCookie = false;
-    }
 
     // Utwórz kontroler po załadowaniu się strony
     $(function () {
@@ -17,6 +13,9 @@ interface Window {
     /** Opisuje, czy już załadowano gadżet */
     Msz2001_vectorDark_loaded: boolean | undefined;
 
-    /** Pozwala skonfigurować, czy pingować ToolForge po zmianie trybu */
+    /**
+     * Pozwala skonfigurować, czy pingować ToolForge po zmianie trybu
+     * @deprecated Należy korzystać z konfiguracji w oknie ustawień
+     */
     Msz2001_vectorDark_pingujCookie: boolean | undefined;
 }
