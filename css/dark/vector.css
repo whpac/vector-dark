@@ -640,6 +640,11 @@
 	html:not(.disable-dark-skin) .oo-ui-indicatorElement-indicator.oo-ui-indicator-down {filter:invert(1);}
 	html:not(.disable-dark-skin) .not-patrolled {background-color:#440;}
 	html:not(.disable-dark-skin) .mw-changesList-watchlistExpiry.oo-ui-iconElement-icon {filter:invert(1);}
+	html:not(.disable-dark-skin) .mw-rcfilters-ui-tagItemWidget-popup-content {color:#bbb;}
+	html:not(.disable-dark-skin) .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {border-top-color:#333;}
+	html:not(.disable-dark-skin) .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before {border-top-color:#777;}
+	html:not(.disable-dark-skin) .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-savedQueryTitle {color:#fff;}
+	html:not(.disable-dark-skin) .mw-rcfilters-ui-savedLinksListItemWidget-label {color:#76acff;}
 	
 	/* Kalendarz */
 	html:not(.disable-dark-skin) .mw-widget-dateInputWidget-handle {background:#333; border-color:#777;}
