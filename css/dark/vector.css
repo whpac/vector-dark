@@ -150,14 +150,17 @@
 	
 	/* Wybór języka */
 	html:not(.disable-dark-skin) body.skin-vector .uls-menu {border-color: #777; -webkit-box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15); box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15);}
+	html:not(.disable-dark-skin) .uls-menu {background:#333;}
+	html:not(.disable-dark-skin) .uls-search {background:#333; border-bottom-color:#666;}
+	html:not(.disable-dark-skin) #uls-settings-block {border-top-color:#666;}
 	html:not(.disable-dark-skin) .interlanguage-uls-menu.selector-left:before {border-right-color:#777;}
 	html:not(.disable-dark-skin) .interlanguage-uls-menu.selector-left:after {border-right-color:#333;}
 	html:not(.disable-dark-skin) body.skin-vector .uls-search {background:#333; border-bottom-color:#666;}
 	html:not(.disable-dark-skin) body.skin-vector .uls-filtersuggestion {background:#333;}
 	html:not(.disable-dark-skin) .uls-languagefilter {color:#ccc;}
 	html:not(.disable-dark-skin) .uls-lcd {background-color:#333;}
-	html:not(.disable-dark-skin) .uls-search-label,
-		html:not(.disable-dark-skin) .uls-languagefilter-clear {filter:brightness(1.7);}
+	html:not(.disable-dark-skin) .uls-search-label {filter:invert(1);}
+	html:not(.disable-dark-skin) .uls-languagefilter-clear {filter:brightness(1.7);}
 	html:not(.disable-dark-skin) body.skin-vector .uls-lcd-region-title {color:#bbb;}
 	html:not(.disable-dark-skin) .uls-language-block > ul > li:hover {background-color:#4a4a4a;}
 	html:not(.disable-dark-skin) .wb-langlinks-link > a:link,
@@ -899,6 +902,101 @@
 	html:not(.disable-dark-skin) .flow-ui-editorWidget > .flow-ui-editorWidget-editor:not(.oo-ui-pendingElement-pending) {background:unset;}
 	html:not(.disable-dark-skin) .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {border-right-color:unset;}
 	
+	/* Tłumaczenie treści */
+	html:not(.disable-dark-skin) .mw-logo-page-title {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .mw-logo-wordmark {filter:invert(1);}
+	html:not(.disable-dark-skin) .cx-skin-menu-dropdown {background:#181818; border-color:#777; color:#bbb;}
+	html:not(.disable-dark-skin) .cx-skin-menu-dropdown .cx-skin-menu-indicator {filter:invert(1);}
+	html:not(.disable-dark-skin) .cx-skin-menu-dropdown .cx-skin-menu-content-list {background:#282828; border-color:#888;}
+	html:not(.disable-dark-skin) .cx-skin-menu-dropdown li:hover {background:#383838;}
+	html:not(.disable-dark-skin) .translation-filter {background:#222; top:-1px;}
+	html:not(.disable-dark-skin) .translation-filter .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {filter:none;}
+	html:not(.disable-dark-skin) .cx-suggestionlist__header,
+		html:not(.disable-dark-skin) .cx-translationlist__header {background:#181818;}
+	html:not(.disable-dark-skin) .cx-suggestionlist__header,
+		html:not(.disable-dark-skin) .cx-translationlist__header {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-tlitem,
+		html:not(.disable-dark-skin) .cx-slitem {background:#181818; border-top-color:#555;}
+	html:not(.disable-dark-skin) .cx-tlitem:last-child,
+		html:not(.disable-dark-skin) .cx-slitem:last-child {border-top-color:#555;}
+	html:not(.disable-dark-skin) .cx-tlitem:hover,
+		html:not(.disable-dark-skin) .cx-slitem:hover {background:#222;}
+	html:not(.disable-dark-skin) .cx-dashboard {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-slitem__desc {color:#bbb;}
+	html:not(.disable-dark-skin) .cx-slitem__desc::before,
+		html:not(.disable-dark-skin) .cx-slitem__desc::after {display:none;}
+	html:not(.disable-dark-skin) .cx-tlitem__languages__language--source:before,
+		html:not(.disable-dark-skin) .cx-slitem__languages__language--source:before {border-left-color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-tlitem__languages__language--source:after,
+		html:not(.disable-dark-skin) .cx-slitem__languages__language--source:after {border-left-color:#181818;}
+	html:not(.disable-dark-skin) .cx-tlitem:hover .cx-tlitem__languages__language--source:after,
+		html:not(.disable-dark-skin) .cx-slitem:hover .cx-tlitem__languages__language--source:after,
+		html:not(.disable-dark-skin) .cx-tlitem:hover .cx-slitem__languages__language--source:after,
+		html:not(.disable-dark-skin) .cx-slitem:hover .cx-slitem__languages__language--source:after {border-left-color:#222;}
+	html:not(.disable-dark-skin) .cx-slitem__actions {opacity:0.7;}
+	html:not(.disable-dark-skin) .cx-tlitem__image.oo-ui-icon-article,
+		html:not(.disable-dark-skin) .cx-slitem__image.oo-ui-icon-article {background-color:#333; background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3Earticle%3C/title%3E%3Cpath fill=%22%23bbb%22 d=%22M5 1a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2zm0 3h5v1H5zm0 2h5v1H5zm0 2h5v1H5zm10 7H5v-1h10zm0-2H5v-1h10zm0-2H5v-1h10zm0-2h-4V4h4z%22/%3E%3C/svg%3E");}
+	html:not(.disable-dark-skin) .cx-suggestionlist__collapse,
+		html:not(.disable-dark-skin) .cx-suggestionlist__expand,
+		html:not(.disable-dark-skin) .cx-suggestionlist__refresh {background:#222; border-color:#777;}
+	html:not(.disable-dark-skin) .cx-suggestionlist__collapse:hover,
+		html:not(.disable-dark-skin) .cx-suggestionlist__expand:hover,
+		html:not(.disable-dark-skin) .cx-suggestionlist__refresh:hover {background:#333;}
+
+	html:not(.disable-dark-skin) .cx-language-filter {background:#333; border-color:#777;}
+	html:not(.disable-dark-skin) .cx-language-filter .cx-language-filter-arrow:before {border-left-color:#777;}
+	html:not(.disable-dark-skin) .cx-language-filter .cx-language-filter-arrow:after {border-left-color:#333;}
+
+	html:not(.disable-dark-skin) .cx-source-page-selector {background:transparent;}
+	html:not(.disable-dark-skin) .oo-ui-menuSectionOptionWidget {color:#fff;}
+	html:not(.disable-dark-skin) .mw-widget-titleWidget-menu .mw-widget-titleOptionWidget-description {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-source-page-selector .mw-widget-titleWidget-menu-withImages .mw-widget-titleOptionWidget.oo-ui-iconElement > .oo-ui-iconElement-icon:not(.mw-widget-titleOptionWidget-hasImage) {background:#fff;}
+	html:not(.disable-dark-skin) .cx-selected-source-page__container {background:#181818;}
+	html:not(.disable-dark-skin) .cx-selected-source-page__license {background:#181818; color:#aaa;}
+	html:not(.disable-dark-skin) .cx-selected-source-page__actions {background:#181818;}
+	html:not(.disable-dark-skin) .cx-selected-source-page__metrics .oo-ui-icon-language {filter:invert(1);}
+	html:not(.disable-dark-skin) .cx-selected-source-page__metrics {color:#aaa;}
+	html:not(.disable-dark-skin) .cx-selected-source-page__messagebar {background:#61511d; color:#d8d8d8;}
+
+	html:not(.disable-dark-skin) .cx-translationlist-empty,
+		html:not(.disable-dark-skin) .cx-suggestionlist-empty {background:#181818;}
+	html:not(.disable-dark-skin) .cx-dashboard-sidebar__help-title {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-dashboard-sidebar__help {background:#333;}
+	html:not(.disable-dark-skin) .cx-dashboard-sidebar__link.oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button {color:#aaa;}
+
+	/* Okno tłumaczenia */
+	html:not(.disable-dark-skin) .cx-translation-view {background:#222;}
+	html:not(.disable-dark-skin) .cx-translation-view .cx-translation-view-container {background:#303030;}
+	html:not(.disable-dark-skin) .cx-translation-view-header {background:#303030; border-bottom-color:#666;}
+	html:not(.disable-dark-skin) .cx-translation-view-header .cx-header__translation-center .oo-ui-buttonElement-button {border-right:#666;}
+	html:not(.disable-dark-skin) .cx-translation-view-header .cx-header__translation-center .oo-ui-buttonElement-button .oo-ui-labelElement-label {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-translation-view-header .cx-header-draft-status {color:#999;}
+	html:not(.disable-dark-skin) .cx-column {background:#303030;}
+	html:not(.disable-dark-skin) .ve-ce-cxPlaceholderNode {background:#181818; box-shadow:0 0 0 4px #181818;}
+	html:not(.disable-dark-skin) .ve-ce-cxLinkAnnotation.cx-target-link-unadapted {color:#999;}
+	html:not(.disable-dark-skin) .cx-sentence-highlight,
+		html:not(.disable-dark-skin) .cx-section-highlight {background-color:#675a42; box-shadow:0 0 0 4px #675a42;}
+	html:not(.disable-dark-skin) .ve-ce-cxLintableNode.mw-cx-current-issue-warning {box-shadow:-16px 0 0 -4px #303030, -20px 0 0 -4px #ffcc33;}
+	html:not(.disable-dark-skin) .ve-ce-cxLintableNode.mw-cx-lintIssue-warning {box-shadow:-17px 0 0 -4px #303030, -20px 0 0 -4px rgba(255, 204, 51, 0.66);}
+	html:not(.disable-dark-skin) .cx-column.cx-column-tools {background:#222;}
+	html:not(.disable-dark-skin) .cx-card:not(:empty) {background:#444;}
+	html:not(.disable-dark-skin) .ve-cx-toolbar-mt .ve-cx-toolbar-mt-title {color:#fff; font-weight:700; border-bottom-color:#666;}
+	html:not(.disable-dark-skin) .ve-cx-toolbar-mt .ve-cx-toolbar-mt-setdefault {border-top-color:#666;}
+	html:not(.disable-dark-skin) .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {color:#fff;}
+	html:not(.disable-dark-skin) .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-head .oo-ui-labelWidget {color:#fff; font-weight:700;}
+	html:not(.disable-dark-skin) .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-body {border-top-color:#777;}
+	html:not(.disable-dark-skin) .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-body > .cx-tools-linter-errors-count .oo-ui-labelElement-label,
+		html:not(.disable-dark-skin) .mw-cx-tools-IssueTracking > .mw-cx-tools-IssueTracking-body > .cx-tools-linter-warnings-count .oo-ui-labelElement-label {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-ui-translationIssue.oo-ui-tabPanelLayout > .cx-ui-translationIssue-title {color:#fff;}
+	html:not(.disable-dark-skin) .card-instructions-section {background:#444; border-bottom-color:#777;}
+	html:not(.disable-dark-skin) .card-instructions-count-one,
+		html:not(.disable-dark-skin) .card-instructions-count-two,
+		html:not(.disable-dark-skin) .card-instructions-count-three {background:#444; color:#91b6ff;}
+	html:not(.disable-dark-skin) .card-instructions-text {color:#fff;}
+	html:not(.disable-dark-skin) .card-instructions-description-one,
+		html:not(.disable-dark-skin) .card-instructions-description-two,
+		html:not(.disable-dark-skin) .card-instructions-description-three {color:#d8d8d8;}
+
 	/* Kawiarenka, TO i inne pojedyncze strony*/
 	html:not(.disable-dark-skin) body.page-Wikipedia_Kawiarenka_pod_Wesołym_Encyklopedystą table:not([class]) tr:only-child td:only-child[style*=background] {background-color:#222 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) body.rootpage-Wikipedia_Kawiarenka table.global-nav + div[style*=background] {background-color:#303030 !important; border-color:#777 !important; color:#d8d8d8;}
