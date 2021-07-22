@@ -911,6 +911,7 @@
 	html:not(.disable-dark-skin) .cx-skin-menu-dropdown li:hover {background:#383838;}
 	html:not(.disable-dark-skin) .translation-filter {background:#222; top:-1px;}
 	html:not(.disable-dark-skin) .translation-filter .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon {filter:none;}
+	html:not(.disable-dark-skin) .cx-translationlist-container {background:#222;}
 	html:not(.disable-dark-skin) .cx-suggestionlist__header,
 		html:not(.disable-dark-skin) .cx-translationlist__header {background:#181818;}
 	html:not(.disable-dark-skin) .cx-suggestionlist__header,
@@ -922,6 +923,7 @@
 	html:not(.disable-dark-skin) .cx-tlitem:hover,
 		html:not(.disable-dark-skin) .cx-slitem:hover {background:#222;}
 	html:not(.disable-dark-skin) .cx-dashboard {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cx-slitem__details .cx-slitem__translation-link .source-title {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .cx-slitem__desc {color:#bbb;}
 	html:not(.disable-dark-skin) .cx-slitem__desc::before,
 		html:not(.disable-dark-skin) .cx-slitem__desc::after {display:none;}
