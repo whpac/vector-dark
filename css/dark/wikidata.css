@@ -2,6 +2,7 @@
 	/* Style specyficzne dla Wikidanych */
 	html:not(.disable-dark-skin) #pt-uls .uls-trigger:before {filter:invert(1) brightness(0.6);}
 	html:not(.disable-dark-skin) h1 .wikibase-title-id {color:#aaa;}
+	html:not(.disable-dark-skin) .skin-vector .wikibase-title .wb-language-fallback-indicator {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-entitytermsview-heading .wikibase-entitytermsview-heading-aliases ul {color:#aaa;}
 	html:not(.disable-dark-skin) .wb-help-field-hint {filter:invert(1) brightness(0.8);}
 
