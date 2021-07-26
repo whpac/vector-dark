@@ -10,6 +10,9 @@
 	html.enable-dark-skin .ui-entityselector-list .ui-entityselector-more,
 		html.enable-dark-skin .wikibase-entitysearch-list .wb-entitysearch-suggestions {background:#282828;}
 	html.enable-dark-skin #searchInput {background-color:rgba(0,0,0,0.5); color:#d8d8d8;}
+	html.enable-dark-skin #uls-settings-block {background:#333;}
+	html.enable-dark-skin #uls-settings-block > button {color:#aaa;}
+	html.enable-dark-skin #uls-settings-block > button:hover {color:#888;}
 
 	/* Opisy w językach */
 	html.enable-dark-skin .wikibase-entitytermsview .wikibase-toolbar-container {background:rgba(48, 48, 48, 0.5);}
