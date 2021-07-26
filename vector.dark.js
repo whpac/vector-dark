@@ -9,7 +9,7 @@ if(window.Msz2001_vectorDark === undefined){
         link_ciemny: null,
         link_jasny: null,
         inicjalizacja: true
-    }
+    };
     
     if(window.Msz2001_vectorDark_pingujCookie === undefined){
         window.Msz2001_vectorDark_pingujCookie = false;
@@ -38,11 +38,20 @@ if(window.Msz2001_vectorDark === undefined){
         if(ciemny_wlaczony) link_ciemny.style.display = "none";
         window.Msz2001_vectorDark.link_ciemny = link_ciemny;
     
-        var link_faq = document.getElementById("n-FAQ");
+        var wiki_id = mw.config.get("wgWikiID");
+        var id_linku = "n-FAQ";
+        switch(wiki_id){
+            case "plwiki": id_linku = "n-FAQ"; break;
+            case "wikidatawiki": id_linku = "n-sitesupport"; break;
+            case "plwikinews": id_linku = "n-Kontakt"; break;
+            case "enwiki": id_linku = "n-sitesupport"; break;
+        }
+
+        var ostatni_link = document.getElementById(id_linku);
     
-        if(link_faq) {
-            link_faq.parentNode.insertBefore(link_jasny, link_faq.nextSibling);
-            link_faq.parentNode.insertBefore(link_ciemny, link_faq.nextSibling);
+        if(ostatni_link) {
+            ostatni_link.parentNode.insertBefore(link_jasny, ostatni_link.nextSibling);
+            ostatni_link.parentNode.insertBefore(link_ciemny, ostatni_link.nextSibling);
         } else {
             setTimeout(function () {
                 var elAboutWikipediaLink = document.querySelector("#mw-mf-page-left ul.hlist li:first-child");
@@ -57,21 +66,21 @@ if(window.Msz2001_vectorDark === undefined){
             }, 1000);
         }
         window.Msz2001_vectorDark.inicjalizacja = false;
-    }
+    };
     
     /**
      * Włącza ciemny motyw
      */
     var Msz2001_vectorDark_wlacz = function() {
         Msz2001_vectorDark_zapiszCzyWlaczony(true);
-    }
+    };
     
     /**
      * Wyłącza ciemny motyw
      */
     var Msz2001_vectorDark_wylacz = function() {
         Msz2001_vectorDark_zapiszCzyWlaczony(false);
-    }
+    };
     
     /**
      * Sprawdza, czy ciemny motyw jest ustawiony
@@ -79,7 +88,7 @@ if(window.Msz2001_vectorDark === undefined){
      */
     var Msz2001_vectorDark_czyWlaczony = function() {
         return (document.cookie.indexOf("disable_vectorDark_Msz2001=1") < 0);
-    }
+    };
     
     /**
      * Zapisuje tryb wybrany przez użytkownika i ustawia widoczność elementów
@@ -114,7 +123,7 @@ if(window.Msz2001_vectorDark === undefined){
         /* Ustawia cookie, które jest dostępne tylko dla front-endu */
         document.cookie = "disable_vectorDark_Msz2001=" + (1-czy_wlaczony) + "; path=/";
         Msz2001_vectorDark_zapiszCookie(czy_wlaczony);
-    }
+    };
     
     /**
      * Tworzy element <li> z linkiem w środku
@@ -130,7 +139,7 @@ if(window.Msz2001_vectorDark === undefined){
         link.addEventListener("click", klik);
         li.appendChild(link);
         return li;
-    }
+    };
 
     /**
      * Pinguje serwer z plikami CSS, aby ustawił odpowiedni plik cookie
@@ -143,5 +152,5 @@ if(window.Msz2001_vectorDark === undefined){
 
         /* Wysyła żądanie do serwera z plikami CSS, by ustawił cookie dla siebie */
         window.Msz2001_vectorDark.obrazek_cors.src = "https://vector-dark.toolforge.org/setcookie.php?is_on=" + (czy_wlaczony ? "true" : "false");
-    }
+    };
 }
