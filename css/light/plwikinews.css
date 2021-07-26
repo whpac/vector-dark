@@ -1,0 +1,24 @@
+@media only screen {
+	/* Style dla strony głównej pl.wikinews */
+	html.enable-dark-skin .mw-parser-output .wikinews,
+		html.enable-dark-skin .mw-parser-output .categories-bar {background:#012540; border:1px solid #155788;}
+	html.enable-dark-skin .mw-parser-output .wikinews .links,
+		html.enable-dark-skin .mw-parser-output .wikinews .categories {background:transparent;}
+	html.enable-dark-skin .mw-parser-output .featured {background:#444; border:none;}
+	html.enable-dark-skin .mw-parser-output .featured .image {border-left-color:#888;}
+	html.enable-dark-skin .mw-parser-output .featured .date {color:#bbb}
+	html.enable-dark-skin .mw-parser-output .sidebar > .widget {background:#222; border:1px solid #444;}
+	html.enable-dark-skin .mw-parser-output .sidebar > .widget h2 {border-bottom-color:#777;}
+	html.enable-dark-skin table.wikitable td,
+		html.enable-dark-skin table.prettytable td {background:transparent;}
+	html.enable-dark-skin .mw-parser-output .recent {border-color:#777;}
+	html.enable-dark-skin .mw-parser-output .recent .column:not(:first-of-type) {border-color:#777;}
+	html.enable-dark-skin .mw-parser-output .article-box:not(:first-of-type) {border-color:#777;}
+	html.enable-dark-skin .mw-parser-output .article-box .date {color:#aaa;}
+	html.enable-dark-skin .mw-parser-output .badge a {color:inherit !important;}
+	html.enable-dark-skin .mw-parser-output .sister-projects {border-color:#777;}
+	html.enable-dark-skin .mw-parser-output .sister-projects h2 {border-bottom-color:#777;}
+
+	html.enable-dark-skin div.NavFrame {border-color:#777;}
+	html.enable-dark-skin div.NavFrame div.NavHead {background:#444;}
+}
