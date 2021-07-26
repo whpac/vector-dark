@@ -1,0 +1,41 @@
+@media only screen {
+    /* Style specyficzne dla Wikidanych */
+    h1 .wikibase-title-id {color:#aaa;}
+    .wikibase-entitytermsview .wikibase-entitytermsview-heading .wikibase-entitytermsview-heading-aliases ul {color:#aaa;}
+
+    .wikibase-entitytermsview .wikibase-toolbar-container {background:rgba(48, 48, 48, 0.5);}
+    .wikibase-entitytermsforlanguagelistview {background:#282828; border-color:#666;}
+    .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {background:#383838; border-right-color:#282828;}
+
+    .wikibase-statementgrouplistview .wikibase-statementgroupview-property {background:#404040;}
+    .wikibase-statementgroupview .wikibase-statementgroupview-property {border-color:#666;}
+    .wikibase-statementgrouplistview .wikibase-statementlistview {border-color:#666; background:#282828;}
+    .wikibase-statementview {border-bottom-color:#444;}
+    .wikibase-statementlistview > .wikibase-toolbar-wrapper {background:#404040; margin-bottom:-0.1px;}
+
+    .wikibase-referenceview {background:#303030; border:1px solid #444;}
+    .wikibase-statementview div.thumb img,
+        .wikibase-statementview div.thumb audio,
+        .wikibase-statementview div.thumb video,
+        .wikibase-statementview div a.mw-kartographer-map {border-color:#666;}
+    .wikibase-statementview div.thumb img {background:#fff;}
+
+    .ui-toggler.ui-state-default {color:#76acff;}
+    .wb-icon {filter:invert(1) brightness(0.7);}
+
+    .wbqc-report,
+        .wbqc-parameter-report {border-top-color:#777;}
+    .wbqc-report .wbqc-ancillary-messages {color:#aaa;}
+    .wikibase-snakview-unsupportedsnaktype,
+        .wikibase-snakview-variation-valuesnak-unsupporteddatavalue,
+        .wikibase-snakview-variation-valuesnak-datavaluetypemismatch,
+        .wikibase-snakview-variation-valuesnak-nonewvaluefordeletedproperty,
+        span.wikibase-snakview-variation-somevaluesnak,
+        span.wikibase-snakview-variation-novaluesnak {color:#999;}
+    
+    .wikibase-sitelinkgroupview .wikibase-sitelinkgroupview-heading-container {background:#404040;}
+    .wikibase-sitelinkgroupview {border-color:#666; background:#282828;}
+    .wikibase-sitelinkgroupview > .mw-collapsible-toggle,
+        .wikibase-sitelinkgroupview > .mw-collapsible-toggle-expanded {filter:invert(1) brightness(0.8);}
+    .wikibase-sitelinklistview .wikibase-sitelinkview .wikibase-sitelinkview-siteid-container {background:#444; border-color:#666;}
+}

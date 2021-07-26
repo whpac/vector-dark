@@ -7,7 +7,8 @@ $additional_css = [
     'user_colors' => 'user_colors.css',
     'talk_colors' => 'talk_colors.css',
     'sandbox' => 'sandbox.css',
-    'plwikinews' => 'plwikinews.css'
+    'plwikinews' => 'plwikinews.css',
+    'wikidata' => 'wikidata.css'
 ];
 
 if(isset($_GET['f'])) $file_id = $_GET['f'];
