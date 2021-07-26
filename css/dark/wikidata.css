@@ -5,6 +5,11 @@
 	html:not(.disable-dark-skin) .skin-vector .wikibase-title .wb-language-fallback-indicator {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-entitytermsview-heading .wikibase-entitytermsview-heading-aliases ul {color:#aaa;}
 	html:not(.disable-dark-skin) .wb-help-field-hint {filter:invert(1) brightness(0.8);}
+	html:not(.disable-dark-skin) .ui-entityselector-list li,
+		html:not(.disable-dark-skin) .ui-entityselector-list li.ui-state-hover {border-top-color:#777;}
+	html:not(.disable-dark-skin) .ui-entityselector-list .ui-entityselector-more,
+		html:not(.disable-dark-skin) .wikibase-entitysearch-list .wb-entitysearch-suggestions {background:#282828;}
+	html:not(.disable-dark-skin) #searchInput {background-color:rgba(0,0,0,0.5); color:#d8d8d8;}
 
 	/* Opisy w językach */
 	html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-toolbar-container {background:rgba(48, 48, 48, 0.5);}
