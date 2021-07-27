@@ -465,7 +465,7 @@
 	
 	/* Infobox */
 	html:not(.disable-dark-skin) .infobox,
-		html:not(.disable-dark-skin) .content table.infobox {background:#333; border-color:#666; color:#d8d8d8;}
+		html:not(.disable-dark-skin) .content table.infobox {background:#333 !important; border-color:#666; color:#d8d8d8;}
 	html:not(.disable-dark-skin) .infobox > * > tr:first-child,
 		html:not(.disable-dark-skin) .infobox > tr:first-child {background:#444 !important; color:#fff !important;} /* Nagłówek */
 	html:not(.disable-dark-skin) .infobox tr td:first-child:not([colspan])[style*=eee],
