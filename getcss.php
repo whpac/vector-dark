@@ -7,6 +7,7 @@ $additional_css = [
     'user_colors' => 'user_colors.css',
     'talk_colors' => 'talk_colors.css',
     'sandbox' => 'sandbox.css',
+    'commons' => 'commons.css',
     'plwikinews' => 'plwikinews.css',
     'wikidata' => 'wikidata.css'
 ];
