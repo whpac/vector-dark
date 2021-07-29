@@ -45,6 +45,7 @@ if(window.Msz2001_vectorDark === undefined){
             case "wikidatawiki": id_linku = "n-sitesupport"; break;
             case "plwikinews": id_linku = "n-Kontakt"; break;
             case "enwiki": id_linku = "n-sitesupport"; break;
+            case "commonswiki": id_linku = "n-help"; break;
         }
 
         var ostatni_link = document.getElementById(id_linku);
