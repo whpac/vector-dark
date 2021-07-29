@@ -152,7 +152,9 @@
 	html:not(.disable-dark-skin) body.skin-vector .uls-menu {border-color: #777; -webkit-box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15); box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15);}
 	html:not(.disable-dark-skin) .uls-menu {background:#333;}
 	html:not(.disable-dark-skin) .uls-search {background:#333; border-bottom-color:#666;}
-	html:not(.disable-dark-skin) #uls-settings-block {border-top-color:#666;}
+	html:not(.disable-dark-skin) #uls-settings-block {background:#333; border-top-color:#666;}
+	html:not(.disable-dark-skin) #uls-settings-block > button {color:#aaa;}
+	html:not(.disable-dark-skin) #uls-settings-block > button:hover {color:#888;}
 	html:not(.disable-dark-skin) .interlanguage-uls-menu.selector-left:before {border-right-color:#777;}
 	html:not(.disable-dark-skin) .interlanguage-uls-menu.selector-left:after {border-right-color:#333;}
 	html:not(.disable-dark-skin) body.skin-vector .uls-search {background:#333; border-bottom-color:#666;}
