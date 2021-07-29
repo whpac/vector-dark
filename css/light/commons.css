@@ -12,12 +12,12 @@
 		html.enable-dark-skin .mw-parser-output .mainpage-box-blue .mainpage-box-seealso {border-color:#004274;}
 	html.enable-dark-skin .mw-parser-output .mainpage-box-blue .mainpage-box-title {background:#004274;}
 	html.enable-dark-skin .mainpage-box-green > div > div[style*=color] {color:#d8d8d8 !important;}
-	html.enable-dark-skin table.mainpage-maintable + div.center > div:first-child {border-top-color:#666;}
+	html.enable-dark-skin table.mainpage-maintable + div.center > div:first-child {border-top-color:#666 !important;}
 	html.enable-dark-skin table.mainpage-maintable + div.center > div > div:first-child {background:#303030 !important;}
 	html.enable-dark-skin table.mainpage-maintable + div.center > div > div:first-child img {filter:invert(1) brightness(0.9);}
 	html.enable-dark-skin table.mainpage-maintable + div.center div[style*=color] {color:#d8d8d8 !important;}
-	html.enable-dark-skin table.mainpage-maintable + div.center table.center {color:#aaa !important;}
-	html.enable-dark-skin .mainpage-languages > div {background:#222; border:1px solid #555; color:#d8d8d8;}
+	html.enable-dark-skin table.mainpage-maintable + div.center table {color:#aaa !important;}
+	html.enable-dark-skin .mainpage-languages > div {background:#222 !important; border:1px solid #555 !important; color:#d8d8d8;}
 
 	/* Wyszukiwarka - filtry i opcje */
 	html.enable-dark-skin .sd-button {color:#d8d8d8;}
