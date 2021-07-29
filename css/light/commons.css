@@ -50,6 +50,23 @@
 	html.enable-dark-skin .sdms-quick-view__cta {background:#333; border-color:#666;}
 	html.enable-dark-skin .sdms-quick-view__cta:hover {background:#444; color:#a4bbea;}
 
+	/* Wyszukiwarka - inne multimedia */
+	html.enable-dark-skin .sdms-audio-result,
+		html.enable-dark-skin .sdms-page-result {border-bottom-color:#777;}
+	html.enable-dark-skin .sdms-page-result p {color:#999;}
+	html.enable-dark-skin .sdms-video-result {border-color:#777;}
+	html.enable-dark-skin .sdms-video-result:hover .sdms-video-result__title {color:#76acff;}
+	html.enable-dark-skin .sdms-video-result:hover, .sdms-video-result:focus {box-shadow:0 0 16px 0 #ccc; text-decoration:none;}
+
+	html.enable-dark-skin .sdms-audio-result__duration,
+		html.enable-dark-skin .sdms-video-result__duration,
+		html.enable-dark-skin .sdms-page-result__namespace {color:#bbb; background:#181818;}
+	html.enable-dark-skin .sdms-audio-result__mime,
+		html.enable-dark-skin .sdms-video-result__mime,
+		html.enable-dark-skin .sdms-other-result__meta {color:#aaa;}
+	html.enable-dark-skin .sd-button--framed {background:#222; border-color:#555;}
+	html.enable-dark-skin .sd-button--framed:hover {background:#444; border-color:#666;}
+
 	/* Strona pliku */
 	html.enable-dark-skin .mw-mmv-filepage-buttons .mw-ui-icon::before {filter:invert(1) brightness(0.9);}
 	html.enable-dark-skin .fileinfo-paramfield {background:#444;}
