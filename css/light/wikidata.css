@@ -1,6 +1,5 @@
 @media only screen {
 	/* Style specyficzne dla Wikidanych */
-	html.enable-dark-skin #pt-uls .uls-trigger:before {filter:invert(1) brightness(0.6);}
 	html.enable-dark-skin h1 .wikibase-title-id {color:#aaa;}
 	html.enable-dark-skin .skin-vector .wikibase-title .wb-language-fallback-indicator {color:#d8d8d8;}
 	html.enable-dark-skin .wikibase-entitytermsview .wikibase-entitytermsview-heading .wikibase-entitytermsview-heading-aliases ul {color:#aaa;}
