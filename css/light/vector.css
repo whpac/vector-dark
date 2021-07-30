@@ -13,7 +13,7 @@
 	html.enable-dark-skin #mw-head-base {background-image:linear-gradient(0deg, #222, black)}
 	html.enable-dark-skin #mw-page-base {background-image:linear-gradient(0deg, #222, black);}
 	html.enable-dark-skin #pt-anonuserpage,
-		html.enable-dark-skin .vector-user-menu-legacy #pt-userpage a {background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%20%3Cg%20fill%3D%22%23888%22%3E%20%20%3Cpath%20d%3D%22M10%2011c-5.92%200-8%203-8%205v3h16v-3c0-2-2.08-5-8-5z%22%2F%3E%20%20%3Ccircle%20cx%3D%2210%22%20cy%3D%225.5%22%20r%3D%224.5%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E")}
+		html.enable-dark-skin .vector-user-menu-legacy #pt-userpage a {background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%20%3Cg%20fill%3D%22%23777%22%3E%20%20%3Cpath%20d%3D%22M10%2011c-5.92%200-8%203-8%205v3h16v-3c0-2-2.08-5-8-5z%22%2F%3E%20%20%3Ccircle%20cx%3D%2210%22%20cy%3D%225.5%22%20r%3D%224.5%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E")}
 	html.enable-dark-skin #pt-notifications-alert .mw-echo-notifications-badge {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E bell %3C/title%3E %3Cpath d=%22M16 7a5.38 5.38 0 0 0-4.46-4.85C11.6 1.46 11.53 0 10 0S8.4 1.46 8.46 2.15A5.38 5.38 0 0 0 4 7v6l-2 2v1h16v-1l-2-2zm-6 13a3 3 0 0 0 3-3H7a3 3 0 0 0 3 3z%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin #pt-notifications-notice .mw-echo-notifications-badge {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E tray %3C/title%3E %3Cpath d=%22M17 1H3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 12h-4l-1 2H8l-1-2H3V3h14z%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin #pt-notifications-alert .mw-echo-notifications-badge:after,
@@ -24,7 +24,8 @@
 	html.enable-dark-skin .cx-callout:after {border-bottom-color:#222;}
 	html.enable-dark-skin .cx-callout li:hover {background:#383838;}
 	html.enable-dark-skin .mw-echo-alert {background-color:#7f6415; color:#fff !important;}
-	html.enable-dark-skin .mw-logo-wordmark {filter:invert(1); color:#111;}
+	html.enable-dark-skin .mw-logo-wordmark,
+		html.enable-dark-skin .mw-logo-tagline {filter:invert(1); color:#111;}
 	html.enable-dark-skin #mw-sidebar-button:before {filter:invert(1);}
 	html.enable-dark-skin .wvui-button:not([disabled]) {color:#d8d8d8;}
 	html.enable-dark-skin .wvui-button--framed:not([disabled]) {background-color:#303030; border-color:#777;}
