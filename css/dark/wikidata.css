@@ -82,4 +82,5 @@
 		html:not(.disable-dark-skin) .wikibase-sitelinkgroupview > .mw-collapsible-toggle-expanded {filter:invert(1) brightness(0.8);}
 	html:not(.disable-dark-skin) .wikibase-sitelinklistview .wikibase-sitelinkview .wikibase-sitelinkview-siteid-container {background:#444; border-color:#666;}
 	html:not(.disable-dark-skin) .wikibase-sitelinkview input:focus {background:#222;}
+	html:not(.disable-dark-skin) .wb-badge-empty {filter:invert(1);}
 }
