@@ -464,7 +464,7 @@
 	html:not(.disable-dark-skin) table:not(.userbox):not(.infobox)[style*=background]:not([style*=transparent]) {background:#222 !important; color:#d8d8d8 !important;}
 	html:not(.disable-dark-skin) .mw-datatable td,
 		html:not(.disable-dark-skin) .mw-datatable th {border-color:#666;}
-	html:not(.disable-dark-skin) .mw-datatable th {background:#444;}
+	html:not(.disable-dark-skin) .mw-datatable th {background-color:#444;}
 	html:not(.disable-dark-skin) .mw-datatable td {background:#282828;}
 	html:not(.disable-dark-skin) .mw-datatable tr:hover td {background:#383838;}
 
