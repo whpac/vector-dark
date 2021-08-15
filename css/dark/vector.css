@@ -48,17 +48,21 @@
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a {border:none; color:#d8d8d8; background:transparent;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:hover {background:#444;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:active {background:#222;}
-	html:not(.disable-dark-skin) body.skin-vector:not(.skin-vector-legacy) .mw-ui-icon-wikimedia-search:before {filter:invert(1) brightness(0.6);}
+	html:not(.disable-dark-skin) body.skin-vector:not(.skin-vector-legacy) .mw-ui-icon-wikimedia-search:before {filter:invert(1) brightness(0.4);}
 	html:not(.disable-dark-skin) .vector-menu-dropdown h3:after {filter:invert(1);}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-logged-in h3:before {color:#d8d8d8;}
-	html:not(.disable-dark-skin) .mw-ui-icon-wikimedia-userAvatar:before {filter:invert(1) brightness(0.6);}
+	html:not(.disable-dark-skin) .mw-ui-icon-wikimedia-userAvatar:before {filter:invert(1) brightness(0.4);}
 	html:not(.disable-dark-skin) .vector-user-menu .mw-ui-icon-before:before {filter:invert(1);}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-content-item,
-		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a
+		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a,
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a:visited {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-content-item:hover,
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a:hover {background:#383838;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-content-item-logout {border-top-color:#777;}
+	html:not(.disable-dark-skin) .vector-user-links #pt-notifications-alert .mw-echo-notifications-badge:hover,
+		html:not(.disable-dark-skin) .vector-user-links #pt-notifications-notice .mw-echo-notifications-badge:hover {background:#444;}
+	html:not(.disable-dark-skin) .mw-ui-icon-wikimedia-search:not(.disabled):hover,
+		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-checkbox:hover + h3 {background:#282828;}
 
 	/* Wyszukiwarka */
 	html:not(.disable-dark-skin) #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
