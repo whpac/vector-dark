@@ -49,7 +49,6 @@
 	html.enable-dark-skin .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:hover {background:#444;}
 	html.enable-dark-skin .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:active {background:#222;}
 	html.enable-dark-skin body.skin-vector:not(.skin-vector-legacy) .mw-ui-icon-wikimedia-search:before {filter:invert(1) brightness(0.4);}
-	html.enable-dark-skin .vector-menu-dropdown h3:after {filter:invert(1);}
 	html.enable-dark-skin .vector-user-links .vector-user-menu-logged-in h3:before {color:#d8d8d8;}
 	html.enable-dark-skin .mw-ui-icon-wikimedia-userAvatar:before {filter:invert(1) brightness(0.4);}
 	html.enable-dark-skin .vector-user-menu .mw-ui-icon-before:before {filter:invert(1);}
