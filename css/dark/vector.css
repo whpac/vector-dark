@@ -445,6 +445,7 @@
 		html:not(.disable-dark-skin) .navbox .inner-columns>tbody>tr+tr>td {border-top-color:#222;}
 	html:not(.disable-dark-skin) .navbox-even,
 		html:not(.disable-dark-skin) .mw-parser-output .navbox .navbox-even {background-color:#333;}
+	html:not(.disable-dark-skin) .mw-parser-output .navbox.pionowy .navbox-odd {background:transparent;}
 	html:not(.disable-dark-skin) .mw-parser-output .navbox>.mw-collapsible-content>.above,
 		html:not(.disable-dark-skin) .mw-parser-output .navbox>.mw-collapsible-content>.below {background:#2f2f2f;}
 	html:not(.disable-dark-skin) .mw-parser-output .navbox .inner-columns>tbody>tr>th,

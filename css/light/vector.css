@@ -60,7 +60,7 @@
 		html.enable-dark-skin .vector-user-links .vector-user-menu li > a:hover {background:#383838;}
 	html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-content-item-logout {border-top-color:#777;}
 	html.enable-dark-skin .vector-user-links #pt-notifications-alert .mw-echo-notifications-badge:hover,
-		html.enable-dark-skin .vector-user-links #pt-notifications-notice .mw-echo-notifications-badge:hover {background:#444;}
+		html.enable-dark-skin .vector-user-links #pt-notifications-notice .mw-echo-notifications-badge:hover {background-color:#444;}
 	html.enable-dark-skin .mw-ui-icon-wikimedia-search:not(.disabled):hover,
 		html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-checkbox:hover + h3 {background:#282828;}
 
@@ -445,6 +445,7 @@
 		html.enable-dark-skin .navbox .inner-columns>tbody>tr+tr>td {border-top-color:#222;}
 	html.enable-dark-skin .navbox-even,
 		html.enable-dark-skin .mw-parser-output .navbox .navbox-even {background-color:#333;}
+	html.enable-dark-skin .mw-parser-output .navbox.pionowy .navbox-odd {background:transparent;}
 	html.enable-dark-skin .mw-parser-output .navbox>.mw-collapsible-content>.above,
 		html.enable-dark-skin .mw-parser-output .navbox>.mw-collapsible-content>.below {background:#2f2f2f;}
 	html.enable-dark-skin .mw-parser-output .navbox .inner-columns>tbody>tr>th,
