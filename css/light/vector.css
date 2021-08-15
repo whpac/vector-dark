@@ -45,6 +45,20 @@
 	html.enable-dark-skin .wvui-typeahead-search__suggestions__footer .wvui-icon {color:#999;}
 	html.enable-dark-skin .wvui-typeahead-suggestion__thumbnail-placeholder {background:#222;}
 	html.enable-dark-skin .wvui-typeahead-suggestion__thumbnail-icon {color:#999;}
+	html.enable-dark-skin .vector-user-links .vector-user-menu-more .vector-menu-content-list li a {border:none; color:#d8d8d8; background:transparent;}
+	html.enable-dark-skin .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:hover {background:#444;}
+	html.enable-dark-skin .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:active {background:#222;}
+	html.enable-dark-skin body.skin-vector:not(.skin-vector-legacy) .mw-ui-icon-wikimedia-search:before {filter:invert(1) brightness(0.6);}
+	html.enable-dark-skin .vector-menu-dropdown h3:after {filter:invert(1);}
+	html.enable-dark-skin .vector-user-links .vector-user-menu-logged-in h3:before {color:#d8d8d8;}
+	html.enable-dark-skin .mw-ui-icon-wikimedia-userAvatar:before {filter:invert(1) brightness(0.6);}
+	html.enable-dark-skin .vector-user-menu .mw-ui-icon-before:before {filter:invert(1);}
+	html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-content-item,
+		html.enable-dark-skin .vector-user-links .vector-user-menu li > a
+		html.enable-dark-skin .vector-user-links .vector-user-menu li > a:visited {color:#d8d8d8;}
+	html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-content-item:hover,
+		html.enable-dark-skin .vector-user-links .vector-user-menu li > a:hover {background:#383838;}
+	html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-content-item-logout {border-top-color:#777;}
 
 	/* Wyszukiwarka */
 	html.enable-dark-skin #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
@@ -114,7 +128,7 @@
 	html.enable-dark-skin .header-container.header-chrome {background-color:#222;}
 	html.enable-dark-skin .search-box .search {background-color:#444; border-color:#555;}
 	html.enable-dark-skin header div.branding-box img {filter:invert(1) brightness(0.8);}
-	html.enable-dark-skin header .mw-ui-icon {filter:brightness(1.8);}
+	html.enable-dark-skin header .mw-ui-icon:not(.mw-ui-icon-before) {filter:brightness(1.8);}
 	html.enable-dark-skin #mw-mf-viewport,
 		html.enable-dark-skin #mw-mf-page-left {background:#333;}
 	html.enable-dark-skin #mw-mf-page-left ul:not(.hlist) li {background:#444; border-color:#333;}
