@@ -497,7 +497,8 @@
 	/* Pola tekstowe */
 	html.enable-dark-skin input,
 		html.enable-dark-skin select,
-		html.enable-dark-skin .mw-ui-input {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
+		html.enable-dark-skin .mw-ui-input,
+		html.enable-dark-skin .wvui-input__input:not([disabled]) {background:#222; border-color:#777; border-radius:0.2em; color:#eee;}
 	html.enable-dark-skin input:hover,
 		html.enable-dark-skin select:hover {border-color:#666;}
 	html.enable-dark-skin .mw-ui-input {box-shadow:inset 0 0 0 0.1em #222;}
