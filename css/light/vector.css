@@ -32,10 +32,10 @@
 	html.enable-dark-skin .wvui-button--framed:not([disabled]):hover {background-color:#444; color:#fff;}
 	html.enable-dark-skin .wvui-button--framed[disabled] {background-color:#222; color:#777;}
 	html.enable-dark-skin .wvui-typeahead-search {background-color:#222; border-color:#777;}
-	html.enable-dark-skin .wvui-typeahead-search .wvui-input__input {border-right:none; border-top-right-radius:0; border-bottom-right-radius:0;}
+	html.enable-dark-skin .wvui-typeahead-search .wvui-input__input.wvui-input__input {border-right:none; border-top-right-radius:0; border-bottom-right-radius:0;}
 	html.enable-dark-skin .wvui-input__start-icon, 
 		html.enable-dark-skin .wvui-input__end-icon {color:#999;}
-	html.enable-dark-skin .wvui-typeahead-search {z-index:1;}
+	html.enable-dark-skin .wvui-typeahead-search__submit {z-index:1;}
 	html.enable-dark-skin .wvui-typeahead-search__suggestions {background:#222; border-color:#777;}
 	html.enable-dark-skin .wvui-typeahead-suggestion--active {background:#333;}
 	html.enable-dark-skin .wvui-typeahead-suggestion__title {color:#d8d8d8;}
