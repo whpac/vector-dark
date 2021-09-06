@@ -32,6 +32,8 @@
 	html:not(.disable-dark-skin) .wvui-button--framed:not([disabled]):hover {background-color:#444; color:#fff;}
 	html:not(.disable-dark-skin) .wvui-button--framed[disabled] {background-color:#222; color:#777;}
 	html:not(.disable-dark-skin) .wvui-typeahead-search {background-color:#222; border-color:#777;}
+	html:not(.disable-dark-skin) .wvui-typeahead-search .wvui-input__input {border-right-color:transparent; border-top-right-radius:0; border-bottom-right-radius:0;}
+	html:not(.disable-dark-skin) .wvui-typeahead-search:hover .wvui-input__input {border-right-color:#777;}
 	html:not(.disable-dark-skin) .wvui-input__start-icon, 
 		html:not(.disable-dark-skin) .wvui-input__end-icon {color:#999;}
 	html:not(.disable-dark-skin) .wvui-typeahead-search__suggestions {background:#222; border-color:#777;}
