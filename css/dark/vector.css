@@ -1021,6 +1021,8 @@
 		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic-description-header {color:#fff;}
 	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-legend-description-header {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-legend-description-body {color:#999;}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .suggested-edits-module-wrapper .suggested-edits-card-wrapper .suggested-edits-task-card-wrapper .se-card-content .se-card-image.no-image {background-color:#282828;}
+	html:not(.disable-dark-skin) .suggested-edits-topic-filters .oo-ui-window-foot {background-color:#333;}
 
 	/* Tłumaczenie treści */
 	html:not(.disable-dark-skin) .mw-logo-page-title {color:#d8d8d8;}
