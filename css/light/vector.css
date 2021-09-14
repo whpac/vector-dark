@@ -546,7 +546,8 @@
 	html.enable-dark-skin .infobox > * > tr:nth-child(2) td[colspan] img,
 		html.enable-dark-skin .infobox > * > tr:nth-child(3) td[colspan] img,
 		html.enable-dark-skin .infobox > tr:nth-child(2) td[colspan] img,
-		html.enable-dark-skin .infobox > tr:nth-child(3) td[colspan] img {background:white; filter:drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 3px white);}
+		html.enable-dark-skin .infobox > tr:nth-child(3) td[colspan] img,
+		html.enable-dark-skin .infobox img[alt=Faksymile] {background:white; filter:drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 3px white);}
 	html.enable-dark-skin .infobox .coordinates img,
 		html.enable-dark-skin .infobox .mapa-lokalizacyjna img {background:transparent !important;filter:none !important;}
 	html.enable-dark-skin .content table.infobox th,
