@@ -970,16 +970,22 @@
 	html:not(.disable-dark-skin) .growthexperiments-homepage-module-startemail .oo-ui-iconWidget {filter:invert(1); opacity:0.8;}
 	html:not(.disable-dark-skin) .growthexperiments-homepage-module .growthexperiments-homepage-module-header,
 		html:not(.disable-dark-skin) .growthexperiments-homepage-module h2.growthexperiments-homepage-module-header,
-		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic-selector-header {color:#fff;}
+		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic-selector-header,
+		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-header {color:#fff;}
 	html:not(.disable-dark-skin) .growthexperiments-homepage-module-start-startediting.growthexperiments-homepage-module-desktop .growthexperiments-homepage-module-header,
 		html:not(.disable-dark-skin) .growthexperiments-homepage-module-start-startediting.growthexperiments-homepage-module-desktop .oo-ui-windowManager .mw-ge-startediting-dialog-progress,
-		html:not(.disable-dark-skin) .growthexperiments-homepage-module-start-startediting.growthexperiments-homepage-module-desktop .oo-ui-windowManager .mw-ge-startediting-dialog-intro-topic {background-color:rgba(234,243,255,0.2);}
+		html:not(.disable-dark-skin) .growthexperiments-homepage-module-start-startediting.growthexperiments-homepage-module-desktop .oo-ui-windowManager .mw-ge-startediting-dialog-intro-topic,
+		html:not(.disable-dark-skin) .growthexperiments-homepage-module-start-startediting.growthexperiments-homepage-module-desktop .oo-ui-windowManager .mw-ge-startediting-dialog-difficulty-banner {background-color:rgba(234,243,255,0.2); border-left-color:transparent}
 	html:not(.disable-dark-skin) .growthexperiments-homepage-module-start-startediting.growthexperiments-homepage-module-desktop .oo-ui-windowManager .mw-ge-startediting-dialog-intro-topic-message,
 		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic-selector-subheader,
+		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-banner,
 		html:not(.disable-dark-skin) .growthexperiments-homepage-module-text-normal {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-progress-label,
 		html:not(.disable-dark-skin) .mw-ge-suggestededits-articleCountWidget .oo-ui-labelWidget {color:#bbb;}
-	html:not(.disable-dark-skin) .growthexperiments-homepage-module-text-light {color:#999;}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-text-light,
+		html:not(.disable-dark-skin) .oo-ui-widget.mw-ge-homepage-taskTypeSelectionWidget-checkbox-create .mw-ge-homepage-taskTypeSelectionWidget-additional-msg,
+		html:not(.disable-dark-skin) .oo-ui-widget.mw-ge-homepage-taskTypeSelectionWidget-checkbox-image-recommendation .mw-ge-homepage-taskTypeSelectionWidget-additional-msg,
+		html:not(.disable-dark-skin) .oo-ui-widget.mw-ge-homepage-taskTypeSelectionWidget-checkbox-link-recommendation .mw-ge-homepage-taskTypeSelectionWidget-additional-msg {color:#999;}
 	html:not(.disable-dark-skin) .growthexperiments-homepage-module-impact .impact-row:nth-child(2n-1) {background-color:#2b2b2b;}
 	html:not(.disable-dark-skin) .growthexperiments-homepage-mentorship-userlink .oo-ui-iconElement {filter:invert(1); opacity:0.8;}
 	html:not(.disable-dark-skin) .growthexperiments-homepage-mentorship-mentorinfo,
@@ -994,6 +1000,27 @@
 		html:not(.disable-dark-skin) .mw-ge-suggestion-wrapper .mw-ge-suggestion:focus {color:#fff;}
 	html:not(.disable-dark-skin) .mw-ge-suggestion-wrapper .mw-ge-suggestion--confirmed {background-color:#112a4b; border-color:#1549b0; color:#d8d8d8;}
 	html:not(.disable-dark-skin) .mw-ge-suggestion-wrapper .mw-ge-suggestion--confirmed .oo-ui-iconElement {filter:invert(1);}
+	html:not(.disable-dark-skin) .oo-ui-widget.mw-ge-homepage-taskTypeSelectionWidget-checkbox-link-recommendation .mw-ge-homepage-taskTypeSelectionWidget-additional-msg .oo-ui-iconElement-icon {filter:invert(1);}
+	html:not(.disable-dark-skin) h4.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-label {color:inherit;}
+	html:not(.disable-dark-skin) p.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-desc {color:#d8d8d8;}
+	
+	/* Wybór artykułów do wstawienia linków */
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .growthexperiments-homepage-module-footer {background:#282828; color:#bbb; border-color:#555;}
+	html:not(.disable-dark-skin) .suggested-edits-task-explanation-wrapper .suggested-edits-short-description {color:#bbb;}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .suggested-edits-module-wrapper .suggested-edits-card-wrapper .suggested-edits-task-card-wrapper {box-shadow:0 5px 10px 0 rgba(0,0,0,0.3); background-color:#333;}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .suggested-edits-module-wrapper .suggested-edits-card-wrapper .suggested-edits-task-card-wrapper .se-card-content .se-card-text {color:#aaa;}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .suggested-edits-module-wrapper .suggested-edits-card-wrapper .suggested-edits-task-card-wrapper .se-card-content .se-card-text[dir='ltr'] .se-card-extract:after {background:linear-gradient(to right,rgba(51,51,51,0),#333 50%);}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .suggested-edits-module-wrapper .suggested-edits-card-wrapper .suggested-edits-task-card-wrapper .se-card-content .se-card-text .se-card-pageviews {color:#999;}
+	html:not(.disable-dark-skin) .growthexperiments-homepage-module-suggested-edits .suggested-edits-module-wrapper .suggested-edits-card-wrapper .suggested-edits-task-card-wrapper .se-card-content .se-card-text .se-card-pageviews .oo-ui-iconWidget {filter:invert(1);}
+	html:not(.disable-dark-skin) .suggested-edits-taskexplanation-difficulty-and-time p,
+		html:not(.disable-dark-skin) .suggested-edits-taskexplanation-additional-info p {color:#bbb;}
+	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-progress,
+		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic,
+		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-banner {background-color:#444; border-left-color:transparent;}
+	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic-title,
+		html:not(.disable-dark-skin) .mw-ge-startediting-dialog-intro-topic-description-header {color:#fff;}
+	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-legend-description-header {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .mw-ge-startediting-dialog-difficulty-legend-description-body {color:#999;}
 
 	/* Tłumaczenie treści */
 	html:not(.disable-dark-skin) .mw-logo-page-title {color:#d8d8d8;}
