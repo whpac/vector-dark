@@ -10,7 +10,7 @@
 	html:not(.disable-dark-skin) .mw-parser-output .sidebar > .widget,
 		html:not(.disable-dark-skin) .mw-parser-output .article-widget {background:#222; border:1px solid #444;}
 	html:not(.disable-dark-skin) .mw-parser-output .sidebar > .widget h2,
-		html:not(.disable-dark-skin) .mw-parser-output .article-widget h2 {border-bottom-color:#777;}
+		html:not(.disable-dark-skin) .mw-parser-output .article-widget .header {border-bottom-color:#777; color:#fff;}
 	html:not(.disable-dark-skin) table.wikitable td,
 		html:not(.disable-dark-skin) table.prettytable td {background:transparent;}
 	html:not(.disable-dark-skin) .mw-parser-output .recent {border-color:#777;}
