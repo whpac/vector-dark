@@ -27,6 +27,7 @@
 	html:not(.disable-dark-skin) .mw-logo-wordmark,
 		html:not(.disable-dark-skin) .mw-logo-tagline {filter:invert(1); color:#111;}
 	html:not(.disable-dark-skin) #mw-sidebar-button:before {filter:invert(1);}
+	html:not(.disable-dark-skin) .mw-header .mw-ui-button {background-color:transparent; border-color:transparent;}
 	html:not(.disable-dark-skin) .wvui-button:not([disabled]) {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .wvui-button--framed:not([disabled]) {background-color:#303030; border-color:#777;}
 	html:not(.disable-dark-skin) .wvui-button--framed:not([disabled]):hover {background-color:#444; color:#fff;}
