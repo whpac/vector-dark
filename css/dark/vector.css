@@ -1140,6 +1140,8 @@
 	html:not(.disable-dark-skin) body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
 	html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
 	html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
+	html:not(.disable-dark-skin) body.page-Pomoc_Spis_treści td[style*=background-color],
+		html:not(.disable-dark-skin) body.page-Pomoc_Spis_treści .mw-inputbox-centered {background-color:#222 !important;}
 	html:not(.disable-dark-skin) body.page-Wikiprojekt_Gry_komputerowe table:not([class]) tr:last-child td:only-child[style*=background] {background-color:#222 !important; color:#d8d8d8;}
 
 	/* Okienka jQuery */
