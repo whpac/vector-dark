@@ -711,6 +711,7 @@
 	html:not(.disable-dark-skin) .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before {border-top-color:#777;}
 	html:not(.disable-dark-skin) .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-savedQueryTitle {color:#fff;}
 	html:not(.disable-dark-skin) .mw-rcfilters-ui-savedLinksListItemWidget-label {color:#76acff;}
+	html:not(.disable-dark-skin) .mw-changeslist-legend {background:#282828; border-color:#666;}
 	
 	/* Kalendarz */
 	html:not(.disable-dark-skin) .mw-widget-dateInputWidget-handle {background:#333; border-color:#777;}
@@ -1138,11 +1139,15 @@
 	html:not(.disable-dark-skin) body.page-Portal_Kategorie_Główne table.global-nav + table:not([class]) td {background:#333 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) body.page-Portal_Kategorie_Główne  #content table.global-nav + table:not([class]) td table {background:#333 !important} /* #content podnosi szczegółowość selektora */
 	html:not(.disable-dark-skin) body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
-	html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
+	html:not(.disable-dark-skin) body[class*=page-Pomoc_FAQ] div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
 	html:not(.disable-dark-skin) body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
 	html:not(.disable-dark-skin) body.page-Pomoc_Spis_treści td[style*=background-color],
 		html:not(.disable-dark-skin) body.page-Pomoc_Spis_treści .mw-inputbox-centered {background-color:#222 !important; color:#d8d8d8 !important}
 	html:not(.disable-dark-skin) body.page-Wikiprojekt_Gry_komputerowe table:not([class]) tr:last-child td:only-child[style*=background] {background-color:#222 !important; color:#d8d8d8;}
+	html:not(.disable-dark-skin) body.page-Wikipedia_Poczekalnia .mw-parser-output td:only-child {background:#383838 !important; color:#d8d8d8; border-color:#777 !important;}
+	html:not(.disable-dark-skin) body.page-Wikipedia_Poczekalnia_artykuły .mw-parser-output > div:first-child,
+	html:not(.disable-dark-skin) body.page-Wikipedia_Poczekalnia_biografie .mw-parser-output > div:first-child,
+	html:not(.disable-dark-skin) body.page-Wikipedia_Poczekalnia_kwestie_techniczne .mw-parser-output > div:first-child {background:#222 !important; color:#d8d8d8; border-color:#666 !important;}
 
 	/* Okienka jQuery */
 	html:not(.disable-dark-skin) .ui-widget-overlay {background:rgba(0,0,0,0.7);}
