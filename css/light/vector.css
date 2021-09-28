@@ -939,8 +939,9 @@
 	html.enable-dark-skin .flow-topic-meta {color:#888;}
 	html.enable-dark-skin .flow-component .mw-ui-icon.mw-ui-icon-before:before {filter:invert(1);}
 	html.enable-dark-skin .flow-list {border-color:#777; background:#282828;}
-	html.enable-dark-skin .flow-list a.mw-ui-button {border:none; border-radius:0;}
+	html.enable-dark-skin .flow-list a.mw-ui-button {border:none; border-radius:0; color:#d8d8d8}
 	html.enable-dark-skin .flow-list a.mw-ui-button:focus {color:#d8d8d8;}
+	html.enable-dark-skin .flow-component .flow-list li:hover {background:#383838;}
 	html.enable-dark-skin .flow-list > section:not(:first-of-type) > li:first-of-type {border-color:#666;}
 	html.enable-dark-skin .flow-post {color:#d8d8d8;}
 	html.enable-dark-skin .flow-post .flow-author {color:#d8d8d8;}
