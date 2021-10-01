@@ -71,6 +71,7 @@
 	html:not(.disable-dark-skin) #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
 	html:not(.disable-dark-skin) #simpleSearch input[type=search] {color:#d8d8d8; background:unset;}
 	html:not(.disable-dark-skin) #simpleSearch #searchButton {filter:invert(1);}
+	html:not(.disable-dark-skin) #p-search .searchButton {background-color:transparent; border:none}
 	html:not(.disable-dark-skin) #searchInput {border-color:#777;}
 	html:not(.disable-dark-skin) #searchInput:focus,
 		html:not(.disable-dark-skin) #simpleSearch:hover #searchInput:focus {border-color:#76acff; -webkit-box-shadow:none; box-shadow:none;}
