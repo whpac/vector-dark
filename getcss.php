@@ -30,13 +30,15 @@ outputFile('css/dark/'.$file);
 function outputFile($file){
     $file_etag = calculateETag($file);
     if(checkETag($file_etag)){
+        logData('304: '.$_SERVER['USER_AGENT']."\n");
         header($_SERVER['SERVER_PROTOCOL'].' 304 Not Modified');
         header('ETag: "'.$file_etag.'"');
         header('Cache-Control: no-cache, private');
         header('Vary: Cookie');
         return;
     }
-    
+
+    logData('200: '.$_SERVER['USER_AGENT']."\n");
     header('ETag: "'.$file_etag.'"');
     header('Cache-Control: no-cache, private');
     header('Vary: Cookie');
@@ -58,5 +60,9 @@ function checkETag($file_etag){
 
 function calculateETag($file){
     return md5_file($file);
+}
+
+function logData($data){
+    file_put_contents('../vd.txt', $data, FILE_APPEND);
 }
 ?>
