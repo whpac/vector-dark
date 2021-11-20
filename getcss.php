@@ -63,6 +63,6 @@ function calculateETag($file){
 }
 
 function logData($data){
-    file_put_contents('../vd.txt', $data, FILE_APPEND);
+    file_put_contents('../vd.txt', '['.time().']'.$data, FILE_APPEND);
 }
 ?>
