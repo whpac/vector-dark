@@ -541,6 +541,7 @@
 		html:not(.disable-dark-skin) .infobox th[style*=background] {background:#444 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) .infobox td:only-child[style*=background][style*=white] {background:#222 !important; border-color:#666 !important; color:#d8d8d8 !important;} /* Wiersz z obrazkiem */
 	html:not(.disable-dark-skin) .infobox td:only-child[style*=background][style*=FFF] {background: #222 !important; color:#d8d8d8;}
+	html:not(.disable-dark-skin) .infobox .grafika {background:#222;}
 	html:not(.disable-dark-skin) .infobox tr[style*=border],
 		html:not(.disable-dark-skin) .infobox td[style*=border],
 		html:not(.disable-dark-skin) .infobox th[style*=border] {border-color:#666 !important;}
