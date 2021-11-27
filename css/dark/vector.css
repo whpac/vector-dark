@@ -131,6 +131,9 @@
 	html:not(.disable-dark-skin) .notification-count {background:transparent;}
 	html:not(.disable-dark-skin) .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {color:#bbb;}
 	html:not(.disable-dark-skin) .mw-echo-ui-notificationsInboxWidget-toolbarWrapper {background:#303030; box-shadow:0 2px 0 0 #666;}
+	html:not(.disable-dark-skin) .mw-echo-ui-crossWikiNotificationItemWidget-group,
+		html:not(.disable-dark-skin) .mw-echo-ui-bundleNotificationItemWidget-group {background:#383838;}
+	html:not(.disable-dark-skin) .mw-echo-ui-notificationItemWidget-bundled .mw-echo-ui-notificationItemWidget-content .mw-echo-ui-notificationItemWidget-content-message-header em {color:#c0c0c0;}
 
 	/* Mobilny nagłówek */
 	html:not(.disable-dark-skin) .header-container.header-chrome {background-color:#222;}
@@ -614,7 +617,7 @@
 	html:not(.disable-dark-skin) table.fmbox {background-color:#222; color:white; border-color:#777;}
 	html:not(.disable-dark-skin) table.fmbox-system {background-color:#222;}
 	html:not(.disable-dark-skin) table.fmbox-editnotice {background-color:transparent;}
-	html:not(.disable-dark-skin) table.fmbox-warning {background-color:#845353; border-color:#dd5757;}
+	html:not(.disable-dark-skin) table.fmbox-warning {background-color:#430300; border-color:#dd5757;}
 	html:not(.disable-dark-skin) table.ambox img,
 		html:not(.disable-dark-skin) table.fmbox img {filter:drop-shadow(0 0 6px white);}
 
@@ -883,6 +886,9 @@
 	html:not(.disable-dark-skin) .ext-discussiontools-ui-replyWidget-modeTabs .ext-discussiontools-ui-modeTab.oo-ui-widget-disabled {color:#83a5d8; box-shadow:inset 0 -2px 0 0 #83a5d8;}
 	html:not(.disable-dark-skin) .ext-discussiontools-ui-replyWidget-modeTabs .ext-discussiontools-ui-modeTab.oo-ui-optionWidget-highlighted {color:#83a5d8; border-radius:2px;box-shadow:inset 0 -2px 0 0 #83a5d8;}
 	html:not(.disable-dark-skin) .mw-widget-titleWidget-menu-withImages .mw-widget-titleOptionWidget.oo-ui-iconElement > .oo-ui-iconElement-icon.mw-widget-titleOptionWidget-hasImage {filter:none;}
+	html:not(.disable-dark-skin) .oo-ui-processDialog-errors {background-color:rgba(0,0,0,0.8);}
+	html:not(.disable-dark-skin) .oo-ui-processDialog-errors-title {color:#fff;}
+	html:not(.disable-dark-skin) .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-error {background-color:#280200;}
 
 	html:not(.disable-dark-skin) textarea {background-color:#222; color:#d8d8d8; border-color:#777;}
 	html:not(.disable-dark-skin) .CodeMirror {background-color:#222 !important; color:#d8d8d8 !important;}
