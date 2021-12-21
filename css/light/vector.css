@@ -253,8 +253,7 @@
 	html.enable-dark-skin .uls-menu.callout.selector-left:before {border-right-color:#777;}
 	html.enable-dark-skin .uls-menu.callout.selector-left:after {border-right-color:#222;}
 	html.enable-dark-skin #p-lang-btn .vector-menu-heading {border-color:#777; color:#eee; filter:none;}
-	html.enable-dark-skin #p-lang-btn .mw-ui-icon:before,
-		html.enable-dark-skin #p-lang-btn-label:after {filter:brightness(1.8);}
+	html.enable-dark-skin #p-lang-btn-label:after {filter:saturate(0) brightness(1.8);}
 
 	/* Stopka */
 	html.enable-dark-skin #footer #footer-info li {color:#d8d8d8;} /* Tekst w stopce na komputerze */
