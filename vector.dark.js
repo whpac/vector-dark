@@ -37,22 +37,12 @@ if(window.Msz2001_vectorDark === undefined){
         var link_ciemny = Msz2001_vectorDark_nowyLink("Tryb ciemny", Msz2001_vectorDark_wlacz);
         if(ciemny_wlaczony) link_ciemny.style.display = "none";
         window.Msz2001_vectorDark.link_ciemny = link_ciemny;
-    
-        var wiki_id = mw.config.get("wgWikiID");
-        var id_linku = "n-FAQ";
-        switch(wiki_id){
-            case "plwiki": id_linku = "n-FAQ"; break;
-            case "wikidatawiki": id_linku = "n-sitesupport"; break;
-            case "plwikinews": id_linku = "n-Kontakt"; break;
-            case "enwiki": id_linku = "n-sitesupport"; break;
-            case "commonswiki": id_linku = "n-help"; break;
-        }
 
-        var ostatni_link = document.getElementById(id_linku);
+        var nav_portlet_ul = document.querySelector("#p-navigation ul");
     
-        if(ostatni_link) {
-            ostatni_link.parentNode.insertBefore(link_jasny, ostatni_link.nextSibling);
-            ostatni_link.parentNode.insertBefore(link_ciemny, ostatni_link.nextSibling);
+        if(!document.body.classList.contains('skin-minerva')) {
+            nav_portlet_ul.appendChild(link_jasny);
+            nav_portlet_ul.appendChild(link_ciemny);
         } else {
             setTimeout(function () {
                 var elAboutWikipediaLink = document.querySelector("#mw-mf-page-left ul.hlist li:first-child");
