@@ -917,7 +917,8 @@
 	html:not(.disable-dark-skin) .cm-mw-apostrophes-bold,
 		html:not(.disable-dark-skin) .cm-mw-apostrophes-italic {color:#47e4ff !important;}
 	html:not(.disable-dark-skin) .cm-mw-section-header {color:#47e4ff !important;}
-	html:not(.disable-dark-skin) .cm-mw-list {color:#76acff !important;}
+	html:not(.disable-dark-skin) .cm-mw-list,
+		html:not(.disable-dark-skin) .cm-mw-indenting {color:#76acff !important;}
 	html:not(.disable-dark-skin) .cm-mw-table-definition,
 		html:not(.disable-dark-skin) .cm-mw-table-bracket,
 		html:not(.disable-dark-skin) .cm-mw-table-delimiter {color:#ff4aff !important;}
