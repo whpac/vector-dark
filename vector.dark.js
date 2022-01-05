@@ -64,6 +64,7 @@ if(window.Msz2001_vectorDark === undefined){
      */
     var Msz2001_vectorDark_wlacz = function() {
         Msz2001_vectorDark_zapiszCzyWlaczony(true);
+        Msz2001_vectorDark_dopasujInfoboks(true);
     };
     
     /**
@@ -71,6 +72,7 @@ if(window.Msz2001_vectorDark === undefined){
      */
     var Msz2001_vectorDark_wylacz = function() {
         Msz2001_vectorDark_zapiszCzyWlaczony(false);
+        Msz2001_vectorDark_dopasujInfoboks(false);
     };
     
     /**
@@ -144,4 +146,103 @@ if(window.Msz2001_vectorDark === undefined){
         /* Wysyła żądanie do serwera z plikami CSS, by ustawił cookie dla siebie */
         window.Msz2001_vectorDark.obrazek_cors.src = "https://vector-dark.toolforge.org/setcookie.php?is_on=" + (czy_wlaczony ? "true" : "false");
     };
+
+    /**
+     * Reguluje kolor nagłówka infoboksu
+     * @param czy_wlaczony - czy tryb ciemny jest włączony
+     */
+    var Msz2001_vectorDark_dopasujInfoboks = function(czy_wlaczony){
+        /* Wczytaj nagłówki infoboksów */
+        var captions = document.querySelectorAll('.infobox caption.naglowek');
+        captions.forEach(function (caption) {
+            if(caption.style === undefined) return;
+
+            /* Przywróć oryginalne kolory */
+            if(!czy_wlaczony){
+                if(caption.dataset.vdOrigBg)
+                    caption.style.backgroundColor = caption.dataset.vdOrigBg;
+                if(caption.dataset.vdOrigCol)
+                    caption.style.color = caption.dataset.vdOrigCol;
+                return;
+            }
+
+            /* Wczytaj kolor z atrybutu style i przetwórz na RGB */
+            var bg_color = caption.style.backgroundColor;
+            if(bg_color === undefined) return;
+
+            var parsed_color = parseColor(bg_color);
+            if(parsed_color === null) return;
+
+            /* Zapisz oryginalny kolor w artybutach data-* */
+            caption.dataset.vdOrigBg = bg_color;
+            caption.dataset.vdOrigCol = caption.style.color || '#000';
+
+            /* Przyciemnij oryginalny kolor */
+            var hsl = rgbToHsl(parsed_color);
+            hsl[2] = Math.sqrt(hsl[2] / 10) * 10;
+            caption.style.backgroundColor = 'hsl('+hsl[0]+'deg,'+hsl[1]+'%,'+hsl[2]+'%)';
+
+            caption.style.color = '#fff';
+        });
+    }
+
+    // https://gist.github.com/mjackson/5311256
+    var rgbToHsl = function (color) {
+        var r = color[0] / 255;
+        var g = color[1] / 255;
+        var b = color[2] / 255;
+
+        var max = Math.max(r, g, b);
+        var min = Math.min(r, g, b);
+        var h, s, l;
+        l = (max + min) / 2;
+
+        if (max == min) {
+            h = s = 0;
+        } else {
+            var d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+            switch (max) {
+            case r:
+                h = (g - b) / d + (g < b ? 6 : 0);
+                break;
+            case g:
+                h = (b - r) / d + 2;
+                break;
+            case b:
+                h = (r - g) / d + 4;
+                break;
+            }
+
+            h /= 6;
+        }
+
+        return [h*360, s*100, l*100];
+    }
+
+    // https://gist.github.com/THEtheChad/1297590
+    var parseColor = function(color) {
+        var cache,
+            p = parseInt,
+            color = color.replace(/\s/g,'');
+        
+        if (cache = /#([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})/.exec(color)) 
+            cache = [p(cache[1], 16), p(cache[2], 16), p(cache[3], 16)];
+            
+        else if (cache = /#([\da-fA-F])([\da-fA-F])([\da-fA-F])/.exec(color))
+            cache = [p(cache[1], 16) * 17, p(cache[2], 16) * 17, p(cache[3], 16) * 17];
+            
+        else if (cache = /rgba\(([\d]+),([\d]+),([\d]+),([\d]+|[\d]*.[\d]+)\)/.exec(color))
+            cache = [+cache[1], +cache[2], +cache[3], +cache[4]];
+
+        else if (cache = /rgb\(([\d]+),([\d]+),([\d]+)\)/.exec(color))
+            cache = [+cache[1], +cache[2], +cache[3]];
+            
+        else return null;
+        
+        isNaN(cache[3]) && (cache[3] = 1);
+        
+        return cache;
+    }
 }
