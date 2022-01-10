@@ -92,6 +92,20 @@
 	html:not(.disable-dark-skin) .mw-searchresults-has-iw .iw-resultset {background:#282828; border:1px solid #555; border-radius:2px;}
 	html:not(.disable-dark-skin) .mw-search-result-data {color:#8c8;}
 
+	/* Pływający nagłówek */
+	html:not(.disable-dark-skin) .vector-sticky-header {background:#282828; border-bottom-color:#666;}
+	html:not(.disable-dark-skin) .vector-sticky-header-context-bar {border-left-color:#666;}
+	html:not(.disable-dark-skin) .vector-sticky-header-context-bar-primary:after {
+		background-image:-webkit-linear-gradient(to right,rgba(40,40,40,0),#282828 20px);
+		background-image:linear-gradient(to right,rgba(40,40,40,0),#282828 20px);}
+	html:not(.disable-dark-skin) header .vector-sticky-header-icons .mw-ui-icon::before,
+		html:not(.disable-dark-skin) header .mw-interlanguage-selector .mw-ui-icon::before {filter:invert(1) brightness(0.4);}
+	html:not(.disable-dark-skin) header .vector-sticky-header-icons .mw-ui-icon:not(.disabled):hover {background-color:rgba(255,255,255,0.1);}
+	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector {color:#bbb;}
+	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector:hover {background:rgba(255,255,255,0.1);}
+	html:not(.disable-dark-skin) #p-lang-btn-sticky-header:after {filter:invert(1);}
+	html:not(.disable-dark-skin) .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .wvui-input__start-icon {color:#d8d8d8;}
+
 	/* Karty w nagłówku */
 	html:not(.disable-dark-skin) .vector-menu-tabs {background-image:none; padding-left:0;}
 	html:not(.disable-dark-skin) .vector-menu-tabs ul {background-image:none;}
