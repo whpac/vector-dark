@@ -4,7 +4,8 @@
 	html:not(.disable-dark-skin).overlay-enabled {background:#333;}
 	html:not(.disable-dark-skin),
 		html:not(.disable-dark-skin) body {background-color:#222; color:#d8d8d8; color-scheme:dark;}
-	html:not(.disable-dark-skin) *[style*=background] {color:black;} /* Ogólne zabezpieczenie przed jasnym tekstem na jasnym tle */
+	html:not(.disable-dark-skin) *[style*=background],
+		html:not(.disable-dark-skin) *[bgcolor] {color:black;} /* Ogólne zabezpieczenie przed jasnym tekstem na jasnym tle */
 	html:not(.disable-dark-skin) *[style*=transparent],
 		html:not(.disable-dark-skin) *[style*=inherit] {color:unset;}
 	html:not(.disable-dark-skin) .mw-page-container {background:#303030;}
