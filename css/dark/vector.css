@@ -276,10 +276,12 @@
 		html:not(.disable-dark-skin) footer .last-modified-bar {background-color:#222; border-color:#777; color:#aaa;}
 	html:not(.disable-dark-skin) .last-modified-bar.active {background-color:#00604b; color:#fff;}
 	html:not(.disable-dark-skin) .last-modified-bar a,
-	html:not(.disable-dark-skin) .last-modified-bar a:visited {color:#aaa;}
+		html:not(.disable-dark-skin) .last-modified-bar a:visited,
+		html:not(.disable-dark-skin) .last-modified-bar .last-modified-text-accent {color:#aaa;}
 	html:not(.disable-dark-skin) .last-modified-bar.active a {color:#fff;}
+	html:not(.disable-dark-skin) .last-modified-bar__icon::before {filter:brightness(1.8);}
 	html:not(.disable-dark-skin) .mw-footer ul {list-style-image:none;}
-	html:not(.disable-dark-skin) .minerva-footer .footer-content h2 img {filter:invert(1) brightness(0.8);}
+	html:not(.disable-dark-skin) .minerva-footer .footer-content .minerva-footer-logo img {filter:invert(1) brightness(0.8);}
 	html:not(.disable-dark-skin) .mw-footer {border-top-color:#777;}
 
 	/* Kolory linków */

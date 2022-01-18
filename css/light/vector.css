@@ -277,10 +277,12 @@
 		html.enable-dark-skin footer .last-modified-bar {background-color:#222; border-color:#777; color:#aaa;}
 	html.enable-dark-skin .last-modified-bar.active {background-color:#00604b; color:#fff;}
 	html.enable-dark-skin .last-modified-bar a,
-	html.enable-dark-skin .last-modified-bar a:visited {color:#aaa;}
+		html.enable-dark-skin .last-modified-bar a:visited,
+		html.enable-dark-skin .last-modified-bar .last-modified-text-accent {color:#aaa;}
+	html.enable-dark-skin .last-modified-bar__icon::before {filter:brightness(1.8);}
 	html.enable-dark-skin .last-modified-bar.active a {color:#fff;}
 	html.enable-dark-skin .mw-footer ul {list-style-image:none;}
-	html.enable-dark-skin .minerva-footer .footer-content h2 img {filter:invert(1) brightness(0.8);}
+	html.enable-dark-skin .minerva-footer .footer-content .minerva-footer-logo img {filter:invert(1) brightness(0.8);}
 	html.enable-dark-skin .mw-footer {border-top-color:#777;}
 
 	/* Kolory linków */
