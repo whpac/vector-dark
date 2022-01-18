@@ -283,6 +283,7 @@
 	html:not(.disable-dark-skin) .mw-footer ul {list-style-image:none;}
 	html:not(.disable-dark-skin) .minerva-footer .footer-content .minerva-footer-logo img {filter:invert(1) brightness(0.8);}
 	html:not(.disable-dark-skin) .mw-footer {border-top-color:#777;}
+	html:not(.disable-dark-skin) .mw-footer > .post-content .minerva-footer-logo {border-color:#777;}
 
 	/* Kolory linków */
 	html:not(.disable-dark-skin) a,
@@ -736,6 +737,7 @@
 	html:not(.disable-dark-skin) .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-savedQueryTitle {color:#fff;}
 	html:not(.disable-dark-skin) .mw-rcfilters-ui-savedLinksListItemWidget-label {color:#76acff;}
 	html:not(.disable-dark-skin) .mw-changeslist-legend {background:#282828; border-color:#666;}
+	html:not(.disable-dark-skin) .mw-rcfilters-ui-changesListWrapperWidget-previousChangesIndicator {border-color:#888;}
 	
 	/* Kalendarz */
 	html:not(.disable-dark-skin) .mw-widget-dateInputWidget-handle {background:#333; border-color:#777;}
