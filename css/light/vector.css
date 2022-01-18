@@ -400,6 +400,9 @@
 		html.enable-dark-skin .content .thumbcaption {color:#aaa;}
 	html.enable-dark-skin body.skin-minerva .content a > img {margin:1px;}
 	html.enable-dark-skin body.skin-minerva .content .thumbcaption {padding:0 2px 2px 2px !important;}
+	html.enable-dark-skin li.gallerybox div.thumb {background-color:#222; border-color:#666;}
+	html.enable-dark-skin li.gallerybox div.thumb img {filter:drop-shadow(0 0 0 #fff);}
+	html.enable-dark-skin body.skin-minerva li.gallerybox div.thumb img {margin:0 auto;}
 
 	/* Media Viewer */
 	html.enable-dark-skin .mw-mmv-post-image {background:#222; color:#d8d8d8;}
