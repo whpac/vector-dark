@@ -108,7 +108,6 @@
 	html.enable-dark-skin #p-lang-btn-sticky-header:after {filter:invert(1);}
 	html.enable-dark-skin .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .wvui-input__start-icon {color:#d8d8d8;}
 
-
 	/* Karty w nagłówku */
 	html.enable-dark-skin .vector-menu-tabs {background-image:none; padding-left:0;}
 	html.enable-dark-skin .vector-menu-tabs ul {background-image:none;}
@@ -280,6 +279,8 @@
 	html.enable-dark-skin .last-modified-bar a,
 		html.enable-dark-skin .last-modified-bar a:visited,
 		html.enable-dark-skin .last-modified-bar .last-modified-text-accent {color:#aaa;}
+	html.enable-dark-skin .last-modified-bar.active .last-modified-text-accent,
+		html.enable-dark-skin .last-modified-bar.active a {color:#fff;}
 	html.enable-dark-skin .last-modified-bar__icon::before {filter:brightness(1.8);}
 	html.enable-dark-skin .last-modified-bar.active a {color:#fff;}
 	html.enable-dark-skin .mw-footer ul {list-style-image:none;}
@@ -554,8 +555,6 @@
 	html.enable-dark-skin .infobox,
 		html.enable-dark-skin .content table.infobox {background:#333 !important; border-color:#666; color:#d8d8d8;}
 	html.enable-dark-skin .infobox caption.naglowek {background:#444; color:#fff; border-color:#666;}
-	html.enable-dark-skin .infobox > * > tr:first-child,
-		html.enable-dark-skin .infobox > tr:first-child {background:#444 !important; color:#fff !important;} /* Nagłówek */
 	html.enable-dark-skin .infobox tr td:first-child:not([colspan])[style*=eee],
 		html.enable-dark-skin .infobox tr th:first-child:not([style]) {background:#222 !important; color:#d8d8d8 !important;} /* Lewa kolumna */
 	html.enable-dark-skin .infobox tr[style*=background][style*=white] > td:not(.naglowek):only-child {background:#222; color:#d8d8d8;} /* Wiersz z linkiem, kolor biały */

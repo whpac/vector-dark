@@ -279,6 +279,8 @@
 	html:not(.disable-dark-skin) .last-modified-bar a,
 		html:not(.disable-dark-skin) .last-modified-bar a:visited,
 		html:not(.disable-dark-skin) .last-modified-bar .last-modified-text-accent {color:#aaa;}
+	html:not(.disable-dark-skin) .last-modified-bar.active .last-modified-text-accent,
+		html:not(.disable-dark-skin) .last-modified-bar.active a {color:#fff;}
 	html:not(.disable-dark-skin) .last-modified-bar.active a {color:#fff;}
 	html:not(.disable-dark-skin) .last-modified-bar__icon::before {filter:brightness(1.8);}
 	html:not(.disable-dark-skin) .mw-footer ul {list-style-image:none;}
@@ -553,8 +555,6 @@
 	html:not(.disable-dark-skin) .infobox,
 		html:not(.disable-dark-skin) .content table.infobox {background:#333 !important; border-color:#666; color:#d8d8d8;}
 	html:not(.disable-dark-skin) .infobox caption.naglowek {background:#444; color:#fff; border-color:#666;}
-	html:not(.disable-dark-skin) .infobox > * > tr:first-child,
-		html:not(.disable-dark-skin) .infobox > tr:first-child {background:#444 !important; color:#fff !important;} /* Nagłówek */
 	html:not(.disable-dark-skin) .infobox tr td:first-child:not([colspan])[style*=eee],
 		html:not(.disable-dark-skin) .infobox tr th:first-child:not([style]) {background:#222 !important; color:#d8d8d8 !important;} /* Lewa kolumna */
 	html:not(.disable-dark-skin) .infobox tr[style*=background][style*=white] > td:not(.naglowek):only-child {background:#222; color:#d8d8d8;} /* Wiersz z linkiem, kolor biały */
