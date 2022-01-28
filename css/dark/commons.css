@@ -66,10 +66,4 @@
 		html:not(.disable-dark-skin) .sdms-other-result__meta {color:#aaa;}
 	html:not(.disable-dark-skin) .sd-button--framed {background:#222; border-color:#555;}
 	html:not(.disable-dark-skin) .sd-button--framed:hover {background:#444; border-color:#666;}
-
-	/* Strona pliku */
-	html:not(.disable-dark-skin) .mw-mmv-filepage-buttons .mw-ui-icon::before {filter:invert(1) brightness(0.9);}
-	html:not(.disable-dark-skin) .fileinfo-paramfield {background:#444;}
-	html:not(.disable-dark-skin) .licensetpl_wrapper {background:#303030 !important; color:#d8d8d8 !important; border-color:#555 !important;}
-	html:not(.disable-dark-skin) .mw-parser-output .template-picture-of-the-day {border-color:#5f563b; background-color:#322501;}
 }

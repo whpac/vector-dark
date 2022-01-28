@@ -591,6 +591,14 @@
 	html:not(.disable-dark-skin) fieldset {border-color:#5d6d8d;}
 	html:not(.disable-dark-skin) .flaggedrevs_reviewform {background-color:#222;}
 	
+	/* Strona pliku */
+	html:not(.disable-dark-skin) .mw-mmv-filepage-buttons .mw-ui-icon::before {filter:invert(1) brightness(0.9);}
+	html:not(.disable-dark-skin) .fileinfo-paramfield {background:#444;}
+	html:not(.disable-dark-skin) .licensetpl_wrapper {background:#303030 !important; color:#d8d8d8 !important; border-color:#555 !important;}
+	html:not(.disable-dark-skin) .mw-parser-output .template-picture-of-the-day {border-color:#5f563b; background-color:#322501;}
+	html:not(.disable-dark-skin) .mw_metadata th {background:#303030; color:#fff; border-color:#666;}
+	html:not(.disable-dark-skin) .mw_metadata td {background:#303030; border-color:#666;}
+	
 	/* Różne szablony */
 	html:not(.disable-dark-skin) .template-documentation {background-color:#3f4e47; border-color:#777;}
 	html:not(.disable-dark-skin) #documentation-meta-data.fmbox {background-color:#3f4e47 !important; color:#d8d8d8;}
