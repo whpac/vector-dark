@@ -51,6 +51,7 @@
 		html:not(.disable-dark-skin) .ui-state-focus,
 		html:not(.disable-dark-skin) .ui-widget-content .ui-state-focus,
 		html:not(.disable-dark-skin) .ui-widget-header .ui-state-focus {background:#282828; border-color:#999; color:#76acff;}
+	html:not(.disable-dark-skin) .wb-propertypage .wikibase-propertyview-datatype {background:#383838; border-color:#777;}
 
 	/* Odwołania */
 	html:not(.disable-dark-skin) .wikibase-referenceview {background:#303030; border:1px solid #444;}
