@@ -960,6 +960,7 @@
 	html:not(.disable-dark-skin) .cm-mw-doubleUnderscore,
 		html:not(.disable-dark-skin) .cm-mw-signature,
 		html:not(.disable-dark-skin) .cm-mw-hr {background-color:#4f4f4f !important;}
+	html:not(.disable-dark-skin) .ve-ce-mwEntityNode-nbsp {background-color:#555;}
 	
 	/* Dookoła okna edycji */
 	html:not(.disable-dark-skin) .editOptions {background:#222; color:#d8d8d8; border-color:#777;}
