@@ -8,7 +8,7 @@
 		html:not(.disable-dark-skin) *[bgcolor] {color:black;} /* Ogólne zabezpieczenie przed jasnym tekstem na jasnym tle */
 	html:not(.disable-dark-skin) *[style*=transparent],
 		html:not(.disable-dark-skin) *[style*=inherit] {color:unset;}
-	html:not(.disable-dark-skin) .mw-page-container {background:#303030;}
+	html:not(.disable-dark-skin) .mw-page-container {background:#303030; border-color:#444;}
 	
 	/* Panel górny */
 	html:not(.disable-dark-skin) #mw-head-base {background-image:linear-gradient(0deg, #222, black)}

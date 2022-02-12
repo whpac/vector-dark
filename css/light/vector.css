@@ -8,7 +8,7 @@
 		html.enable-dark-skin *[bgcolor] {color:black;} /* Ogólne zabezpieczenie przed jasnym tekstem na jasnym tle */
 	html.enable-dark-skin *[style*=transparent],
 		html.enable-dark-skin *[style*=inherit] {color:unset;}
-	html.enable-dark-skin .mw-page-container {background:#303030;}
+	html.enable-dark-skin .mw-page-container {background:#303030; border-color:#444;}
 	
 	/* Panel górny */
 	html.enable-dark-skin #mw-head-base {background-image:linear-gradient(0deg, #222, black)}
