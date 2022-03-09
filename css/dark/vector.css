@@ -923,6 +923,27 @@
 	html:not(.disable-dark-skin) .oo-ui-processDialog-errors {background-color:rgba(0,0,0,0.8);}
 	html:not(.disable-dark-skin) .oo-ui-processDialog-errors-title {color:#fff;}
 	html:not(.disable-dark-skin) .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-error {background-color:#280200;}
+	
+	html:not(.disable-dark-skin) .oo-ui-outlineOptionWidget.oo-ui-optionWidget-highlighted {background-color:#333; color:#eee;}
+	html:not(.disable-dark-skin) .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled:hover .oo-ui-iconElement-icon,
+		html:not(.disable-dark-skin) .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled:hover .oo-ui-indicatorElement-indicator {opacity:1;}
+	html:not(.disable-dark-skin) .oo-ui-outlineOptionWidget.oo-ui-optionWidget-selected {background-color:#383838; color:#fff;}
+	html:not(.disable-dark-skin) .ve-ui-mwTemplateDialog .oo-ui-outlineOptionWidget.oo-ui-flaggedElement-empty .oo-ui-iconElement-icon {opacity:0.8;}
+	html:not(.disable-dark-skin) .ve-ui-mwTemplateDialog .oo-ui-outlineOptionWidget.oo-ui-flaggedElement-empty .oo-ui-labelElement-label {color:#aaa;}
+	html:not(.disable-dark-skin) .oo-ui-outlineOptionWidget.oo-ui-indicatorElement .oo-ui-indicatorElement-indicator {opacity:0.7; filter:invert(1);}
+	html:not(.disable-dark-skin) .oo-ui-outlineControlsWidget {background-color:#333;}
+	html:not(.disable-dark-skin) .oo-ui-bookletLayout-outlinePanel > .oo-ui-outlineControlsWidget {border-top-color:#666;}
+	html:not(.disable-dark-skin) .ve-ui-expandableContent-toggle {background-color:#222;}
+	html:not(.disable-dark-skin) .ve-ui-expandableContent-fade {background:linear-gradient(to right,rgba(32,32,32,0) 0,#222 90%);}
+	html:not(.disable-dark-skin) .ve-ui-mwTemplatePage-description {color:#999;}
+	html:not(.disable-dark-skin) .ve-ui-mwParameterPage-statusIndicator {opacity:0.75; filter:invert(1);}
+	html:not(.disable-dark-skin) .oo-ui-textInputWidget.oo-ui-widget-enabled > .oo-ui-indicatorElement-indicator {filter:invert(1);}
+	html:not(.disable-dark-skin) .oo-ui-fieldsetLayout.oo-ui-iconElement > .oo-ui-fieldsetLayout-header .oo-ui-iconElement-icon {filter:invert(1);}
+	html:not(.disable-dark-skin) .ve-ui-mwParameterResultWidget.oo-ui-optionWidget-highlighted {background-color:#444;}
+	html:not(.disable-dark-skin) .ve-ui-mwParameterResultWidget-description {color:#aaa;}
+	html:not(.disable-dark-skin) .ve-ui-mwParameterResultWidget-name {color:#bbb; background-color:#181818; border-color:#555;}
+	html:not(.disable-dark-skin) .ve-ui-mwMoreParametersResultWidget.oo-ui-optionWidget-highlighted {background:#444;}
+	html:not(.disable-dark-skin) .oo-ui-messageWidget.oo-ui-messageWidget-block > .oo-ui-iconElement-icon {filter:invert(1);}
 
 	html:not(.disable-dark-skin) textarea {background-color:#222; color:#d8d8d8; border-color:#777;}
 	html:not(.disable-dark-skin) .CodeMirror {background-color:#222 !important; color:#d8d8d8 !important;}
