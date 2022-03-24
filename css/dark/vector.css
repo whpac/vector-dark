@@ -884,7 +884,7 @@
 	html:not(.disable-dark-skin) .ve-ui-diffElement-attributeChange {color:#aaa;}
 	html:not(.disable-dark-skin) .ve-ui-changeDescriptionsSelectWidget > .oo-ui-optionWidget-highlighted {background:#00214b;}
 	html:not(.disable-dark-skin) .ve-ui-diffElement-hasDescriptions .ve-ui-diffElement-content {border-color:#777;}
-	html:not(.disable-dark-skin) .ve-ce-linkAnnotation.ve-ce-annotation-active {background:#003578; box-shadow:0 0 1px #003578;}
+	html:not(.disable-dark-skin) .ve-ce-linkAnnotation.ve-ce-annotation-active {background-color:#003578; box-shadow:0 0 1px #003578;}
 	html:not(.disable-dark-skin) .ve-ui-context-menu .oo-ui-iconWidget {filter:invert(1);}
 	html:not(.disable-dark-skin) .ve-ui-context-menu .ve-ui-mwInternalLinkContextItem-hasImage {filter:none;}
 	html:not(.disable-dark-skin) .ve-ui-desktopContext .ve-ui-linkContextItem .ve-ui-linkContextItem-label {border-color:#666;}
@@ -924,7 +924,7 @@
 	html:not(.disable-dark-skin) .oo-ui-processDialog-errors {background-color:rgba(0,0,0,0.8);}
 	html:not(.disable-dark-skin) .oo-ui-processDialog-errors-title {color:#fff;}
 	html:not(.disable-dark-skin) .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-error {background-color:#280200;}
-	
+
 	html:not(.disable-dark-skin) .oo-ui-outlineOptionWidget.oo-ui-optionWidget-highlighted {background-color:#333; color:#eee;}
 	html:not(.disable-dark-skin) .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled:hover .oo-ui-iconElement-icon,
 		html:not(.disable-dark-skin) .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled:hover .oo-ui-indicatorElement-indicator {opacity:1;}

@@ -884,7 +884,7 @@
 	html.enable-dark-skin .ve-ui-diffElement-attributeChange {color:#aaa;}
 	html.enable-dark-skin .ve-ui-changeDescriptionsSelectWidget > .oo-ui-optionWidget-highlighted {background:#00214b;}
 	html.enable-dark-skin .ve-ui-diffElement-hasDescriptions .ve-ui-diffElement-content {border-color:#777;}
-	html.enable-dark-skin .ve-ce-linkAnnotation.ve-ce-annotation-active {background:#003578; box-shadow:0 0 1px #003578;}
+	html.enable-dark-skin .ve-ce-linkAnnotation.ve-ce-annotation-active {background-color:#003578; box-shadow:0 0 1px #003578;}
 	html.enable-dark-skin .ve-ui-context-menu .oo-ui-iconWidget {filter:invert(1);}
 	html.enable-dark-skin .ve-ui-context-menu .ve-ui-mwInternalLinkContextItem-hasImage {filter:none;}
 	html.enable-dark-skin .ve-ui-desktopContext .ve-ui-linkContextItem .ve-ui-linkContextItem-label {border-color:#666;}
