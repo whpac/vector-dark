@@ -583,8 +583,8 @@
 		html:not(.disable-dark-skin) .infobox > * > tr:nth-child(3) td[colspan] img,
 		html:not(.disable-dark-skin) .infobox > tr:nth-child(1) td[colspan] img,
 		html:not(.disable-dark-skin) .infobox > tr:nth-child(2) td[colspan] img,
-		html:not(.disable-dark-skin) .infobox > tr:nth-child(3) td[colspan] img,
-		html:not(.disable-dark-skin) .infobox img[alt=Faksymile] {background:white; filter:drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 3px white);}
+		html:not(.disable-dark-skin) .infobox > tr:nth-child(3) td[colspan] img {filter:drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 3px white);}
+	html:not(.disable-dark-skin) .infobox img[alt=Faksymile] {background:#d8d8d8;}
 	html:not(.disable-dark-skin) .infobox .coordinates img,
 		html:not(.disable-dark-skin) .infobox .mapa-lokalizacyjna img {background:transparent !important;filter:none !important;}
 	html:not(.disable-dark-skin) .content table.infobox th,
