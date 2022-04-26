@@ -453,6 +453,11 @@
 	html.enable-dark-skin.client-js .toc-mobile .collapsible-heading .indicator {filter:invert(1);}
 	html.enable-dark-skin .toc ul {list-style-image:none;}
 	html.enable-dark-skin #filetoc {background:#222; border-color:#666;}
+	html.enable-dark-skin .sidebar-toc {background-color:#222; border:1px solid #484848;}
+	html.enable-dark-skin .sidebar-toc:after {background:linear-gradient(rgba(34,34,34,0),#222); margin:0px 1px 1px calc(0.75em + 1px);}
+	html.enable-dark-skin .sidebar-toc .sidebar-toc-list-item a {color:#d8d8d8;}
+	html.enable-dark-skin .sidebar-toc .sidebar-toc-list-item.sidebar-toc-level-1 > a {color:#76acff;}
+	html.enable-dark-skin .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
 	
 	html.enable-dark-skin .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
 	html.enable-dark-skin .navbox {background-color:#222; border-color:#777;}
