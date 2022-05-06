@@ -273,7 +273,13 @@
 	html:not(.disable-dark-skin) .uls-menu.callout.selector-left:after {border-right-color:#222;}
 	html:not(.disable-dark-skin) #p-lang-btn .vector-menu-heading {border-color:#777; color:#eee; filter:none;}
 	html:not(.disable-dark-skin) #p-lang-btn-label:after {filter:saturate(0) brightness(1.8);}
-	
+	html:not(.disable-dark-skin) .uls-menu .uls-no-results-view .uls-no-found-more {background-color:#282828; border-top-color:#555; color:#aaa;}
+	html:not(.disable-dark-skin) .cx-uls-relevant-languages-banner {background-color:#282828; color:#bbb;}
+	html:not(.disable-dark-skin) .cx-uls-relevant-languages-banner__icon {filter:invert(1);}
+	html:not(.disable-dark-skin) .cx-uls-entrypoint__panel-container {background-color:#383838;}
+	html:not(.disable-dark-skin) .cx-uls-entrypoint {border-color:#777;}
+	html:not(.disable-dark-skin) .cx-uls-entrypoint__header {border-bottom-color:#777;}
+
 	/* Stopka */
 	html:not(.disable-dark-skin) #footer #footer-info li {color:#d8d8d8;} /* Tekst w stopce na komputerze */
 	html:not(.disable-dark-skin) .minerva-footer,
