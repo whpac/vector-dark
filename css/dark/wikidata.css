@@ -34,7 +34,8 @@
 	html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementlistview {border-color:#666; background:#282828;}
 	html:not(.disable-dark-skin) .wikibase-statementview {border-bottom-color:#444;}
 	html:not(.disable-dark-skin) .wikibase-statementlistview > .wikibase-toolbar-wrapper {background:#404040; margin-bottom:-0.1px;}
-	html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit, .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {background:#3b404c;}
+	html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit,
+		html:not(.disable-dark-skin) .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {background:#3b404c;}
 	html:not(.disable-dark-skin) .valueview-ineditmode .valueview-input {background:#181818; border-color:#777;}
 	html:not(.disable-dark-skin) .ui-suggester-input.ui-entityselector-input.ui-entityselector-input-recognized {border-color:#0bb38e;}
 	html:not(.disable-dark-skin) .ui-inputextender-extension-close {filter:invert(1);}
