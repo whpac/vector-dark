@@ -959,6 +959,9 @@
 	html:not(.disable-dark-skin) .ve-ui-mwParameterResultWidget-name {color:#bbb; background-color:#181818; border-color:#555;}
 	html:not(.disable-dark-skin) .ve-ui-mwMoreParametersResultWidget.oo-ui-optionWidget-highlighted {background:#444;}
 	html:not(.disable-dark-skin) .oo-ui-messageWidget.oo-ui-messageWidget-block > .oo-ui-iconElement-icon {filter:invert(1);}
+	html:not(.disable-dark-skin) .ve-ui-mwTransclusionOutlineTemplateWidget-sticky {background:#222};
+	html:not(.disable-dark-skin) .ve-ui-mwTransclusionOutlineTemplateWidget-no-match {color:#aaa;}
+	html:not(.disable-dark-skin) .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {background-color:#2a200e; border-color:#ae8200;}
 
 	html:not(.disable-dark-skin) textarea {background-color:#222; color:#d8d8d8; border-color:#777;}
 	html:not(.disable-dark-skin) .CodeMirror {background-color:#222 !important; color:#d8d8d8 !important;}
