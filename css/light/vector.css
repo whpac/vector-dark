@@ -112,19 +112,22 @@
 	html.enable-dark-skin .vector-menu-tabs {background-image:none; padding-left:0;}
 	html.enable-dark-skin .vector-menu-tabs ul {background-image:none;}
 	html.enable-dark-skin .vector-menu-tabs li {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #777;
-		border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1; margin-top:-1px;}
+		border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1;}
 	html.enable-dark-skin .vector-menu-tabs li:first-child {border-left:1px solid #777;}
-	html.enable-dark-skin .vector-menu-tabs li.selected {background-image:none; background:linear-gradient(0deg, #303030 50%, transparent); border-bottom:none; margin-top:0;}
+	html.enable-dark-skin .vector-menu-tabs li.selected,
+		html.enable-dark-skin .vector-article-toolbar .mw-article-toolbar-container .vector-menu-tabs li.selected {background-image:none; background:linear-gradient(0deg, #303030 50%, transparent); border-bottom:none; margin-top:0;}
 	html.enable-dark-skin .vector-menu-tabs li span {background-image:none;}
 	html.enable-dark-skin .vector-menu-tabs li.selected a,
 		html.enable-dark-skin .vector-menu-tabs li.selected a:visited {color:#ddd;}
 	html.enable-dark-skin .vector-menu-tabs a {background-image:none;}
-	html.enable-dark-skin #mw-head .vector-menu-dropdown h3,
-		html.enable-dark-skin #mw-head .vector-menu-dropdown .vector-menu-heading {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #666; border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1; color:#aaa;}
-	html.enable-dark-skin #mw-head .vector-menu-dropdown h3::after,
-		html.enable-dark-skin #mw-head .vector-menu-dropdown .vector-menu-heading::after {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E %3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
+	html.enable-dark-skin .vector-menu-dropdown h3,
+		html.enable-dark-skin .vector-menu-dropdown .vector-menu-heading {background-image:none; background:linear-gradient(0deg, #4e4e4e, transparent); border-right:1px solid #666; border-bottom:1px solid #777; box-sizing:border-box; border-image:linear-gradient(0deg, #777, transparent) 1; color:#aaa;}
+	html.enable-dark-skin .vector-menu-dropdown h3::after,
+		html.enable-dark-skin .vector-menu-dropdown .vector-menu-heading::after {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E %3Cpath d=%22M11.05 3.996l-.965-1.053-4.035 3.86-3.947-3.86L1.05 3.996l5 5 5-5%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin .vector-menu-dropdown .vector-menu-content {background:#4e4e4e; border-color:#777; margin-top:-1px;}
-	
+	html.enable-dark-skin .vector-article-toolbar .mw-article-toolbar-container #right-navigation,
+		html.enable-dark-skin .vector-article-toolbar .mw-article-toolbar-container #left-navigation {border-bottom-color:#777;}
+
 	/* Panel powiadomień */
 	html.enable-dark-skin .mw-echo-ui-notificationItemWidget {background-color:#333; border-color:#666;}
 	html.enable-dark-skin .mw-echo-ui-notificationItemWidget:hover {background-color:#3f3f3f;}
@@ -290,8 +293,8 @@
 		html.enable-dark-skin .last-modified-bar .last-modified-text-accent {color:#aaa;}
 	html.enable-dark-skin .last-modified-bar.active .last-modified-text-accent,
 		html.enable-dark-skin .last-modified-bar.active a {color:#fff;}
-	html.enable-dark-skin .last-modified-bar__icon::before {filter:brightness(1.8);}
 	html.enable-dark-skin .last-modified-bar.active a {color:#fff;}
+	html.enable-dark-skin .last-modified-bar__icon::before {filter:brightness(1.8);}
 	html.enable-dark-skin .mw-footer ul {list-style-image:none;}
 	html.enable-dark-skin .minerva-footer .footer-content .minerva-footer-logo img {filter:invert(1) brightness(0.8);}
 	html.enable-dark-skin .mw-footer {border-top-color:#777;}
@@ -327,6 +330,7 @@
 	/* Główna część strony */
 	html.enable-dark-skin .mw-body,
 		html.enable-dark-skin #content {background:#303030; color:#d8d8d8; border-color:#777;}
+	html.enable-dark-skin body.skin-vector-2022 #content {border-color:transparent;}
 	html.enable-dark-skin body.skin-minerva #content {border-color:#444;} /* Mobilne */
 	html.enable-dark-skin #main-page #main-page-footer h2 {color:#222; background-image:url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" height=\"25\" width=\"100%\" style=\"background:%23303030;\"><rect x=\"0\" y=\"0\" width=\"100%\" height=\"25\" rx=\"7\" ry=\"12\" style=\"fill:%23c6fec8;\"/></svg>");}
 	html.enable-dark-skin body.skin-minerva #main-page #main-page-footer h2 {color:white; background-image:none;}
@@ -530,7 +534,7 @@
 	html.enable-dark-skin .jquery-tablesorter th.headerSortUp {background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%222…21 4%22%3E %3Cpath d=%22M6.5 4l4-4 4 4z%22 fill=%22white%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin .jquery-tablesorter th.headerSortDown {background-image:linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2221%22 height=%224%22 viewBox=%220 0 21 4%22%3E %3Cpath d=%22M14.5 0l-4 4-4-4z%22 fill=%22white%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin table:not(.userbox):not(.infobox)[style*=background]:not([style*=transparent]) {background:#222 !important; color:#d8d8d8 !important;}
-	html.enable-dark-skin.mw-datatable td,
+	html.enable-dark-skin .mw-datatable td,
 		html.enable-dark-skin .mw-datatable th {border-color:#666;}
 	html.enable-dark-skin .mw-datatable th {background-color:#444;}
 	html.enable-dark-skin .mw-datatable td {background:#282828;}
@@ -556,7 +560,7 @@
 	html.enable-dark-skin .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {color:#d8d8d8;}
 	html.enable-dark-skin input:-webkit-autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html.enable-dark-skin input:autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
-
+	
 	/* Klawisz z klawiatury */
 	html.enable-dark-skin .keyboard-key {border:1px solid #666 !important; -moz-box-shadow: 0.1em 0.2em 0.2em #222 !important; -webkit-box-shadow: 0.1em 0.2em 0.2em #222 !important;
 		box-shadow: 0.1em 0.2em 0.2em #222 !important; color:#d8d8d8; border-radius:0.2em; background-color: #555 !important;
@@ -764,7 +768,7 @@
 	html.enable-dark-skin .mw-rcfilters-ui-savedLinksListItemWidget-label {color:#76acff;}
 	html.enable-dark-skin .mw-changeslist-legend {background:#282828; border-color:#666;}
 	html.enable-dark-skin .mw-rcfilters-ui-changesListWrapperWidget-previousChangesIndicator {border-color:#888;}
-
+	
 	/* Kalendarz */
 	html.enable-dark-skin .mw-widget-dateInputWidget-handle {background:#333; border-color:#777;}
 	html.enable-dark-skin .mw-widget-calendarWidget {border-color:#777;}
@@ -991,7 +995,7 @@
 		html.enable-dark-skin .cm-mw-apostrophes-italic {color:#47e4ff !important;}
 	html.enable-dark-skin .cm-mw-section-header {color:#47e4ff !important;}
 	html.enable-dark-skin .cm-mw-list,
-		html:not(.disable-dark-skin) .cm-mw-indenting {color:#76acff !important;}
+		html.enable-dark-skin .cm-mw-indenting {color:#76acff !important;}
 	html.enable-dark-skin .cm-mw-table-definition,
 		html.enable-dark-skin .cm-mw-table-bracket,
 		html.enable-dark-skin .cm-mw-table-delimiter {color:#ff4aff !important;}
@@ -1022,7 +1026,7 @@
 	html.enable-dark-skin .flow-topic-meta {color:#888;}
 	html.enable-dark-skin .flow-component .mw-ui-icon.mw-ui-icon-before:before {filter:invert(1);}
 	html.enable-dark-skin .flow-list {border-color:#777; background:#282828;}
-	html.enable-dark-skin .flow-list a.mw-ui-button {border:none; border-radius:0; color:#d8d8d8}
+	html.enable-dark-skin .flow-list a.mw-ui-button {border:none; border-radius:0; color:#d8d8d8;}
 	html.enable-dark-skin .flow-list a.mw-ui-button:focus {color:#d8d8d8;}
 	html.enable-dark-skin .flow-component .flow-list li:hover {background:#383838;}
 	html.enable-dark-skin .flow-list > section:not(:first-of-type) > li:first-of-type {border-color:#666;}
@@ -1052,7 +1056,7 @@
 	/* Narzędzia dykusji */
 	html.enable-dark-skin .ext-discussiontools-init-targetcomment {background-color:rgba(255,255,0,0.1);}
 	html.enable-dark-skin .ext-discussiontools-init-highlight {mix-blend-mode:lighten;}
-	
+
 	/* Strona domowa dla początkujących */
 	html.enable-dark-skin .growthexperiments-homepage-module {color:#d8d8d8; background-color:#222; border-color:#444;}
 	html.enable-dark-skin .growthexperiments-homepage-module-startemail {border:1px solid #444; background-color:#222;}
@@ -1172,8 +1176,8 @@
 
 	html.enable-dark-skin .cx-translationlist-empty,
 		html.enable-dark-skin .cx-suggestionlist-empty {background:#181818;}
-	html.enable-dark-skin .cx-dashboard-sidebar__help {background:#333;}
 	html.enable-dark-skin .cx-dashboard-sidebar__help-title {color:#d8d8d8;}
+	html.enable-dark-skin .cx-dashboard-sidebar__help {background:#333;}
 	html.enable-dark-skin .cx-dashboard-sidebar__link.oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button {color:#aaa;}
 
 	/* Okno tłumaczenia */
@@ -1188,8 +1192,8 @@
 	html.enable-dark-skin .ve-ce-cxLinkAnnotation.cx-target-link-unadapted {color:#999;}
 	html.enable-dark-skin .cx-sentence-highlight,
 		html.enable-dark-skin .cx-section-highlight {background-color:#675a42; box-shadow:0 0 0 4px #675a42;}
-	html.enable-dark-skin .ve-ce-cxLintableNode.mw-cx-lintIssue-warning {box-shadow:-17px 0 0 -4px #303030, -20px 0 0 -4px rgba(255, 204, 51, 0.66);}
 	html.enable-dark-skin .ve-ce-cxLintableNode.mw-cx-current-issue-warning {box-shadow:-16px 0 0 -4px #303030, -20px 0 0 -4px #ffcc33;}
+	html.enable-dark-skin .ve-ce-cxLintableNode.mw-cx-lintIssue-warning {box-shadow:-17px 0 0 -4px #303030, -20px 0 0 -4px rgba(255, 204, 51, 0.66);}
 	html.enable-dark-skin .cx-column.cx-column-tools {background:#222;}
 	html.enable-dark-skin .cx-card:not(:empty) {background:#444;}
 	html.enable-dark-skin .ve-cx-toolbar-mt .ve-cx-toolbar-mt-title {color:#fff; font-weight:700; border-bottom-color:#666;}
@@ -1229,7 +1233,7 @@
 	html.enable-dark-skin body[class*=page-Pomoc_FAQ] div.mw-parser-output > div[style*=background] {background:#303030 !important; border-top:1px solid #aaa}
 	html.enable-dark-skin body.page-Pomoc_FAQ div.mw-parser-output > table + div[style*=background] {border-top:none;}
 	html.enable-dark-skin body.page-Pomoc_Spis_treści td[style*=background-color],
-		html.enable-dark-skin body.page-Pomoc_Spis_treści .mw-inputbox-centered {background-color:#222 !important; color:#d8d8d8 !important;}
+		html.enable-dark-skin body.page-Pomoc_Spis_treści .mw-inputbox-centered {background-color:#222 !important; color:#d8d8d8 !important}
 	html.enable-dark-skin body.page-Wikiprojekt_Gry_komputerowe table:not([class]) tr:last-child td:only-child[style*=background] {background-color:#222 !important; color:#d8d8d8;}
 	html.enable-dark-skin body.page-Wikipedia_Poczekalnia .mw-parser-output td:only-child {background:#383838 !important; color:#d8d8d8; border-color:#777 !important;}
 	html.enable-dark-skin body.page-Wikipedia_Poczekalnia_artykuły .mw-parser-output > div:first-child,
