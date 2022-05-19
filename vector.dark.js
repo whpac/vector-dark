@@ -38,7 +38,7 @@ if(window.Msz2001_vectorDark === undefined){
         if(ciemny_wlaczony) link_ciemny.style.display = "none";
         window.Msz2001_vectorDark.link_ciemny = link_ciemny;
 
-        var nav_portlet_ul = document.querySelector("#mw-panel nav:first-of-type ul");
+        var nav_portlet_ul = document.querySelector("#mw-panel .mw-portlet:first-of-type ul");
     
         if(!document.body.classList.contains('skin-minerva')) {
             nav_portlet_ul.appendChild(link_jasny);
