@@ -68,6 +68,7 @@
 	html.enable-dark-skin .oo-ui-pendingElement-pending {background-color:#222; background-image:linear-gradient(135deg,#383838 25%,transparent 25%,transparent 50%,#383838 50%,#383838 75%,transparent 75%,transparent);}
 	html.enable-dark-skin header .mw-ui-icon-wikimedia-watchlist:before {filter:invert(1) brightness(0.7);}
 	html.enable-dark-skin #p-personal-more .vector-menu-content-list a {filter:none;}
+	html.enable-dark-skin .vector-menu-dropdown .vector-menu-content {background:#333; border-color:#777;}
 
 	/* Wyszukiwarka */
 	html.enable-dark-skin #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
