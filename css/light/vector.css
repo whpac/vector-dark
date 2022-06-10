@@ -753,7 +753,8 @@
 	html.enable-dark-skin .oo-ui-dropdownInputWidget.oo-ui-widget-enabled,
 		html.enable-dark-skin .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover {background:transparent;}
 	html.enable-dark-skin .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle {background:#333; color:#d8d8d8; border-color:#777;}
-	html.enable-dark-skin .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator {filter:invert(1);}
+	html.enable-dark-skin .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator,
+		html.enable-dark-skin .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle .oo-ui-iconElement-icon {filter:invert(1);}
 	html.enable-dark-skin .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover {background:#282828; color:#d8d8d8; border-color:#777;}
 	html.enable-dark-skin .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle {background:#282828;}
 	html.enable-dark-skin .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {color:#d8d8d8;}
@@ -1099,6 +1100,23 @@
 	html.enable-dark-skin h4.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-label {color:inherit;}
 	html.enable-dark-skin p.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-desc {color:#d8d8d8;}
 	
+	/* Panel przewodnika */
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview,
+		html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module {border-color:#777;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module .growthexperiments-mentor-dashboard-module-header,
+		html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview h3 {color:#fff;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content .growthexperiments-mentor-dashboard-module-mentee-overview-info-content p {color:#d8d8d8;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .oo-ui-iconWidget {opacity:1; filter:invert(1);}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content table thead tr {background-color:#383838;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content table {border-color:#666;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content table tbody td,
+		html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content table thead th {border-bottom-color:#666;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools h4 {color:#bbb;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions {background-color:#282828;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions .growthexperiments-mentor-dashboard-module-mentor-tools-claim-mentee-footer {color:#bbb;}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-module-resources .icon-references {filter:invert(1); opacity:1;}
+
+
 	/* Wybór artykułów do wstawienia linków */
 	html.enable-dark-skin .growthexperiments-homepage-module-suggested-edits .growthexperiments-homepage-module-footer {background:#282828; color:#bbb; border-color:#555;}
 	html.enable-dark-skin .suggested-edits-task-explanation-wrapper .suggested-edits-short-description {color:#bbb;}
