@@ -553,9 +553,13 @@
 	html.enable-dark-skin input,
 		html.enable-dark-skin select,
 		html.enable-dark-skin .mw-ui-input,
-		html.enable-dark-skin .wvui-input__input:not([disabled]) {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
-	html.enable-dark-skin input:hover,
-		html.enable-dark-skin select:hover {border-color:#666;}
+		html.enable-dark-skin .wvui-input__input {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
+	html.enable-dark-skin input:hover:not(:disabled),
+		html.enable-dark-skin select:hover:not(:disabled) {border-color:#666; background:#333;}
+	html.enable-dark-skin input:disabled,
+		html.enable-dark-skin select:disabled,
+		html.enable-dark-skin .mw-ui-input:disabled,
+		html.enable-dark-skin .wvui-input__input:disabled {opacity:0.5;}
 	html.enable-dark-skin .mw-ui-input {box-shadow:inset 0 0 0 0.1em #222;}
 	html.enable-dark-skin .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {background:#333;}
 	html.enable-dark-skin .oo-ui-tagMultiselectWidget-handle {border-color:#777;}

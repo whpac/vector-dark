@@ -553,9 +553,13 @@
 	html:not(.disable-dark-skin) input,
 		html:not(.disable-dark-skin) select,
 		html:not(.disable-dark-skin) .mw-ui-input,
-		html:not(.disable-dark-skin) .wvui-input__input:not([disabled]) {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
-	html:not(.disable-dark-skin) input:hover,
-		html:not(.disable-dark-skin) select:hover {border-color:#666;}
+		html:not(.disable-dark-skin) .wvui-input__input {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
+	html:not(.disable-dark-skin) input:hover:not(:disabled),
+		html:not(.disable-dark-skin) select:hover:not(:disabled) {border-color:#666; background:#333;}
+	html:not(.disable-dark-skin) input:disabled,
+		html:not(.disable-dark-skin) select:disabled,
+		html:not(.disable-dark-skin) .mw-ui-input:disabled,
+		html:not(.disable-dark-skin) .wvui-input__input:disabled {opacity:0.5;}
 	html:not(.disable-dark-skin) .mw-ui-input {box-shadow:inset 0 0 0 0.1em #222;}
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {background:#333;}
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget-handle {border-color:#777;}
