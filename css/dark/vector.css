@@ -555,7 +555,8 @@
 		html:not(.disable-dark-skin) .mw-ui-input,
 		html:not(.disable-dark-skin) .wvui-input__input {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
 	html:not(.disable-dark-skin) input:hover:not(:disabled),
-		html:not(.disable-dark-skin) select:hover:not(:disabled) {border-color:#666; background:#333;}
+		html:not(.disable-dark-skin) select:hover:not(:disabled) {border-color:#666;}
+	html:not(.disable-dark-skin) input[type=submit]:hover:not(:disabled) {background:#333;}
 	html:not(.disable-dark-skin) input:disabled,
 		html:not(.disable-dark-skin) select:disabled,
 		html:not(.disable-dark-skin) .mw-ui-input:disabled,
