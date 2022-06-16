@@ -133,6 +133,7 @@
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-tabs .selected a,
 		html.enable-dark-skin body.skin-vector-2022 .vector-menu-tabs .selected a:visited {color:#d8d8d8;}
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-tabs li a {color:#76acff;}
+	html.enable-dark-skin body.skin-vector-2022 .vector-menu-tabs li.new a {color:#ef5252;}
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-dropdown .vector-menu-heading {color:#aaa;}
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-dropdown .vector-menu-heading:after {filter:invert(1); opacity:0.65;}
 
