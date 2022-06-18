@@ -1071,7 +1071,7 @@
 	
 	/* Narzędzia dykusji */
 	html:not(.disable-dark-skin) .ext-discussiontools-init-targetcomment {background-color:rgba(255,255,0,0.1);}
-	html:not(.disable-dark-skin) .ext-discussiontools-init-highlight {mix-blend-mode:lighten;}
+	html:not(.disable-dark-skin) .ext-discussiontools-init-highlight {mix-blend-mode:lighten; background-color:#004968;}
 
 	/* Strona domowa dla początkujących */
 	html:not(.disable-dark-skin) .growthexperiments-homepage-module {color:#d8d8d8; background-color:#222; border-color:#444;}
