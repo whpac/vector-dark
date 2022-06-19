@@ -479,6 +479,10 @@
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-list-item-active > .sidebar-toc-link {color:#bbb;}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-title {color:#fff;}
+	html:not(.disable-dark-skin) #vector-toc-collapsed-button {background-color:transparent;}
+	html:not(.disable-dark-skin) #vector-toc-collapsed-button:hover,
+		html:not(.disable-dark-skin) #vector-toc-collapsed-button:active {filter:none; background-color:#222;}
+	html:not(.disable-dark-skin) #vector-toc-collapsed-button::before {filter:invert(1); opacity:0.8;}
 	
 	html:not(.disable-dark-skin) .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
 	html:not(.disable-dark-skin) .navbox {background-color:#222; border-color:#777;}
