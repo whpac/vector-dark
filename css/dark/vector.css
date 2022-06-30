@@ -938,13 +938,17 @@
 	html:not(.disable-dark-skin) .oo-ui-labelWidget.oo-ui-inline-help {color:#aaa;}
 	html:not(.disable-dark-skin) .oo-ui-searchWidget-query {border-color:#777;}
 	html:not(.disable-dark-skin) .mw-widget-mediaResultWidget-overlay {box-shadow:inset 0 0 0 1px #666}
-	html:not(.disable-dark-skin) figure[typeof~='mw:Image/Thumb'],
+	html:not(.disable-dark-skin) figure[typeof~='mw:File/Thumb'],
+		html:not(.disable-dark-skin) figure[typeof~='mw:File/Frame'],
+		html:not(.disable-dark-skin) figure[typeof~='mw:Image/Thumb'],
 		html:not(.disable-dark-skin) figure[typeof~='mw:Video/Thumb'],
 		html:not(.disable-dark-skin) figure[typeof~='mw:Audio/Thumb'],
 		html:not(.disable-dark-skin) figure[typeof~='mw:Image/Frame'],
 		html:not(.disable-dark-skin) figure[typeof~='mw:Video/Frame'],
 		html:not(.disable-dark-skin) figure[typeof~='mw:Audio/Frame'] {background:#222; border-color:#777;}
-	html:not(.disable-dark-skin) figure[typeof~='mw:Image/Thumb'] > figcaption,
+	html:not(.disable-dark-skin) figure[typeof~='mw:File/Thumb'] > figcaption,
+		html:not(.disable-dark-skin) figure[typeof~='mw:File/Frame'] > figcaption,
+		html:not(.disable-dark-skin) figure[typeof~='mw:Image/Thumb'] > figcaption,
 		html:not(.disable-dark-skin) figure[typeof~='mw:Video/Thumb'] > figcaption,
 		html:not(.disable-dark-skin) figure[typeof~='mw:Audio/Thumb'] > figcaption,
 		html:not(.disable-dark-skin) figure[typeof~='mw:Image/Frame'] > figcaption,
