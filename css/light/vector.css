@@ -215,7 +215,7 @@
 	html.enable-dark-skin .overlay .panel {border-color:#999;}
 	html.enable-dark-skin .overlay .content-header {background:#333; border-color:#777;}
 	html.enable-dark-skin ul.topic-title-list {list-style-image:none;}
-	html.enable-dark-skin body.skin-minerva #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {opacity:0.87;}
+	html.enable-dark-skin body.skin-minerva #pt-notifications-alert .mw-echo-notifications-badge.mw-echo-notifications-badge-all-read {opacity:1;}
 	
 	/* Panel boczny */
 	html.enable-dark-skin a.mw-wiki-logo {filter:drop-shadow(0px 0px 4px white) drop-shadow(0px 0px 2px white);} /* Logo Wikipedii */
