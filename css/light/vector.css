@@ -69,7 +69,8 @@
 	html.enable-dark-skin header .mw-ui-icon-wikimedia-watchlist:before {filter:invert(1) brightness(0.7);}
 	html.enable-dark-skin #p-personal-more .vector-menu-content-list a {filter:none;}
 	html.enable-dark-skin .vector-menu-dropdown .vector-menu-content {background:#444; border-color:#777;}
-	html.enable-dark-skin #p-personal .vector-menu-content .mw-ui-icon:before {filter:invert(1);}
+	html.enable-dark-skin #p-personal .vector-menu-content .mw-ui-icon:before,
+		html.enable-dark-skin #p-personal-sticky-header .vector-menu-content .mw-ui-icon:before {filter:invert(1);}
 	html.enable-dark-skin .minerva-user-notifications ul {list-style: none;}
 
 	/* Wyszukiwarka */
