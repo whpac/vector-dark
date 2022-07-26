@@ -995,6 +995,11 @@
 	html.enable-dark-skin .ve-ui-mwTransclusionOutlineTemplateWidget-sticky {background:#222};
 	html.enable-dark-skin .ve-ui-mwTransclusionOutlineTemplateWidget-no-match {color:#aaa;}
 	html.enable-dark-skin .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {background-color:#2a200e; border-color:#ae8200;}
+	html.enable-dark-skin .ve-ui-mwTransclusionOutlineTemplateWidget .ve-ui-mwTransclusionOutlineParameterWidget.ve-ui-mwTransclusionOutlineParameterWidget-isSet,
+		html.enable-dark-skin .ve-ui-mwTransclusionOutlineTemplateWidget .ve-ui-mwTransclusionOutlineParameterWidget.ve-ui-mwTransclusionOutlineParameterWidget-isSet:hover,
+		html.enable-dark-skin .ve-ui-mwTransclusionOutlineTemplateWidget .ve-ui-mwTransclusionOutlineParameterWidget.ve-ui-mwTransclusionOutlineParameterWidget-isSet.oo-ui-optionWidget-highlighted {background-color:#383838; color:#76acff;}
+	html.enable-dark-skin .ve-ui-mwTransclusionOutlineTemplateWidget .ve-ui-mwTransclusionOutlineParameterWidget.oo-ui-optionWidget-highlighted {background-color:rgba(255,255,255,0.06); color:#fff;}
+	html.enable-dark-skin .oo-ui-checkboxInputWidget [type='checkbox'] + span {background-color:#222;}
 
 	html.enable-dark-skin textarea {background-color:#222; color:#d8d8d8; border-color:#777;}
 	html.enable-dark-skin .CodeMirror {background-color:#222 !important; color:#d8d8d8 !important;}
