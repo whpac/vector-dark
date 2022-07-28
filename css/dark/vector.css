@@ -28,26 +28,26 @@
 	html:not(.disable-dark-skin) .mw-logo-wordmark,
 		html:not(.disable-dark-skin) .mw-logo-tagline {filter:invert(1); color:#111;}
 	html:not(.disable-dark-skin) #mw-sidebar-button:before {filter:invert(1);}
-	html:not(.disable-dark-skin) .wvui-button:not([disabled]) {color:#d8d8d8;}
-	html:not(.disable-dark-skin) .wvui-button--framed:not([disabled]) {background-color:#303030; border-color:#777;}
-	html:not(.disable-dark-skin) .wvui-button--framed:not([disabled]):hover {background-color:#444; color:#fff;}
-	html:not(.disable-dark-skin) .wvui-button--framed[disabled] {background-color:#222; color:#777;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search {background-color:#222; border-color:#777;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search .wvui-input__input.wvui-input__input {border-right:none; border-top-right-radius:0; border-bottom-right-radius:0;}
-	html:not(.disable-dark-skin) .wvui-input__start-icon, 
-		html:not(.disable-dark-skin) .wvui-input__end-icon {color:#999;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search__submit {z-index:1;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search__suggestions {background:#222; border-color:#777;}
-	html:not(.disable-dark-skin) .wvui-typeahead-suggestion--active {background:#333;}
-	html:not(.disable-dark-skin) .wvui-typeahead-suggestion__title {color:#d8d8d8;}
-	html:not(.disable-dark-skin) .wvui-typeahead-suggestion__thumbnail-placeholder,
-		html:not(.disable-dark-skin) .wvui-typeahead-suggestion__thumbnail {box-shadow:0 0 1px 1px #777;}
-	html:not(.disable-dark-skin) .wvui-typeahead-suggestion__text .wvui-typeahead-suggestion__description {color:#aaa;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search__suggestions__footer {border-top-color:#666;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search__suggestions__footer--active {background:#333;}
-	html:not(.disable-dark-skin) .wvui-typeahead-search__suggestions__footer .wvui-icon {color:#999;}
-	html:not(.disable-dark-skin) .wvui-typeahead-suggestion__thumbnail-placeholder {background:#222;}
-	html:not(.disable-dark-skin) .wvui-typeahead-suggestion__thumbnail-icon {color:#999;}
+	html:not(.disable-dark-skin) .cdx-button:not([disabled]) {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cdx-button--framed:not([disabled]) {background-color:#303030; border-color:#777;}
+	html:not(.disable-dark-skin) .cdx-button--framed:not([disabled]):hover {background-color:#444; color:#fff;}
+	html:not(.disable-dark-skin) .cdx-button--framed[disabled] {background-color:#222; color:#777;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search {background-color:#222; border-color:#777;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search .cdx-input__input.cdx-input__input {border-right:none; border-top-right-radius:0; border-bottom-right-radius:0;}
+	html:not(.disable-dark-skin) .cdx-input__start-icon, 
+		html:not(.disable-dark-skin) .cdx-input__end-icon {color:#999;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search__submit {z-index:1;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search__suggestions {background:#222; border-color:#777;}
+	html:not(.disable-dark-skin) .cdx-typeahead-suggestion--active {background:#333;}
+	html:not(.disable-dark-skin) .cdx-typeahead-suggestion__title {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .cdx-typeahead-suggestion__thumbnail-placeholder,
+		html:not(.disable-dark-skin) .cdx-typeahead-suggestion__thumbnail {box-shadow:0 0 1px 1px #777;}
+	html:not(.disable-dark-skin) .cdx-typeahead-suggestion__text .cdx-typeahead-suggestion__description {color:#aaa;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search__suggestions__footer {border-top-color:#666;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search__suggestions__footer--active {background:#333;}
+	html:not(.disable-dark-skin) .cdx-typeahead-search__suggestions__footer .cdx-icon {color:#999;}
+	html:not(.disable-dark-skin) .cdx-typeahead-suggestion__thumbnail-placeholder {background:#222;}
+	html:not(.disable-dark-skin) .cdx-typeahead-suggestion__thumbnail-icon {color:#999;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a {border:none; color:#d8d8d8; background:transparent;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:hover {background:#444;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:active {background:#222;}
@@ -110,7 +110,7 @@
 	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector {color:#bbb;}
 	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector:hover {background:rgba(255,255,255,0.1);}
 	html:not(.disable-dark-skin) #p-lang-btn-sticky-header:after {filter:invert(1);}
-	html:not(.disable-dark-skin) .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .wvui-input__start-icon {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .cdx-input__start-icon {color:#d8d8d8;}
 
 	/* Karty w nagłówku */
 	html:not(.disable-dark-skin) body.skin-vector-legacy .vector-menu-tabs {background-image:none; padding-left:0;}
@@ -570,14 +570,14 @@
 	html:not(.disable-dark-skin) input,
 		html:not(.disable-dark-skin) select,
 		html:not(.disable-dark-skin) .mw-ui-input,
-		html:not(.disable-dark-skin) .wvui-input__input {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
+		html:not(.disable-dark-skin) .cdx-input__input {background:#222; border:1px solid #777; border-radius:0.2em; color:#eee;}
 	html:not(.disable-dark-skin) input:hover:not(:disabled),
 		html:not(.disable-dark-skin) select:hover:not(:disabled) {border-color:#666;}
 	html:not(.disable-dark-skin) input[type=submit]:hover:not(:disabled) {background:#333;}
 	html:not(.disable-dark-skin) input:disabled,
 		html:not(.disable-dark-skin) select:disabled,
 		html:not(.disable-dark-skin) .mw-ui-input:disabled,
-		html:not(.disable-dark-skin) .wvui-input__input:disabled {opacity:0.5;}
+		html:not(.disable-dark-skin) .cdx-input__input:disabled {opacity:0.5;}
 	html:not(.disable-dark-skin) .mw-ui-input {box-shadow:inset 0 0 0 0.1em #222;}
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {background:#333;}
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget-handle {border-color:#777;}
