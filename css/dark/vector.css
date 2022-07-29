@@ -42,7 +42,7 @@
 	html:not(.disable-dark-skin) .cdx-menu-item--highlighted {background:#333;}
 	html:not(.disable-dark-skin) .cdx-search-result-title {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .cdx-menu-item__thumbnail-placeholder,
-		html:not(.disable-dark-skin) .cdx-menu-item__thumbnail {box-shadow:0 0 1px 1px #777;}
+		html:not(.disable-dark-skin) .cdx-menu-item__thumbnail {border-color:#777;}
 	html:not(.disable-dark-skin) .cdx-menu-item__text__description {color:#aaa;}
 	html:not(.disable-dark-skin) .cdx-typeahead-search__search-footer {border-top-color:#666;}
 	html:not(.disable-dark-skin) .cdx-typeahead-search__search-footer--active {background:#333;}
