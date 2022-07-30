@@ -49,6 +49,14 @@
 	html:not(.disable-dark-skin) .cdx-typeahead-search__search-footer .cdx-icon {color:#999;}
 	html:not(.disable-dark-skin) .cdx-menu-item__thumbnail-placeholder {background:#222;}
 	html:not(.disable-dark-skin) .cdx-menu-item__thumbnail-placeholder-icon {color:#999;}
+	html:not(.disable-dark-skin) .search-form__loader {background:#222;}
+	html:not(.disable-dark-skin) .cdx-menu-item--enabled.cdx-menu-item--active,
+		html:not(.disable-dark-skin) .cdx-menu-item--enabled.cdx-menu-item--active:hover,
+		html:not(.disable-dark-skin) .cdx-menu-item--enabled:hover,
+		html:not(.disable-dark-skin) .cdx-menu-item--enabled.cdx-menu-item--highlighted {background:#444; color:#bbb}
+	html:not(.disable-dark-skin) .cdx-menu-item--enabled.cdx-menu-item--active .cdx-menu-item__text__description,
+		html:not(.disable-dark-skin) .cdx-menu-item--enabled.cdx-menu-item--active:hover .cdx-menu-item__text__description {color:#bbb;}
+		
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a {border:none; color:#d8d8d8; background:transparent;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:hover {background:#444;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu-more .vector-menu-content-list li a:active {background:#222;}
@@ -324,7 +332,8 @@
 		html:not(.disable-dark-skin) .toctogglelabel,
 		html:not(.disable-dark-skin) .uls-language-block a,
 		html:not(.disable-dark-skin) .vector-menu-portal .body li a,
-		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-content li a {color:#76acff}
+		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-content li a,
+		html:not(.disable-dark-skin) .vector-menu-dropdown .mw-list-item a {color:#76acff}
 	html:not(.disable-dark-skin) a:visited,
 		html:not(.disable-dark-skin) #mw-panel .portal .body li a:visited,
 		html:not(.disable-dark-skin) .mw-parser-output a.extiw:visited,
