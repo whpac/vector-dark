@@ -489,7 +489,7 @@
 	html.enable-dark-skin .toc ul {list-style-image:none;}
 	html.enable-dark-skin #filetoc {background:#222; border-color:#666;}
 	html.enable-dark-skin .sidebar-toc {background-color:#222; border:1px solid #484848;}
-	html.enable-dark-skin .sidebar-toc:after {background:linear-gradient(rgba(34,34,34,0),#222); margin:0px 1px 1px calc(0.75em + 1px);}
+	html.enable-dark-skin .sidebar-toc:after {background:linear-gradient(rgba(34,34,34,0),#222); margin:1px; width:calc(15.25em - 2px);}
 	html.enable-dark-skin .sidebar-toc .sidebar-toc-list-item a {color:#76acff;}
 	html.enable-dark-skin .sidebar-toc .sidebar-toc-list-item-active > .sidebar-toc-link {color:#bbb;}
 	html.enable-dark-skin .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
