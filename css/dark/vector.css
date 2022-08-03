@@ -1059,6 +1059,7 @@
 		html:not(.disable-dark-skin) #userSummaryButtons a:hover {background-color:#3f4e47; color:#ccc; border-color:#090;}
 	html:not(.disable-dark-skin) .userSummaryButtons a:first-child,
 		html:not(.disable-dark-skin) #userSummaryButtons a:first-child {background-color:#4d5338 !important;}
+	html:not(.disable-dark-skin) #userSummaryButtons a:not(:first-child)[style] {filter:brightness(0.7) invert(1) hue-rotate(180deg); color:#000;}
 	html:not(.disable-dark-skin) table.flaggedrevs_editnotice,
 		html:not(.disable-dark-skin) table.flaggedrevs_viewnotice {background:#333; border:1px solid #777;}
 	html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-disabled {background:transparent}
