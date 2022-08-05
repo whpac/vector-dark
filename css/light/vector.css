@@ -504,7 +504,7 @@
 		html.enable-dark-skin .vector-toc-uncollapse-button {color:#76acff}
 	html.enable-dark-skin .vector-toc-collapse-button:hover,
 		html.enable-dark-skin .vector-toc-uncollapse-button:hover {color:#3a88ff}
-	html.enable-dark-skin .client-js .vector-toc-collapsed .vector-layout-grid .sidebar-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
+	html.enable-dark-skin.client-js .vector-toc-collapsed .vector-layout-grid .sidebar-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
 
 	html.enable-dark-skin .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
 	html.enable-dark-skin .navbox {background-color:#222; border-color:#777;}
