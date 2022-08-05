@@ -120,6 +120,8 @@
 	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector:hover {background:rgba(255,255,255,0.1);}
 	html:not(.disable-dark-skin) #p-lang-btn-sticky-header:after {filter:invert(1);}
 	html:not(.disable-dark-skin) .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .cdx-input__start-icon {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .vector-sticky-header-icons .mw-ui-button.mw-ui-progressive.mw-ui-quiet {color:#76acff}
+	html:not(.disable-dark-skin) .vector-sticky-header-icons .mw-ui-button.mw-ui-progressive.mw-ui-quiet .mw-ui-icon {filter:brightness(2.4) hue-rotate(180deg);}
 
 	/* Karty w nagłówku */
 	html:not(.disable-dark-skin) body.skin-vector-legacy .vector-menu-tabs {background-image:none; padding-left:0;}
@@ -498,7 +500,12 @@
 	html:not(.disable-dark-skin) #vector-toc-collapsed-button:hover,
 		html:not(.disable-dark-skin) #vector-toc-collapsed-button:active {filter:none; background-color:#222;}
 	html:not(.disable-dark-skin) #vector-toc-collapsed-button::before {filter:invert(1); opacity:0.8;}
-	
+	html:not(.disable-dark-skin) .vector-toc-collapse-button,
+		html:not(.disable-dark-skin) .vector-toc-uncollapse-button {color:#76acff}
+	html:not(.disable-dark-skin) .vector-toc-collapse-button:hover,
+		html:not(.disable-dark-skin) .vector-toc-uncollapse-button:hover {color:#3a88ff}
+	html:not(.disable-dark-skin) .client-js .vector-toc-collapsed .vector-layout-grid .sidebar-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
+
 	html:not(.disable-dark-skin) .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
 	html:not(.disable-dark-skin) .navbox {background-color:#222; border-color:#777;}
 	html:not(.disable-dark-skin) .navbox-subgroup {background-color:#222;}
