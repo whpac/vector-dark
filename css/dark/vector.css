@@ -389,7 +389,7 @@
 	html:not(.disable-dark-skin) .heading-holder .tagline {color:#999;}
 	html:not(.disable-dark-skin) ol.references li:target,
 		html:not(.disable-dark-skin) sup.reference:target,
-		html:not(.disable-dark-skin) span.citation:target {background-color:#4f4f4f;} /* Wyróżniony przypis */
+		html:not(.disable-dark-skin) .citation:target {background-color:#4f4f4f;} /* Wyróżniony przypis */
 	html:not(.disable-dark-skin) div.flaggedrevs_preview,
 		html:not(.disable-dark-skin) div.flaggedrevs_short,
 		html:not(.disable-dark-skin) div.flaggedrevs_short_details {background-color:#444; color:#d8d8d8; border-color:#777;}
