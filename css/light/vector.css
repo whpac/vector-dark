@@ -307,6 +307,8 @@
 	html.enable-dark-skin .cx-uls-entrypoint__panel-container {background-color:#383838;}
 	html.enable-dark-skin .cx-uls-entrypoint {border-color:#777;}
 	html.enable-dark-skin .cx-uls-entrypoint__header {border-bottom-color:#777;}
+	html.enable-dark-skin .uls-empty-state .uls-empty-state__header,
+		html.enable-dark-skin .uls-empty-state .uls-empty-state__desc {color:#aaa;}
 
 	/* Stopka */
 	html.enable-dark-skin #footer #footer-info li {color:#d8d8d8;} /* Tekst w stopce na komputerze */
