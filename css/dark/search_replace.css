@@ -1,0 +1,10 @@
+@media only screen {
+	/* Gadżet wyszukiwanie i zamiana */
+	html:not(.disable-dark-skin) #srBox {background:#222; border-color:#666;}
+	html:not(.disable-dark-skin) #srBox .label,
+		html:not(.disable-dark-skin) #srBox label {color:#d8d8d8;}
+	html:not(.disable-dark-skin) #srBox input[type="text"] {background:#222; border-color:#777;}
+	html:not(.disable-dark-skin) #srBox a {color:#d8d8d8; background:#383862;}
+	html:not(.disable-dark-skin) #srBox a:hover {background:#202039;}
+	html:not(.disable-dark-skin) #srBox a:focus {background:#6464a2; color:#fff;}
+}
