@@ -3,46 +3,54 @@ header('Content-Type:text/css');
 
 $default_css = 'vector.css';
 $additional_css = [
+    'core' => 'vector.css',
     'popups' => 'popups.css',
     'user_colors' => 'user_colors.css',
     'talk_colors' => 'talk_colors.css',
     'sandbox' => 'sandbox.css',
     'commons' => 'commons.css',
     'plwikinews' => 'plwikinews.css',
-    'wikidata' => 'wikidata.css'
+    'wikidata' => 'wikidata.css',
+    'search_replace' => 'search_replace.css'
 ];
 
-if(isset($_GET['f'])) $file_id = $_GET['f'];
-else $file_id = '';
+// Decode the list of files to include
+if(isset($_GET['f'])) $file_ids = $_GET['f'];
+else $file_ids = '';
+$file_ids = explode(';', $file_ids);
 
-$file = $default_css;
-if(isset($additional_css[$file_id])) $file = $additional_css[$file_id];
+$files = [];
+foreach($file_ids as $file_id){
+    if(isset($additional_css[$file_id])) $files[] = $additional_css[$file_id];
+}
+if(empty($files)) $files[] = $default_css;
+
 
 if(isset($_COOKIE['vectorDark_enable']) && !isset($_GET['force_css'])){
     if($_COOKIE['vectorDark_enable'] == '0'){
-        outputFile('css/light/'.$file);
+        useFiles('css/light/', $files);
         return;
     }
 }
 
-outputFile('css/dark/'.$file);
+useFiles('css/dark/', $files);
 
-function outputFile($file){
-    $file_etag = calculateETag($file);
-    if(checkETag($file_etag)){
+function useFiles($path, $files){
+    $etag = calculateETag($path, $files);
+    if(checkETag($etag)){
         logData('304: '.$_SERVER['HTTP_USER_AGENT']."\n");
         header($_SERVER['SERVER_PROTOCOL'].' 304 Not Modified');
-        header('ETag: "'.$file_etag.'"');
+        header('ETag: "'.$etag.'"');
         header('Cache-Control: no-cache, private');
         header('Vary: Cookie');
         return;
     }
 
     logData('200: '.$_SERVER['HTTP_USER_AGENT']."\n");
-    header('ETag: "'.$file_etag.'"');
+    header('ETag: "'.$etag.'"');
     header('Cache-Control: no-cache, private');
     header('Vary: Cookie');
-    echo(file_get_contents($file));
+    outputFiles($path, $files);
 }
 
 // false - need to send CSS, true - use cache
@@ -58,8 +66,20 @@ function checkETag($file_etag){
     return false;
 }
 
-function calculateETag($file){
-    return md5_file($file);
+function calculateETag($path, $files){
+    $etag = '';
+
+    foreach($files as $file){
+        $etag .= md5_file($path.$file);
+    }
+
+    return $etag;
+}
+
+function outputFiles($path, $files){
+    foreach($files as $file){
+        echo(file_get_contents($path.$file));
+    }
 }
 
 function logData($data){
