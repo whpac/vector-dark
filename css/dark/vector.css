@@ -726,10 +726,10 @@
 		html:not(.disable-dark-skin) h4,
 		html:not(.disable-dark-skin) h5,
 		html:not(.disable-dark-skin) h6 {color:white; border-bottom-color:#777;}
-	html:not(.disable-dark-skin) .client-js .mw-content-ltr .mw-editsection-bracket:first-of-type,
-		html:not(.disable-dark-skin) .client-js .mw-content-rtl .mw-editsection-bracket:not(:first-of-type),
-		html:not(.disable-dark-skin) .client-js .mw-content-rtl .mw-editsection-bracket:first-of-type,
-		html:not(.disable-dark-skin) .client-js .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
+	html:not(.disable-dark-skin).client-js .mw-content-ltr .mw-editsection-bracket:first-of-type,
+		html:not(.disable-dark-skin).client-js .mw-content-rtl .mw-editsection-bracket:not(:first-of-type),
+		html:not(.disable-dark-skin).client-js .mw-content-rtl .mw-editsection-bracket:first-of-type,
+		html:not(.disable-dark-skin).client-js .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
 		html:not(.disable-dark-skin) .mw-editsection-divider,
 		html:not(.disable-dark-skin) .mw-editsection {color:#999;}
 	html:not(.disable-dark-skin) ul {list-style-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22%3E %3Ccircle cx=%222.5%22 cy=%229%22 r=%222.5%22 fill=%22%23eee%22/%3E %3C/svg%3E");}
