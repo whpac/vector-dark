@@ -726,7 +726,12 @@
 		html:not(.disable-dark-skin) h4,
 		html:not(.disable-dark-skin) h5,
 		html:not(.disable-dark-skin) h6 {color:white; border-bottom-color:#777;}
-	html:not(.disable-dark-skin) .mw-editsection-bracket {color:#bbb;}
+	html:not(.disable-dark-skin) .client-js .mw-content-ltr .mw-editsection-bracket:first-of-type,
+		html:not(.disable-dark-skin) .client-js .mw-content-rtl .mw-editsection-bracket:not(:first-of-type),
+		html:not(.disable-dark-skin) .client-js .mw-content-rtl .mw-editsection-bracket:first-of-type,
+		html:not(.disable-dark-skin) .client-js .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
+		html:not(.disable-dark-skin) .mw-editsection-divider,
+		html:not(.disable-dark-skin) .mw-editsection {color:#999;}
 	html:not(.disable-dark-skin) ul {list-style-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22%3E %3Ccircle cx=%222.5%22 cy=%229%22 r=%222.5%22 fill=%22%23eee%22/%3E %3C/svg%3E");}
 	
 	html:not(.disable-dark-skin) table.global-nav {filter:invert(1) hue-rotate(180deg);} /* Karty do nawigacji na stronach pomocowych */
@@ -1059,6 +1064,11 @@
 	html:not(.disable-dark-skin) .ve-ce-mwEntityNode-nbsp {background-color:#555;}
 	html:not(.disable-dark-skin) .cm-mw-matchingbracket {background-color:#222; box-shadow:inset 0 0 1px 1px #666;}
 	
+	/* Strony dyskusji */
+	html:not(.disable-dark-skin) .ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section-metaitem + .ext-discussiontools-init-section-metaitem {border-left-color:#777;}
+	html:not(.disable-dark-skin) .ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section-metaitem {color:#aaa;}
+	html:not(.disable-dark-skin) .ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section {border-top-color:#888;}
+
 	/* Dookoła okna edycji */
 	html:not(.disable-dark-skin) .editOptions {background:#222; color:#d8d8d8; border-color:#777;}
 	html:not(.disable-dark-skin) .oo-ui-textInputWidget .oo-ui-inputWidget-input {background:#333; color:#d8d8d8; border-color:#777;}
