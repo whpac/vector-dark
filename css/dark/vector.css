@@ -81,6 +81,9 @@
 	html:not(.disable-dark-skin) #p-personal .vector-menu-content .mw-ui-icon:before,
 		html:not(.disable-dark-skin) #p-personal-sticky-header .vector-menu-content .mw-ui-icon:before {filter:invert(1);}
 	html:not(.disable-dark-skin) .minerva-user-notifications ul {list-style: none;}
+	html:not(.disable-dark-skin) .vector-menu-content .uls-trigger {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .vector-menu-content .uls-trigger .mw-ui-icon::before {filter:invert(1);}
+
 
 	/* Wyszukiwarka */
 	html:not(.disable-dark-skin) #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
@@ -337,7 +340,8 @@
 		html:not(.disable-dark-skin) .uls-language-block a,
 		html:not(.disable-dark-skin) .vector-menu-portal .body li a,
 		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-content li a,
-		html:not(.disable-dark-skin) .vector-menu-dropdown .mw-list-item a {color:#76acff}
+		html:not(.disable-dark-skin) .vector-menu-dropdown .mw-list-item a,
+		html:not(.disable-dark-skin) #pt-userpage-2 a {color:#76acff}
 	html:not(.disable-dark-skin) a:visited,
 		html:not(.disable-dark-skin) #mw-panel .portal .body li a:visited,
 		html:not(.disable-dark-skin) .mw-parser-output a.extiw:visited,
