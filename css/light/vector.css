@@ -85,8 +85,8 @@
 	html.enable-dark-skin #p-personal .vector-menu-content .mw-ui-icon:before,
 		html.enable-dark-skin #p-personal-sticky-header .vector-menu-content .mw-ui-icon:before {filter:invert(1);}
 	html.enable-dark-skin .minerva-user-notifications ul {list-style: none;}
-	html.enable-dark-skin .vector-menu-content .uls-trigger {color:#d8d8d8;}
-	html.enable-dark-skin .vector-menu-content .uls-trigger .mw-ui-icon::before {filter:invert(1);}
+	html.enable-dark-skin .vector-menu-content .uls-trigger {color:#bbb;}
+	html.enable-dark-skin .vector-menu-content .uls-trigger .mw-ui-icon::before {filter:invert(1) brightness(0.7);}
 
 	/* Wyszukiwarka */
 	html.enable-dark-skin #simpleSearch {background-image:none; background-color:#303030; border-color:#777}
