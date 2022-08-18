@@ -72,7 +72,9 @@
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a:hover {background:#383838;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-content-item-logout {border-top-color:#777;}
 	html:not(.disable-dark-skin) .vector-user-links #p-personal-more a:hover,
-		html:not(.disable-dark-skin) .vector-user-links #p-vector-user-menu-overflow .mw-ui-button:hover {background-color:#444;}
+		html:not(.disable-dark-skin) .vector-user-links #p-vector-user-menu-overflow .mw-ui-button:hover,
+		html:not(.disable-dark-skin) .vector-user-links #pt-notifications-alert .mw-echo-notifications-badge:hover,
+		html:not(.disable-dark-skin) .vector-user-links #pt-notifications-notice .mw-echo-notifications-badge:hover {background-color:#444;}
 	html:not(.disable-dark-skin) .mw-ui-icon-wikimedia-search:not(.disabled):hover,
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-checkbox:hover + h3 {background:#282828;}
 	html:not(.disable-dark-skin) .oo-ui-pendingElement-pending {background-color:#222; background-image:linear-gradient(135deg,#383838 25%,transparent 25%,transparent 50%,#383838 50%,#383838 75%,transparent 75%,transparent);}
