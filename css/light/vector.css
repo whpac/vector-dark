@@ -71,12 +71,14 @@
 	html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-content-item:hover,
 		html.enable-dark-skin .vector-user-links .vector-user-menu li > a:hover {background:#383838;}
 	html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-content-item-logout {border-top-color:#777;}
-	html.enable-dark-skin .vector-user-links #p-personal-more a:hover {background-color:#444;}
+	html.enable-dark-skin .vector-user-links #p-personal-more a:hover,
+		html.enable-dark-skin .vector-user-links #p-vector-user-menu-overflow .mw-ui-button:hover {background-color:#444;}
 	html.enable-dark-skin .mw-ui-icon-wikimedia-search:not(.disabled):hover,
 		html.enable-dark-skin .vector-user-links .vector-user-menu .vector-menu-checkbox:hover + h3 {background:#282828;}
 	html.enable-dark-skin .oo-ui-pendingElement-pending {background-color:#222; background-image:linear-gradient(135deg,#383838 25%,transparent 25%,transparent 50%,#383838 50%,#383838 75%,transparent 75%,transparent);}
 	html.enable-dark-skin header .mw-ui-icon-wikimedia-watchlist:before {filter:invert(1) brightness(0.7);}
-	html.enable-dark-skin #p-personal-more .vector-menu-content-list a {filter:none;}
+	html.enable-dark-skin #p-personal-more .vector-menu-content-list a,
+		html.enable-dark-skin #p-vector-user-menu-overflow .vector-menu-content-list a {filter:none;}
 	html.enable-dark-skin .vector-menu-dropdown .vector-menu-content {background:#444; border-color:#777;}
 	html.enable-dark-skin #p-personal .vector-menu-content .mw-ui-icon:before,
 		html.enable-dark-skin #p-personal-sticky-header .vector-menu-content .mw-ui-icon:before {filter:invert(1);}
