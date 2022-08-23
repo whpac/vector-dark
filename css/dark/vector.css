@@ -679,6 +679,11 @@
 	html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-parzysty {background:#222 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-naglowek {background:#222 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) tr.szablon-lista_utworow_2-tytul {background:#555; color:#d8d8d8; border-color:#777 !important;}
+	html:not(.disable-dark-skin) .licznik-czasu {background:#282828; border-color:#666;}
+	html:not(.disable-dark-skin) .licznik-czasu .start-stop {color:#aaa;}
+	html:not(.disable-dark-skin) .licznik-czasu .data-czas {color:#2bb;}
+	html:not(.disable-dark-skin) .licznik-czasu .zakonczone {color:#77f;}
+	html:not(.disable-dark-skin) .licznik-czasu .trwa {color:#3c3;}
 
 	html:not(.disable-dark-skin) img[src*=icon_check\.svg], html:not(.disable-dark-skin) img[src*=icon_imageAdd-ltr\.svg],
 		html:not(.disable-dark-skin) img[src*=icon_close-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_listBullet-ltr\.svg],
