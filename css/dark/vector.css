@@ -1318,7 +1318,7 @@
 	/* Kawiarenka, TO i inne pojedyncze strony*/
 	html:not(.disable-dark-skin) body.page-Wikipedia_Kawiarenka_pod_Wesołym_Encyklopedystą table:not([class]) tr:only-child td:only-child[style*=background] {background-color:#222 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) body.rootpage-Wikipedia_Kawiarenka table.global-nav + div[style*=background] {background-color:#303030 !important; border-color:#777 !important; color:#d8d8d8;}
-	html:not(.disable-dark-skin) body.page-Wikipedia_Tablica_ogłoszeń table.global-nav + table:not(.global-nav) + div {background-color:#303030 !important; color:#d8d8d8;}
+	html:not(.disable-dark-skin) body.page-Wikipedia_Tablica_ogłoszeń div[title="Nagłówek tablicy ogłoszeń"] {background-color:#303030 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) body.page-Portal_Kategorie_Główne table.global-nav + table:not([class]) td {background:#333 !important; color:#d8d8d8;}
 	html:not(.disable-dark-skin) body.page-Portal_Kategorie_Główne  #content table.global-nav + table:not([class]) td table {background:#333 !important} /* #content podnosi szczegółowość selektora */
 	html:not(.disable-dark-skin) body.page-Wikipedia_Indeks_haseł .mw-inputbox-centered {background-color:transparent !important;}
