@@ -960,6 +960,10 @@
 		html.enable-dark-skin .ve-ui-diffElement-attributeChange del {background:#7a0600 !important; box-shadow:0 0 0 1px #7a0600;}
 	html.enable-dark-skin [data-diff-action='change'],
 		html.enable-dark-skin [data-diff-action='change-insert'] {background-color:#00214b !important; box-shadow:0 0 0 1px #4073b5;}
+	html.enable-dark-skin [data-diff-action='insert'] *,
+		html.enable-dark-skin [data-diff-action='remove'] *,
+		html.enable-dark-skin [data-diff-action='change'] *,
+		html.enable-dark-skin [data-diff-action='change-insert'] * {mix-blend-mode:lighten;}
 	html.enable-dark-skin .ve-ui-diffElement-attributeChange {color:#aaa;}
 	html.enable-dark-skin .ve-ui-changeDescriptionsSelectWidget > .oo-ui-optionWidget-highlighted {background:#00214b;}
 	html.enable-dark-skin .ve-ui-diffElement-hasDescriptions .ve-ui-diffElement-content {border-color:#777;}
