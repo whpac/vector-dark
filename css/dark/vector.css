@@ -747,10 +747,10 @@
 		html:not(.disable-dark-skin) .mw-editsection {color:#999;}
 
 	/* Listy wypunktowane */
-	@supports not selector(::marker){
-		html:not(.disable-dark-skin) ul {list-style-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22%3E %3Ccircle cx=%222.5%22 cy=%229%22 r=%222.5%22 fill=%22%23eee%22/%3E %3C/svg%3E");}
+	html:not(.disable-dark-skin) ul {list-style-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22%3E %3Ccircle cx=%222.5%22 cy=%229%22 r=%222.5%22 fill=%22%23eee%22/%3E %3C/svg%3E");}
+	/*@supports not selector(::marker){
 	}
-	html:not(.disable-dark-skin) ul > li::marker {color:inherit; content:'• '; font-weight:bold;}
+	html:not(.disable-dark-skin) ul > li::marker {color:inherit; content:'• '; font-weight:bold;}*/
 
 	html:not(.disable-dark-skin) table.global-nav {filter:invert(1) hue-rotate(180deg);} /* Karty do nawigacji na stronach pomocowych */
 	html:not(.disable-dark-skin) .global-nav td:hover,
