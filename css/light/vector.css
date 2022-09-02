@@ -355,6 +355,7 @@
 		html.enable-dark-skin .vector-menu-tabs .new a:visited,
 		html.enable-dark-skin #p-personal a.new:visited {color:#cc5b5b}
 	html.enable-dark-skin .vectorMenu li a {color:#9dc2fa;}
+	html.enable-dark-skin .mw-echo-alert a span {color:#fff;}
 	html.enable-dark-skin a.mw-selflink {color:inherit;}
 	html.enable-dark-skin .mw-parser-output a.external,
 		html.enable-dark-skin .link-https {background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2213%22%3E%0A%09%3Cpath%20fill%3D%22%2376acff%22%20d%3D%22M5.002%201.01h7v7l-2-2-3%202v-1l3-2.25%201%201V2.01h-3.75l1%201-2.25%203h-1l2-3z%22%2F%3E%0A%09%3Cpath%20fill%3D%22%2376acff%22%20d%3D%22M7.002%203.01h-5v8h8v-5h-1v4h-6v-6h4z%22%2F%3E%0A%09%3Cpath%20fill%3D%22%2376acff%22%20d%3D%22M4.082%205.51c0-.621.621-.621.621-.621%201.864.621%203.107%201.864%203.728%203.728%200%200%200%20.621-.62.621-1.245-1.864-1.866-2.485-3.73-3.728z%22%2F%3E%0A%3C%2Fsvg%3E");}
