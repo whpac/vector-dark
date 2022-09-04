@@ -1363,7 +1363,7 @@
 		html:not(.disable-dark-skin) .mw-highlight .kd {color:#569cd6;}
 	html:not(.disable-dark-skin) .mw-highlight .nb,
 		html:not(.disable-dark-skin) .mw-highlight .nc {color:#4ec9b0;}
-	html:not(.disable-dark-skin) .mw-highlight .c1
+	html:not(.disable-dark-skin) .mw-highlight .c1,
 		html:not(.disable-dark-skin) .mw-highlight .cm {color:#6a9955;}
 	html:not(.disable-dark-skin) .mw-highlight .nf {color:#dcdcaa;}
 	html:not(.disable-dark-skin) .mw-highlight .n,
