@@ -1334,6 +1334,11 @@
 	html.enable-dark-skin body.page-Wikipedia_Poczekalnia_artykuły .mw-parser-output > div:first-child,
 	html.enable-dark-skin body.page-Wikipedia_Poczekalnia_biografie .mw-parser-output > div:first-child,
 	html.enable-dark-skin body.page-Wikipedia_Poczekalnia_kwestie_techniczne .mw-parser-output > div:first-child {background:#222 !important; color:#d8d8d8; border-color:#666 !important;}
+	html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_pomoc div[style*="background-color: Gainsboro;"] {background-color:#3d3d3d !important; color:#d8d8d8;}
+	html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_pomoc div[style*="background-color: Honeydew;"],
+	html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_pomoc div[style*="background-color: AntiqueWhite;"],
+	html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_pomoc div[style*="background-color: WhiteSmoke;"] {background-color:#4d4d4d !important; color:#d8d8d8; border-color:#888 !important;}
+	html.enable-dark-skin body.page-Wikiprojekt_Czy_wiesz_pomoc div[style*="background: #F5F5F5;"] {background:#222 !important; color:#d8d8d8;}
 
 	/* Okienka jQuery */
 	html.enable-dark-skin .ui-widget-overlay {background:rgba(0,0,0,0.7);}
