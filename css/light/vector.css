@@ -501,6 +501,7 @@
 	html.enable-dark-skin .sidebar-toc .sidebar-toc-list-item-active > .sidebar-toc-link {color:#bbb;}
 	html.enable-dark-skin .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
 	html.enable-dark-skin .sidebar-toc .sidebar-toc-title {color:#fff;}
+	html.enable-dark-skin .sidebar-toc .sidebar-toc-level-1-active:not(.sidebar-toc-list-item-active) > .sidebar-toc-link {color:#d8d8d8;}
 	html.enable-dark-skin #vector-toc-collapsed-button {background-color:transparent;}
 	html.enable-dark-skin #vector-toc-collapsed-button:hover,
 		html.enable-dark-skin #vector-toc-collapsed-button:active {filter:none; background-color:#222;}
