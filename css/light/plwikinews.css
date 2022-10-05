@@ -18,8 +18,8 @@
 	html.enable-dark-skin .mw-parser-output .article-box:not(:first-of-type) {border-color:#777;}
 	html.enable-dark-skin .mw-parser-output .article-box .date {color:#aaa;}
 	html.enable-dark-skin .mw-parser-output .badge a {color:inherit !important;}
-	html.enable-dark-skin .mw-parser-output .sister-projects {border-color:#777;}
-	html.enable-dark-skin .mw-parser-output .sister-projects h2 {border-bottom-color:#777;}
+	html.enable-dark-skin .mw-parser-output .frame {border-color:#777;}
+	html.enable-dark-skin .mw-parser-output .frame h2 {border-bottom-color:#777;}
 
 	html.enable-dark-skin div.NavFrame {border-color:#777;}
 	html.enable-dark-skin div.NavFrame div.NavHead {background:#444;}
