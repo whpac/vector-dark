@@ -69,7 +69,7 @@
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a:visited {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-content-item:hover,
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu li > a:hover {background:#383838;}
-	html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-content-item-logout {border-top-color:#777;}
+	html:not(.disable-dark-skin) .vector-user-menu-logout {border-top-color:#777;}
 	html:not(.disable-dark-skin) .vector-user-links #p-personal-more a:hover,
 		html:not(.disable-dark-skin) .vector-user-links #p-vector-user-menu-overflow .mw-ui-button:hover,
 		html:not(.disable-dark-skin) .vector-user-links #pt-notifications-alert .mw-echo-notifications-badge:hover,
