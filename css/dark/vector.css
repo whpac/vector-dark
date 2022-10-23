@@ -780,6 +780,7 @@
 	html:not(.disable-dark-skin) .warningbox {background:#332000; color:#d8d8d8; border-color:#967100;}
 	html:not(.disable-dark-skin) span.fr-under-review {background-color:#4f3c00;}
 	html:not(.disable-dark-skin) .updatedmarker {background-color:#aeff00; color:#000;}
+	html:not(.disable-dark-skin) .content .mw-index-pager-list-header {background-color:#282828; color:#bbb;}
 
 	/* Ostatnie zmiany */
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagMultiselectWidget-handle,
