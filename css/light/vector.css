@@ -31,6 +31,7 @@
 	html.enable-dark-skin .cdx-button--framed:not([disabled]) {background-color:#303030; border-color:#777;}
 	html.enable-dark-skin .cdx-button--framed:not([disabled]):hover {background-color:#444; color:#fff;}
 	html.enable-dark-skin .cdx-button--framed[disabled] {background-color:#222; color:#777;}
+	html.enable-dark-skin .cdx-button--type-primary.cdx-button--action-progressive:enabled {background-color:#36c; border-color:#36c; color:#fff;}
 	html.enable-dark-skin .cdx-search-input {background-color:#222; border-color:#777;}
 	html.enable-dark-skin .cdx-search-input .cdx-input__input.cdx-input__input {border-right:none; border-top-right-radius:0; border-bottom-right-radius:0;}
 	html.enable-dark-skin .cdx-text-input__input:enabled {background-color:#222; color:#d8d8d8; border-color:#777;}
@@ -1193,7 +1194,34 @@
 	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions {background-color:#282828;}
 	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions .growthexperiments-mentor-dashboard-module-mentor-tools-claim-mentee-footer {color:#bbb;}
 	html.enable-dark-skin .growthexperiments-mentor-dashboard-module-resources .icon-references {filter:invert(1); opacity:1;}
-
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-module-mentee-overview-vue .growthexperiments-mentor-dashboard-module-mentee-overview-recent-by-mentees {background-color:#282828;}
+	html.enable-dark-skin .ext-growthExperiments-DataTable__table {border-color:#777;}
+	html.enable-dark-skin .ext-growthExperiments-DataTable__table thead tr {background:#444;}
+	html.enable-dark-skin .ext-growthExperiments-DataTable__table thead th,
+		html.enable-dark-skin .ext-growthExperiments-DataTable__table tbody td {border-color:#777;}
+	html.enable-dark-skin .ext-growthExperiments-DataTable__table__header {filter:invert(1) brightness(2);}
+	html.enable-dark-skin .ext-growthExperiments-DataTableCellMentee__user-info__last-seen {color:#bbb;}
+	html.enable-dark-skin .cdx-select--enabled .cdx-select__handle {background:#282828; color:#d8d8d8; border-color:#666;}
+	html.enable-dark-skin .cdx-select--enabled .cdx-select__handle:hover {background:#383838; color:#d8d8d8; border-color:#777;}
+	html.enable-dark-skin .cdx-select--enabled .cdx-select__handle:active {color:#fff;}
+	html.enable-dark-skin .cdx-select--enabled.cdx-select--expanded .cdx-select__handle {background:#383838;}
+	html.enable-dark-skin .cdx-select__indicator {filter:invert(1);}
+	html.enable-dark-skin .cdx-menu-item--enabled,
+		html.enable-dark-skin .cdx-menu-item--enabled .cdx-menu-item__content {color:#d8d8d8;}
+	html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected,
+		html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected:hover {background:#383838;}
+	html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected:hover,
+		html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected.cdx-menu-item--highlighted,
+		html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected:hover .cdx-menu-item__content,
+		html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected.cdx-menu-item--highlighted .cdx-menu-item__content,
+		html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected:hover .cdx-menu-item__text__description,
+		html.enable-dark-skin .cdx-menu-item--enabled.cdx-menu-item--selected.cdx-menu-item--highlighted .cdx-menu-item__text__description {color:#76acff;}
+	html.enable-dark-skin .ext-growthExperiments-MenteeFilters__form,
+		html.enable-dark-skin .ext-growthExperiments-CPopper__popover {background-color:#444; border-color:#888; box-shadow:1px 2px 2px 1px rgba(0, 0, 0, 0.4)}
+	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module h3,
+		html.enable-dark-skin .ext-growthExperiments-CInfoBox__popover.ext-growthExperiments-CInfoBox__popover h3 {color:#fff;}
+	html.enable-dark-skin .ext-growthExperiments-LegendBox__list-item__legend-icon {filter:invert(1); opacity:1;}
+	html.enable-dark-skin .ext-growthExperiments-NumberInput__input:enabled {background:#222; color:#d8d8d8; border-color:#777;}
 
 	/* Wybór artykułów do wstawienia linków */
 	html.enable-dark-skin .growthexperiments-homepage-module-suggested-edits .growthexperiments-homepage-module-footer {background:#282828; color:#bbb; border-color:#555;}
