@@ -12,10 +12,10 @@ test:
   stage: test
   script:
     - npm ci
-    - WIKI_PASSWORD=$WIKI_PASSWORD npm run test-ci
+    - bash -c "WIKI_PASSWORD=$WIKI_PASSWORD npm run test-ci"
   artifacts:
     when: always
     paths:
       - cypress/videos/**/*.mp4
       - cypress/screenshots/**/*.png
-    expire_in: 1 day
+    expire_in: 10 day
