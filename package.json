@@ -1,0 +1,20 @@
+{
+  "name": "vector-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vector.dark.js",
+  "scripts": {
+    "test-ci": "cypress run --headless --browser chrome",
+    "test": "cypress run --headed --browser chrome",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.wikimedia.org:toolforge-repos/vector-dark.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@simonsmith/cypress-image-snapshot": "^6.0.0",
+    "cypress": "^10.11.0"
+  }
+}

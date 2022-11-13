@@ -1,0 +1,21 @@
+image: cypress/base:10
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .npm/
+
+stages:
+  - test
+test:
+  stage: test
+  script:
+    - npm ci
+    - WIKI_PASSWORD=$WIKI_PASSWORD npm run test-ci
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 day
