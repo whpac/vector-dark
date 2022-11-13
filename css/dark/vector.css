@@ -682,6 +682,7 @@
 	html:not(.disable-dark-skin) .licznik-czasu .data-czas {color:#2bb;}
 	html:not(.disable-dark-skin) .licznik-czasu .zakonczone {color:#77f;}
 	html:not(.disable-dark-skin) .licznik-czasu .trwa {color:#3c3;}
+	html:not(.disable-dark-skin) .zastrzezenia {background:#282828 !important; border-color:#444 !important;}
 
 	html:not(.disable-dark-skin) img[src*=icon_check\.svg], html:not(.disable-dark-skin) img[src*=icon_imageAdd-ltr\.svg],
 		html:not(.disable-dark-skin) img[src*=icon_close-ltr\.svg], html:not(.disable-dark-skin) img[src*=icon_listBullet-ltr\.svg],
