@@ -78,7 +78,7 @@
 	html:not(.disable-dark-skin) .mw-ui-icon-wikimedia-search:not(.disabled):hover,
 		html:not(.disable-dark-skin) .vector-user-links .vector-user-menu .vector-menu-checkbox:hover + h3 {background:#282828;}
 	html:not(.disable-dark-skin) .oo-ui-pendingElement-pending {background-color:#222; background-image:linear-gradient(135deg,#383838 25%,transparent 25%,transparent 50%,#383838 50%,#383838 75%,transparent 75%,transparent);}
-	html:not(.disable-dark-skin) header .mw-ui-icon-wikimedia-watchlist:before {filter:invert(1) brightness(0.7);}
+	html:not(.disable-dark-skin) .mw-header li > .mw-ui-icon:before {filter:invert(1) brightness(0.7);}
 	html:not(.disable-dark-skin) #p-personal-more .vector-menu-content-list a,
 		html:not(.disable-dark-skin) #p-vector-user-menu-overflow .vector-menu-content-list a {filter:none;}
 	html:not(.disable-dark-skin) .vector-menu-dropdown .vector-menu-content {background:#444; border-color:#777;}
