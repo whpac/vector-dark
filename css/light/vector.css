@@ -158,7 +158,8 @@
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-tabs li.new a {color:#ef5252;}
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-dropdown .vector-menu-heading {color:#aaa;}
 	html.enable-dark-skin body.skin-vector-2022 .vector-menu-dropdown .vector-menu-heading:after {filter:invert(1); opacity:0.65;}
-	html.enable-dark-skin body.skin-vector-2022 #ca-watch {filter:invert(1);}
+	html.enable-dark-skin body.skin-vector-2022 #ca-watch a::before,
+		html.enable-dark-skin body.skin-vector-2022 #ca-unwatch a::before {filter:invert(1);}
 
 	/* Panel powiadomień */
 	html.enable-dark-skin .mw-echo-ui-notificationItemWidget {background-color:#333; border-color:#666;}
