@@ -1418,6 +1418,7 @@
 	html.enable-dark-skin .mw-content-ltr.mw-highlight-lines pre,
 		html.enable-dark-skin .mw-content-ltr.content .mw-highlight-lines pre {box-shadow:inset 2.75em 0 0 #333;}
 	html.enable-dark-skin .mw-highlight .linenos {color:#bbb}
+	html.enable-dark-skin .mw-highlight .hll {background-color:rgba(118, 172, 255, 0.25);}
 
 } /* Koniec @media */
 
