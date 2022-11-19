@@ -18,7 +18,9 @@
 	html.enable-dark-skin body.skin-vector-legacy #pt-notifications-alert .mw-echo-notifications-badge {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E bell %3C/title%3E %3Cpath d=%22M16 7a5.38 5.38 0 0 0-4.46-4.85C11.6 1.46 11.53 0 10 0S8.4 1.46 8.46 2.15A5.38 5.38 0 0 0 4 7v6l-2 2v1h16v-1l-2-2zm-6 13a3 3 0 0 0 3-3H7a3 3 0 0 0 3 3z%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin body.skin-vector-legacy #pt-notifications-notice .mw-echo-notifications-badge {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E %3Ctitle%3E tray %3C/title%3E %3Cpath d=%22M17 1H3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 12h-4l-1 2H8l-1-2H3V3h14z%22 fill=%22%23aaa%22/%3E %3C/svg%3E");}
 	html.enable-dark-skin #pt-notifications-alert .mw-echo-notifications-badge:after,
-		html.enable-dark-skin #pt-notifications-notice .mw-echo-notifications-badge:after {background:#444; color:#f0f0f0; border-color:#aaa;}
+		html.enable-dark-skin #pt-notifications-notice .mw-echo-notifications-badge:after,
+		html.enable-dark-skin body.skin-vector-2022 #pt-notifications-alert .mw-ui-button:after,
+		html.enable-dark-skin body.skin-vector-2022 #pt-notifications-notice .mw-ui-button:after {background:#444; color:#f0f0f0; border-color:#aaa;}
 	html.enable-dark-skin .cx-callout {background:#222; border-color:#777;}
 	html.enable-dark-skin .cx-callout:before {border-bottom-color:#777;}
 	html.enable-dark-skin .cx-callout:after {border-bottom-color:#222;}
