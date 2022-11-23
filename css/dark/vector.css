@@ -501,7 +501,8 @@
 	html:not(.disable-dark-skin).client-js .toc-mobile .collapsible-heading .indicator {filter:invert(1);}
 	html:not(.disable-dark-skin) #filetoc {background:#222; border-color:#666;}
 	html:not(.disable-dark-skin) .sidebar-toc {background-color:#222; outline:1px solid #484848;}
-	html:not(.disable-dark-skin) .sidebar-toc:after {background:linear-gradient(rgba(34,34,34,0),#222);}
+	html:not(.disable-dark-skin) .vector-feature-page-tools-enabled.vector-toc-pinned .sidebar-toc:after,
+		html:not(.disable-dark-skin) .vector-feature-page-tools-disabled.vector-toc-not-collapsed .sidebar-toc:after {background:linear-gradient(rgba(34,34,34,0),#222);}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-list-item a {color:#76acff;}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-list-item-active > .sidebar-toc-link {color:#bbb;}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
