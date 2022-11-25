@@ -335,6 +335,7 @@
 	html.enable-dark-skin .minerva-footer .footer-content .minerva-footer-logo img {filter:invert(1) brightness(0.8);}
 	html.enable-dark-skin .mw-footer {border-top-color:#777;}
 	html.enable-dark-skin .mw-footer > .post-content .minerva-footer-logo {border-color:#777;}
+	html.enable-dark-skin .vector-limited-width-toggle:before {filter:invert(1);}
 
 	/* Kolory linków */
 	html.enable-dark-skin a,
