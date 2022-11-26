@@ -1424,6 +1424,14 @@
 	html:not(.disable-dark-skin) .mw-highlight .linenos {color:#bbb}
 	html:not(.disable-dark-skin) .mw-highlight .hll {background-color:rgba(118, 172, 255, 0.25);}
 
+	/* JSON */
+	html:not(.disable-dark-skin) .mw-json tr {background-color:#222;}
+	html:not(.disable-dark-skin) .mw-json th,
+		html:not(.disable-dark-skin) .mw-json td {border-color:#666;}
+	html:not(.disable-dark-skin) .mw-json th {background-color:#383838;}
+	html:not(.disable-dark-skin) .mw-json-value,
+		html:not(.disable-dark-skin) .mw-json-single-value {background-color:#1a3320;}
+
 } /* Koniec @media */
 
 @media only screen and (min-width: 1165px){
