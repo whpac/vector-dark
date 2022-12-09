@@ -1174,7 +1174,7 @@
 		html.enable-dark-skin .growthexperiments-homepage-mentorship-editcount,
 		html.enable-dark-skin .growthexperiments-homepage-mentorship-lastactive {color:#999;}
 	html.enable-dark-skin .growthexperiments-homepage-mentorship-intro {color:#d8d8d8; border-left-color:#666;}
-	html.enable-dark-skin .growthexperiments-dashboard-module-header-icon .oo-ui-icon-help {filter:invert(1); opacity:0.8;}
+	html.enable-dark-skin .growthexperiments-dashboard-module-header-icon.oo-ui-icon-help {filter:invert(1); opacity:0.8;}
 	html.enable-dark-skin .growthexperiments-homepage-module .growthexperiments-homepage-module-subheader,
 		html.enable-dark-skin .growthexperiments-homepage-module h3.growthexperiments-homepage-module-subheader {color:#bbb;}
 	html.enable-dark-skin .mw-ge-suggestion-wrapper .mw-ge-suggestion {background:#333; border-color:#555; color:#ccc;}
@@ -1185,6 +1185,7 @@
 	html.enable-dark-skin .oo-ui-widget.mw-ge-homepage-taskTypeSelectionWidget-checkbox-link-recommendation .mw-ge-homepage-taskTypeSelectionWidget-additional-msg .oo-ui-iconElement-icon {filter:invert(1);}
 	html.enable-dark-skin h4.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-label {color:inherit;}
 	html.enable-dark-skin p.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-desc {color:#d8d8d8;}
+	html.enable-dark-skin .mw-body-content .growthexperiments-homepage-module-help ul li:before {color:#d8d8d8;}
 	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-head,
 	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-body,
 	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-foot {color:#d8d8d8;}
