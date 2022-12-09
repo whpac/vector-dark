@@ -509,14 +509,12 @@
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-title {color:#fff;}
 	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-level-1-active:not(.sidebar-toc-list-item-active) > .sidebar-toc-link {color:#bbb;}
-	html:not(.disable-dark-skin) #vector-toc-collapsed-button {background-color:transparent;}
-	html:not(.disable-dark-skin) #vector-toc-collapsed-button:hover,
-		html:not(.disable-dark-skin) #vector-toc-collapsed-button:active {filter:none; background-color:#222;}
-	html:not(.disable-dark-skin) #vector-toc-collapsed-button::before {filter:invert(1); opacity:0.8;}
-	html:not(.disable-dark-skin) .vector-toc-collapse-button,
-		html:not(.disable-dark-skin) .vector-toc-uncollapse-button {color:#76acff}
-	html:not(.disable-dark-skin) .vector-toc-collapse-button:hover,
-		html:not(.disable-dark-skin) .vector-toc-uncollapse-button:hover {color:#3a88ff}
+	html:not(.disable-dark-skin) .vector-page-titlebar-toc {background-color:#303030;}
+	html:not(.disable-dark-skin) .vector-page-titlebar-toc:hover,
+		html:not(.disable-dark-skin) .vector-page-titlebar-toc:active {background-color:#222;}
+	html:not(.disable-dark-skin) .vector-page-titlebar-toc label::before {filter:invert(1); opacity:0.8;}
+	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button {color:#76acff}
+	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:hover {color:#3a88ff}
 	html:not(.disable-dark-skin).client-js .vector-toc-collapsed .vector-layout-grid .sidebar-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
 
 	html:not(.disable-dark-skin) .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
