@@ -515,6 +515,8 @@
 	html:not(.disable-dark-skin) .vector-page-titlebar-toc label::before {filter:invert(1); opacity:0.8;}
 	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button {color:#76acff}
 	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:hover {color:#3a88ff}
+	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:before,
+		html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:after {color:#aaa;}
 	html:not(.disable-dark-skin).client-js .vector-toc-collapsed .vector-layout-grid .sidebar-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
 
 	html:not(.disable-dark-skin) .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
