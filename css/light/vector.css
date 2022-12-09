@@ -1185,7 +1185,47 @@
 	html.enable-dark-skin .oo-ui-widget.mw-ge-homepage-taskTypeSelectionWidget-checkbox-link-recommendation .mw-ge-homepage-taskTypeSelectionWidget-additional-msg .oo-ui-iconElement-icon {filter:invert(1);}
 	html.enable-dark-skin h4.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-label {color:inherit;}
 	html.enable-dark-skin p.mw-ge-homepage-taskTypeSelectionWidget-difficulty-level-desc {color:#d8d8d8;}
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-head,
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-body,
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-foot {color:#d8d8d8;}
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-window-head {background-color:rgba(24,24,32,0.5);}
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog .oo-ui-panelLayout {background:#282828;}
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog-dot {background:#666;}
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog-dot.dot-completed {background:#76acff;}
+	html.enable-dark-skin .growthexperiments-multi-pane-dialog-progress-indicator {color:#aaa; background:#222; margin:4px; padding:4px 8px; border:1px solid #555; border-radius:2px; box-shadow:1px 1px 5px 1px rgba(0,0,0,0.2);}
 	
+	html.enable-dark-skin .structuredtask-onboarding-content-image {background:rgba(24,24,32,0.5); box-shadow:none;}
+	html.enable-dark-skin .addlink-onboarding-content-example-label {color:#aaa;}
+	html.enable-dark-skin .addlink-onboarding-content-example {background:#222; border-color:#444;}
+	html.enable-dark-skin .addlink-onboarding-content-example .positive {color:#fff; background:#244270; border:1px solid #76acff; border-radius:1px;}
+	html.enable-dark-skin .mw-ge-machine-suggestions-mode-title .mw-ge-machine-suggestions-mode-title-text {color:#d8d8d8;}
+	html.enable-dark-skin .mw-ge-machine-suggestions-mode-title .oo-ui-icon-robot {filter:invert(1); opacity:0.8;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog.ve-ui-toolbarDialog-position-inline {background:#222; border-color:#777;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-desktop-anchor:before {border-bottom-color:#777;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-desktop-anchor:after {border-bottom-color:#383838;}
+	html.enable-dark-skin .mw-ge-structuredTaskToolbarDialog .oo-ui-window-head {background:#383838;}
+	html.enable-dark-skin .mw-ge-structuredTaskToolbarDialog .oo-ui-window-head .mw-ge-structuredTaskToolbarDialog-head-robot-icon {filter:invert(1); opacity:0.8;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-introLabel {color:#aaa;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-linkPreview-extract {color:#bbb;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-linkPreview .mw-ge-recommendedLinkToolbarDialog-linkPreview-link {color:#76acff;}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-desktop .mw-ge-recommendedLinkToolbarDialog-linkPreview .mw-ge-recommendedLinkToolbarDialog-linkPreview-link:after {filter:invert(1) hue-rotate(180deg);}
+	html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-buttons-prev,
+		html.enable-dark-skin .mw-ge-recommendedLinkToolbarDialog-buttons-next {background:none;}
+	html.enable-dark-skin .ve-ce-linkAnnotation.mw-ge-recommendedLinkAnnotation {background:#724a00; box-shadow:0 0 0 1px #bf8f00;}
+	html.enable-dark-skin .ve-ce-linkAnnotation.mw-ge-recommendedLinkAnnotation-accepted {color:#76acff;}
+	html.enable-dark-skin .ve-ce-linkAnnotation.mw-ge-recommendedLinkAnnotation.mw-ge-recommendedLinkAnnotation-active {background:#222; box-shadow:0 0 0 2px #76acff;}
+	html.enable-dark-skin .ve-ce-linkAnnotation.mw-ge-recommendedLinkAnnotation .mw-ge-recommendedLinkAnnotation-icon-undecided,
+		html.enable-dark-skin .ve-ce-linkAnnotation.mw-ge-recommendedLinkAnnotation .mw-ge-recommendedLinkAnnotation-icon-accepted {filter:invert(1) hue-rotate(180deg);}
+	html.enable-dark-skin .ve-ce-linkAnnotation.mw-ge-recommendedLinkAnnotation .mw-ge-recommendedLinkAnnotation-icon-rejected {filter:brightness(1.8);}
+	html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-summaryTable caption {color:#fff;}
+	html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-summaryTable tr {border-bottom-color:#555;}
+	html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-summaryTable th {color:#bbb;}
+	html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-table-data {color:#d8d8d8;}
+	html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-table-data .oo-ui-icon-subtract,
+		html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-table-data .oo-ui-icon-link {filter:invert(1); opacity:0.8;}
+	html.enable-dark-skin .ge-structuredTask-mwSaveDialog .ge-structuredTask-copyrightwarning {color:#aaa;}
+	html.enable-dark-skin .ge-addlink-mwSaveDialog .ge-addlink-mwSaveDialog-summaryTable th .oo-ui-icon-robot-black {filter:invert(1);}
+
 	/* Panel przewodnika */
 	html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview,
 		html.enable-dark-skin .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module {border-color:#777;}
