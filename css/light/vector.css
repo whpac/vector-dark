@@ -614,7 +614,9 @@
 	html.enable-dark-skin .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {color:#d8d8d8;}
 	html.enable-dark-skin input:-webkit-autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html.enable-dark-skin input:autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
-	
+	html.enable-dark-skin .mw-inputbox-createbox:required:invalid ~ .mw-ui-button,
+		html.enable-dark-skin .mw-inputbox-createbox:required:invalid ~ .mw-ui-button:hover {background-color:#181818; color:#555; border-color:#555;}
+
 	/* Klawisz z klawiatury */
 	html.enable-dark-skin .keyboard-key {border:1px solid #666 !important; -moz-box-shadow: 0.1em 0.2em 0.2em #222 !important; -webkit-box-shadow: 0.1em 0.2em 0.2em #222 !important;
 		box-shadow: 0.1em 0.2em 0.2em #222 !important; color:#d8d8d8; border-radius:0.2em; background-color: #555 !important;
