@@ -1241,7 +1241,8 @@
 	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content table tbody td,
 		html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-body .growthexperiments-mentor-dashboard-module-mentee-overview-content table thead th {border-bottom-color:#666;}
 	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools h4 {color:#bbb;}
-	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions {background-color:#282828;}
+	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions,
+		html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-module-mentee-overview .growthexperiments-mentor-dashboard-module-mentee-overview-recent-by-mentees {background-color:#282828;}
 	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-container .growthexperiments-mentor-dashboard-module-mentor-tools .growthexperiments-mentor-dashboard-module-mentor-tools-other-actions .growthexperiments-mentor-dashboard-module-mentor-tools-claim-mentee-footer {color:#bbb;}
 	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-module-resources .icon-references {filter:invert(1); opacity:1;}
 	html:not(.disable-dark-skin) .growthexperiments-mentor-dashboard-module-mentee-overview-vue .growthexperiments-mentor-dashboard-module-mentee-overview-recent-by-mentees {background-color:#282828;}
