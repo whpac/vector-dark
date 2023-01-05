@@ -245,7 +245,9 @@
 	html:not(.disable-dark-skin) #mw-panel .portal h3,
 		html:not(.disable-dark-skin) #mw-panel .portal .vector-menu-heading,
 		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-heading,
-		html:not(.disable-dark-skin) .mw-sidebar-action .mw-sidebar-action-item h3.mw-sidebar-action-heading {border-bottom-color:#777; color:#ddd; background-image:none;}
+		html:not(.disable-dark-skin) .mw-sidebar-action .mw-sidebar-action-item h3.mw-sidebar-action-heading,
+		html:not(.disable-dark-skin) .vector-main-menu-group .vector-menu-heading,
+		html:not(.disable-dark-skin) .vector-main-menu-action-item .vector-menu-heading {border-bottom-color:#777; color:#ddd; background-image:none;}
 	html:not(.disable-dark-skin) #mw-panel .portal .body {background-image:none; border-top:1px solid #777;}
 	html:not(.disable-dark-skin) #mw-panel #p-logo + .portal .body {border:none}
 	html:not(.disable-dark-skin) .mw-ui-button:not(.mw-ui-quiet) {background-color:#282828; color:#ccc; border-color:#777;}
@@ -350,13 +352,17 @@
 		html:not(.disable-dark-skin) .vector-menu-portal .body li a,
 		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-content li a,
 		html:not(.disable-dark-skin) .vector-menu-dropdown .mw-list-item a,
-		html:not(.disable-dark-skin) #pt-userpage-2 a {color:#76acff}
+		html:not(.disable-dark-skin) #pt-userpage-2 a,
+		html:not(.disable-dark-skin) .vector-main-menu-group .vector-menu-content li a,
+		html:not(.disable-dark-skin) .vector-main-menu-action-item .vector-menu-content li a {color:#76acff}
 	html:not(.disable-dark-skin) a:visited,
 		html:not(.disable-dark-skin) #mw-panel .portal .body li a:visited,
 		html:not(.disable-dark-skin) .mw-parser-output a.extiw:visited,
 		html:not(.disable-dark-skin) .mw-parser-output a.external:visited,
 		html:not(.disable-dark-skin) .vector-menu-portal .body li a:visited,
-		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-content li a:visited {color:#ba8fe7}
+		html:not(.disable-dark-skin) .vector-menu-portal .vector-menu-content li a:visited,
+		html:not(.disable-dark-skin) .vector-main-menu-group .vector-menu-content li a:visited,
+		html:not(.disable-dark-skin) .vector-main-menu-action-item .vector-menu-content li a:visited {color:#ba8fe7}
 	html:not(.disable-dark-skin) a.new,
 		html:not(.disable-dark-skin) .vector-menu-tabs li.new a,
 		html:not(.disable-dark-skin) #p-personal a.new {color:#ef5252;}
