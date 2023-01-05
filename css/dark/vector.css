@@ -253,7 +253,9 @@
 	html:not(.disable-dark-skin) .mw-ui-button:not(.mw-ui-quiet):active,
 		html:not(.disable-dark-skin) .mw-interlanguage-selector:active,
 		html:not(.disable-dark-skin) .mw-interlanguage-selector.selector-open {background-color:#333; color:#ccc; border-color:#777;}
-	html:not(.disable-dark-skin) body.skin-vector:not(.skin-vector-legacy) #mw-panel {background-image:linear-gradient(to bottom, #303030 0%, #222 10%, #222 90%, #303030 100%); border-right-color:#444;}
+	html:not(.disable-dark-skin) body.skin-vector:not(.skin-vector-legacy) #mw-panel,
+		html:not(.disable-dark-skin) .vector-feature-page-tools-disabled .vector-main-menu,
+		html:not(.disable-dark-skin) #vector-main-menu-pinned-container .vector-main-menu {background-color:#222;}
 	html:not(.disable-dark-skin) .mw-message-box {background-color:#333; border-color:#444; color:#d8d8d8;}
 
 	/* Wybór języka */
