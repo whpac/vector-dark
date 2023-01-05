@@ -434,13 +434,17 @@
 	html.enable-dark-skin body.skin-minerva .category-header li {border-color:#777;}
 	html.enable-dark-skin body.skin-minerva.action-history .mw-history-compareselectedversions {background:#303030;}
 	html.enable-dark-skin body.skin-minerva .mw-history-undo a,
-		html.enable-dark-skin body.skin-minerva .mw-rollback-link a {background:#222; border-color:#777;}
+		html.enable-dark-skin body.skin-minerva .mw-rollback-link a,
+		html.enable-dark-skin body.skin-minerva a.mw-thanks-thank-link {background:#222; border-color:#777;}
 	html.enable-dark-skin body.skin-minerva .mw-history-undo a:hover,
 		html.enable-dark-skin body.skin-minerva .mw-rollback-link a:hover,
+		html.enable-dark-skin body.skin-minerva a.mw-thanks-thank-link:hover,
 		html.enable-dark-skin body.skin-minerva .mw-history-undo a:active,
 		html.enable-dark-skin body.skin-minerva .mw-rollback-link a:active,
+		html.enable-dark-skin body.skin-minerva a.mw-thanks-thank-link:active,
 		html.enable-dark-skin body.skin-minerva .mw-history-undo a.is-on,
-		html.enable-dark-skin body.skin-minerva .mw-rollback-link a.is-on {background:#333; color:#d8d8d8; border-color:#888;}
+		html.enable-dark-skin body.skin-minerva .mw-rollback-link a.is-on,
+		html.enable-dark-skin body.skin-minerva a.mw-thanks-thank-link.is-on {background:#333; color:#d8d8d8; border-color:#888;}
 
 	/* Podgląd przypisów */
 	html.enable-dark-skin .referencetooltip li:first-child {background:#181818; border-color:#4f4b8d; -webkit-box-shadow:2px 4px 8px rgba(0, 0, 0, 0.7); -moz-box-shadow:2px 4px 8px rgba(0, 0, 0, 0.7); box-shadow:2px 4px 8px rgb(0, 0, 0, 0.7);}
@@ -1492,7 +1496,7 @@
 }
 
 @media screen and (min-width: 1001px) {
-	html:not(.disable-dark-skin) .mw-parser-output .prouser-contact {background:#282828; border:1px solid #444;}
+	html.enable-dark-skin .mw-parser-output .prouser-contact {background:#282828; border:1px solid #444;}
 }
 
 @keyframes unseen-fade-out-to-read-dark {
