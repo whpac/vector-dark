@@ -623,6 +623,7 @@
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {background:#333;}
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget-handle {border-color:#777;}
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle {background-color:#222; color:#777; text-shadow:0 1px 1px #222; border-color:#555;}
 	html:not(.disable-dark-skin) input:-webkit-autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html:not(.disable-dark-skin) input:autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html:not(.disable-dark-skin) .mw-inputbox-createbox:required:invalid ~ .mw-ui-button,
