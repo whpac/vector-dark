@@ -512,14 +512,16 @@
 	html:not(.disable-dark-skin).client-js .toc-mobile {background-color:#444; border-color:#777;}
 	html:not(.disable-dark-skin).client-js .toc-mobile .collapsible-heading .indicator {filter:invert(1);}
 	html:not(.disable-dark-skin) #filetoc {background:#222; border-color:#666;}
-	html:not(.disable-dark-skin) .sidebar-toc {background-color:#222; outline:1px solid #484848;}
-	html:not(.disable-dark-skin) .vector-toc-pinned #vector-toc-pinned-container .sidebar-toc:after {background:linear-gradient(rgba(34,34,34,0),#222);}
+	html:not(.disable-dark-skin) .sidebar-toc,
+		html:not(.disable-dark-skin) .vector-toc {background-color:#222; outline:1px solid #484848;}
+	html:not(.disable-dark-skin) .vector-toc-pinned #vector-toc-pinned-container .sidebar-toc:after,
+		html:not(.disable-dark-skin) .vector-toc-pinned #vector-toc-pinned-container .vector-toc:after {background:linear-gradient(rgba(34,34,34,0),#222);}
 	html:not(.disable-dark-skin) #vector-sticky-header-toc-label::before {filter:invert(1);}
-	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-list-item a {color:#76acff;}
-	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-list-item-active > .sidebar-toc-link {color:#bbb;}
-	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
-	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-title {color:#fff;}
-	html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-level-1-active:not(.sidebar-toc-list-item-active) > .sidebar-toc-link {color:#bbb;}
+	html:not(.disable-dark-skin) .sidebar-toc-list-item a {color:#76acff;}
+	html:not(.disable-dark-skin) .sidebar-toc-list-item-active > .sidebar-toc-link {color:#bbb;}
+	html:not(.disable-dark-skin) .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
+	html:not(.disable-dark-skin) .sidebar-toc-title {color:#fff;}
+	html:not(.disable-dark-skin) .sidebar-toc-level-1-active:not(.sidebar-toc-list-item-active) > .sidebar-toc-link {color:#bbb;}
 	html:not(.disable-dark-skin) .vector-page-titlebar-toc {background-color:#303030;}
 	html:not(.disable-dark-skin) .vector-page-titlebar-toc:hover,
 		html:not(.disable-dark-skin) .vector-page-titlebar-toc:active {background-color:#222;}
