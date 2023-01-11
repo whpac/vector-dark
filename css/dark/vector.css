@@ -519,7 +519,8 @@
 	html:not(.disable-dark-skin) #vector-sticky-header-toc-label::before {filter:invert(1);}
 	html:not(.disable-dark-skin) .sidebar-toc-list-item a {color:#76acff;}
 	html:not(.disable-dark-skin) .sidebar-toc-list-item-active > .sidebar-toc-link,
-		html:not(.disable-dark-skin) .vector-toc-list-item-active > .vector-toc-link {color:#bbb;}
+		html:not(.disable-dark-skin) .vector-toc-list-item-active > .vector-toc-link,
+		html:not(.disable-dark-skin) .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > .vector-toc-link {color:#bbb;}
 	html:not(.disable-dark-skin) .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
 	html:not(.disable-dark-skin) .sidebar-toc-title {color:#fff;}
 	html:not(.disable-dark-skin) .sidebar-toc-level-1-active:not(.sidebar-toc-list-item-active) > .sidebar-toc-link {color:#bbb;}
