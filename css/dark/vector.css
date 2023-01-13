@@ -126,10 +126,13 @@
 	html:not(.disable-dark-skin) header .vector-sticky-header-icons .mw-ui-icon:not(.disabled):hover {background-color:rgba(255,255,255,0.1);}
 	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector {color:#bbb;}
 	html:not(.disable-dark-skin) .vector-sticky-header .mw-interlanguage-selector:hover {background:rgba(255,255,255,0.1);}
+	html:not(.disable-dark-skin) header .mw-ui-icon-wikimedia-language {filter:invert(1);}
+	html:not(.disable-dark-skin) .mw-portlet-lang-heading-empty::after {filter:invert(1);}
 	html:not(.disable-dark-skin) #p-lang-btn-sticky-header:after {filter:invert(1);}
 	html:not(.disable-dark-skin) .vector-sticky-header.vector-header-search-toggled .vector-search-box-show-thumbnail .cdx-input__start-icon {color:#d8d8d8;}
 	html:not(.disable-dark-skin) .vector-sticky-header-icons .mw-ui-button.mw-ui-progressive.mw-ui-quiet {color:#76acff}
 	html:not(.disable-dark-skin) .vector-sticky-header-icons .mw-ui-button.mw-ui-progressive.mw-ui-quiet .mw-ui-icon {filter:brightness(2.4) hue-rotate(180deg);}
+	html:not(.disable-dark-skin) .vector-page-titlebar .mw-portlet-lang .mw-portlet-lang-heading-empty + .vector-menu-content .mw-portlet-empty-language-selector-body {color:#aaa;}
 
 	/* Karty w nagłówku */
 	html:not(.disable-dark-skin) body.skin-vector-legacy .vector-menu-tabs {background-image:none; padding-left:0;}
