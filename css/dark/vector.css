@@ -516,20 +516,16 @@
 	html:not(.disable-dark-skin).client-js .toc-mobile {background-color:#444; border-color:#777;}
 	html:not(.disable-dark-skin).client-js .toc-mobile .collapsible-heading .indicator {filter:invert(1);}
 	html:not(.disable-dark-skin) #filetoc {background:#222; border-color:#666;}
-	html:not(.disable-dark-skin) .sidebar-toc,
-		html:not(.disable-dark-skin) .vector-toc {background-color:#222; outline:1px solid #484848;}
+	html:not(.disable-dark-skin) .vector-toc {background-color:#222; outline:1px solid #484848;}
 	html:not(.disable-dark-skin) .vector-toc-pinned #vector-toc-pinned-container .sidebar-toc:after,
 		html:not(.disable-dark-skin) .vector-toc-pinned #vector-toc-pinned-container .vector-toc:after {background:linear-gradient(rgba(34,34,34,0),#222);}
 	html:not(.disable-dark-skin) #vector-sticky-header-toc-label::before {filter:invert(1);}
-	html:not(.disable-dark-skin) .sidebar-toc-list-item a {color:#76acff;}
-	html:not(.disable-dark-skin) .sidebar-toc-list-item-active > .sidebar-toc-link,
-		html:not(.disable-dark-skin) .vector-toc-list-item-active > .vector-toc-link,
+	html:not(.disable-dark-skin) .vector-toc .vector-toc-link {color:#76acff;}
+	html:not(.disable-dark-skin) .vector-toc-list-item-active > .vector-toc-link,
 		html:not(.disable-dark-skin) .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > .vector-toc-link,
-		html:not(.disable-dark-skin) .sidebar-toc .sidebar-toc-list-item-active.sidebar-toc-level-1-active > .sidebar-toc-link,
 		html:not(.disable-dark-skin) .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-active) > .vector-toc-link {color:#bbb;}
-	html:not(.disable-dark-skin) .sidebar-toc-toggle {filter:invert(1) brightness(0.75);}
-	html:not(.disable-dark-skin) .sidebar-toc-title {color:#fff;}
-	html:not(.disable-dark-skin) .sidebar-toc-level-1-active:not(.sidebar-toc-list-item-active) > .sidebar-toc-link {color:#bbb;}
+	html:not(.disable-dark-skin) .vector-toc-toggle {filter:invert(1) brightness(0.75);}
+	html:not(.disable-dark-skin) .vector-toc-title {color:#fff;}
 	html:not(.disable-dark-skin) .vector-page-titlebar-toc {background-color:#303030;}
 	html:not(.disable-dark-skin) .vector-page-titlebar-toc:hover,
 		html:not(.disable-dark-skin) .vector-page-titlebar-toc:active {background-color:#222;}
@@ -538,7 +534,7 @@
 	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:hover {color:#3a88ff}
 	html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:before,
 		html:not(.disable-dark-skin) .vector-pinnable-header-toggle-button:after {color:#aaa;}
-	html:not(.disable-dark-skin).client-js .vector-toc-collapsed .vector-layout-grid .sidebar-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
+	html:not(.disable-dark-skin).client-js .vector-toc-collapsed .vector-layout-grid .vector-toc {border:1px solid #666; box-shadow:0 0 16px 2px rgba(0, 0, 0, 0.3);}
 
 	html:not(.disable-dark-skin) .catlinks {background-color:#222; border-color:#777;} /* Lista kategorii */
 	html:not(.disable-dark-skin) .navbox {background-color:#222; border-color:#777;}
