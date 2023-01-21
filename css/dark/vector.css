@@ -632,7 +632,8 @@
 	html:not(.disable-dark-skin) .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle {background-color:#222; color:#777; text-shadow:0 1px 1px #222; border-color:#555;}
 	html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select {color:#d8d8d8}
 	html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:hover {color:#d8d8d8;}
-	html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:active {color:#d8d8d8; background-color:#282828;}
+	html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:active {color:#d8d8d8;}
+	html:not(.disable-dark-skin) .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:focus {background-color:#282828;}
 	html:not(.disable-dark-skin) select.oo-ui-indicator-down {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Ctitle%3E down %3C/title%3E%3Cpath fill=%22%23bbb%22 d=%22M9.9 2.9 6 6.8 2.1 2.9 1 4l5 5 5-5z%22/%3E%3C/svg%3E");}
 	html:not(.disable-dark-skin) input:-webkit-autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html:not(.disable-dark-skin) input:autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
