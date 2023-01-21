@@ -634,7 +634,7 @@
 	html.enable-dark-skin .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select {color:#d8d8d8}
 	html.enable-dark-skin .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:hover {color:#d8d8d8;}
 	html.enable-dark-skin .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:active {color:#d8d8d8;}
-	html.enable-dark-skin select.oo-ui-indicator-down {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Ctitle%3E down %3C/title%3E%3Cpath fill%22%23bbb%22 d=%22M9.9 2.9 6 6.8 2.1 2.9 1 4l5 5 5-5z%22/%3E%3C/svg%3E");}
+	html.enable-dark-skin select.oo-ui-indicator-down {background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Ctitle%3E down %3C/title%3E%3Cpath fill=%22%23bbb%22 d=%22M9.9 2.9 6 6.8 2.1 2.9 1 4l5 5 5-5z%22/%3E%3C/svg%3E");}
 	html.enable-dark-skin input:-webkit-autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html.enable-dark-skin input:autofill {background:#003270 !important; color:#d8d8d8 !important; text-shadow:1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;}
 	html.enable-dark-skin .mw-inputbox-createbox:required:invalid ~ .mw-ui-button,
