@@ -325,6 +325,7 @@
 	html.enable-dark-skin .cx-uls-entrypoint__header {border-bottom-color:#777;}
 	html.enable-dark-skin .uls-empty-state .uls-empty-state__header,
 		html.enable-dark-skin .uls-empty-state .uls-empty-state__desc {color:#aaa;}
+	html.enable-dark-skin #uls-settings-block.uls-settings-block--vector-2022.uls-settings-block--with-add-languages {background-color:#282828; border-top-color:#666;}
 
 	/* Stopka */
 	html.enable-dark-skin #footer #footer-info li {color:#d8d8d8;} /* Tekst w stopce na komputerze */
