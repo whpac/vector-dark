@@ -524,9 +524,9 @@
 	html.enable-dark-skin .vector-toc-list-item-active > .vector-toc-link,
 		html.enable-dark-skin .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > .vector-toc-link,
 		html.enable-dark-skin .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-active) > .vector-toc-link {color:#bbb;}
-	html.enable-dark-skin .vector-toc-toggle {filter:invert(1) brightness(0.75);}
+	html.enable-dark-skin .vector-toc-toggle::before {filter:invert(1) brightness(0.75);}
 	html.enable-dark-skin .vector-toc-title {color:#fff;}
-	html.enable-dark-skin .vector-page-titlebar-toc {background-color:#303030;}
+	html.enable-dark-skin.client-js .vector-below-page-title .vector-page-titlebar-toc {background-color:#303030;}
 	html.enable-dark-skin .vector-page-titlebar-toc:hover,
 		html.enable-dark-skin .vector-page-titlebar-toc:active {background-color:#222;}
 	html.enable-dark-skin .vector-page-titlebar-toc label::before {filter:invert(1); opacity:0.8;}
