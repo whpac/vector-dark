@@ -261,6 +261,12 @@
 	html.enable-dark-skin.vector-feature-page-tools-disabled .vector-main-menu,
 		html.enable-dark-skin #vector-main-menu-pinned-container .vector-main-menu {background-color:#222;}
 	html.enable-dark-skin .mw-message-box {background-color:#333; border-color:#444; color:#d8d8d8;}
+	html.enable-dark-skin .vector-feature-page-tools-enabled .vector-pinnable-element .mw-list-item a,
+		html.enable-dark-skin .vector-feature-page-tools-enabled .vector-pinnable-element .mw-list-item a:visited {color:#76acff;}
+	html.enable-dark-skin .vector-pinnable-header-label {color:#ddd;}
+	html.enable-dark-skin .vector-feature-page-tools-enabled .vector-pinnable-element > *:not(:last-child) {border-bottom-color:#777;}
+	html.enable-dark-skin .vector-feature-page-tools-enabled .vector-pinnable-element .vector-menu-heading {color:#ccc;}
+	html.enable-dark-skin .mw-ui-icon-wikimedia-menu:before {filter:invert(1); opacity:0.6;}
 
 	/* Wybór języka */
 	html.enable-dark-skin body.skin-vector .uls-menu {border-color: #777; -webkit-box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15); box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15);}
@@ -517,9 +523,9 @@
 	html.enable-dark-skin.client-js .toc-mobile {background-color:#444; border-color:#777;}
 	html.enable-dark-skin.client-js .toc-mobile .collapsible-heading .indicator {filter:invert(1);}
 	html.enable-dark-skin #filetoc {background:#222; border-color:#666;}
-	html.enable-dark-skin .vector-toc {background-color:#222; outline:1px solid #484848;}
+	html.enable-dark-skin .vector-toc {background-color:#222; border:1px solid #484848;}
 	html.enable-dark-skin .vector-toc-pinned #vector-toc-pinned-container .sidebar-toc:after,
-		html.enable-dark-skin .vector-toc-pinned #vector-toc-pinned-container .vector-toc:after {background:linear-gradient(rgba(34,34,34,0),#222);}
+		html.enable-dark-skin .vector-toc-pinned #vector-toc-pinned-container .vector-toc:after {background:linear-gradient(rgba(34,34,34,0),#222); left:1px; right:1px; bottom:1px;}
 	html.enable-dark-skin #vector-sticky-header-toc-label::before {filter:invert(1);}
 	html.enable-dark-skin .vector-toc .vector-toc-link {color:#76acff;}
 	html.enable-dark-skin .vector-toc-list-item-active > .vector-toc-link,
