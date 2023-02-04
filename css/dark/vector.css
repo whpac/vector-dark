@@ -884,9 +884,9 @@
 	html:not(.disable-dark-skin) .fr-unreviewed-unwatched {background-color:#663b39;} /* Nieobserwowane zdezaktualizowane przejrzane strony */
 	
 	/* Różnice między wersjami */
-	html:not(.disable-dark-skin) .diff-deletedline {border-color:#ffb900;}
+	html:not(.disable-dark-skin) .diff-deletedline {border-color:#ffb900; background-color:transparent;}
 	html:not(.disable-dark-skin) .diff-deletedline .diffchange {background-color:#c18c00; color:#fff;}
-	html:not(.disable-dark-skin) .diff-addedline {border-color:#40a4ff;}
+	html:not(.disable-dark-skin) .diff-addedline {border-color:#40a4ff; background-color:transparent;}
 	html:not(.disable-dark-skin) .diff-addedline .diffchange {background-color:#0086ff; color:#fff;}
 	html:not(.disable-dark-skin) .diff-context {background:#333; color:#aaa; border-color:#777;}
 	html:not(.disable-dark-skin) .mw-diff-movedpara-left,
