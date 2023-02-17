@@ -267,6 +267,7 @@
 	html.enable-dark-skin.vector-feature-page-tools-enabled .vector-pinnable-element > *:not(:last-child) {border-bottom-color:#777;}
 	html.enable-dark-skin.vector-feature-page-tools-enabled .vector-pinnable-element .vector-menu-heading {color:#ccc;}
 	html.enable-dark-skin .mw-ui-icon-wikimedia-menu:before {filter:invert(1); opacity:0.6;}
+	html.enable-dark-skin #vector-page-tools-pinned-container .vector-page-tools:after {background:linear-gradient(rgba(48,48,48,0),#303030);}
 
 	/* Wybór języka */
 	html.enable-dark-skin body.skin-vector .uls-menu {border-color: #777; -webkit-box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15); box-shadow: 2px 2px 2px 0 rgba(255,255,255,0.15);}
