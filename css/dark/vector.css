@@ -1125,6 +1125,10 @@
 	html:not(.disable-dark-skin) .ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section-metaitem + .ext-discussiontools-init-section-metaitem {border-left-color:#777;}
 	html:not(.disable-dark-skin) .ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section-metaitem {color:#aaa;}
 	html:not(.disable-dark-skin) .ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section {border-top-color:#888;}
+	html:not(.disable-dark-skin) .ext-discussiontools-init-pageframe-latestcomment {color:#999;}
+	html:not(.disable-dark-skin) .ext-discussiontools-init-lede-button.oo-ui-buttonElement > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {color:#999;}
+	html:not(.disable-dark-skin) .ext-discussiontools-init-readAsWikiPage,
+		html:not(.disable-dark-skin) .ext-discussiontools-init-new-topic {color:#76acff; background-color:#222; border-top-color:#666;}
 
 	/* Dookoła okna edycji */
 	html:not(.disable-dark-skin) .editOptions {background:#222; color:#d8d8d8; border-color:#777;}
