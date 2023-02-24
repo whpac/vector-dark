@@ -114,6 +114,9 @@
 	html.enable-dark-skin .mw-advancedSearch-namespace-border {border-color:#777;}
 	html.enable-dark-skin .mw-searchresults-has-iw .iw-resultset {background:#282828; border:1px solid #555; border-radius:2px;}
 	html.enable-dark-skin .mw-search-result-data {color:#8c8;}
+	html.enable-dark-skin .mw-search-profile-tabs {background:#303030; border-color:#666;}
+	html.enable-dark-skin #mw-searchoptions {background:#222; border-color:#666;}
+	html.enable-dark-skin #mw-searchoptions .divider {border-bottom-color:#666;}
 
 	/* Pływający nagłówek */
 	html.enable-dark-skin .vector-sticky-header {background:#282828; border-bottom-color:#666;}
