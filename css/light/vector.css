@@ -713,6 +713,8 @@
 	html.enable-dark-skin .mw-parser-output .template-picture-of-the-day {border-color:#5f563b; background-color:#322501;}
 	html.enable-dark-skin .mw_metadata th {background:#303030; color:#fff; border-color:#666;}
 	html.enable-dark-skin .mw_metadata td {background:#303030; border-color:#666;}
+	html.enable-dark-skin .mw-parser-output table.commons-file-information-table,
+		html.enable-dark-skin .mw-parser-output .fileinfotpl-type-information {background-color:#222; border-color:#777;}
 	
 	/* Różne szablony */
 	html.enable-dark-skin .template-documentation {background-color:#3f4e47; border-color:#777;}
