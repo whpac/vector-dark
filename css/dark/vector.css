@@ -695,6 +695,7 @@
 		html:not(.disable-dark-skin) .content table.infobox td {border-color:#999;}
 	html:not(.disable-dark-skin) .infobox > tbody > .iboxs {border-color:#666;}
 	html:not(.disable-dark-skin) .mw-parser-output .wwikipedii tr {background:#222;}
+	html:not(.disable-dark-skin) .infobox > tbody > tr:last-child[style*=background] {background-color:#444 !important; color:#d8d8d8;}
 
 	html:not(.disable-dark-skin) .mw-parser-output table.jezyk.infobox > tbody > tr > .naglowek {background-color:#333; color:#d8d8d8; border-color:#666;}
 	html:not(.disable-dark-skin) .mw-parser-output .wwikipedii th,
