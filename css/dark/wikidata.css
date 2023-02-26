@@ -1,192 +1,79 @@
 @media only screen {
-  html:not(.disable-dark-skin) h1 .wikibase-title-id {
-    color: #aaa;
-  }
-  html:not(.disable-dark-skin) .skin-vector .wikibase-title .wb-language-fallback-indicator {
-    color: #d8d8d8;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-entitytermsview-heading .wikibase-entitytermsview-heading-aliases ul {
-    color: #aaa;
-  }
-  html:not(.disable-dark-skin) .wb-help-field-hint {
-    filter: invert(1) brightness(0.8);
-  }
-  html:not(.disable-dark-skin) .ui-entityselector-list li,
-  html:not(.disable-dark-skin) .ui-entityselector-list li.ui-state-hover {
-    border-top-color: #777;
-  }
-  html:not(.disable-dark-skin) .ui-entityselector-list .ui-entityselector-more,
-  html:not(.disable-dark-skin) .wikibase-entitysearch-list .wb-entitysearch-suggestions {
-    background: #282828;
-  }
-  html:not(.disable-dark-skin) #searchInput {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #d8d8d8;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-toolbar-container {
-    background: rgba(48, 48, 48, 0.5);
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview {
-    background: #282828;
-    border-color: #666;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {
-    background: #383838;
-    border-right-color: #282828;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview.wb-edit .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {
-    background: #444;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview.wb-edit {
-    border-color: #2c59b3;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label input,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description input,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label textarea,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description textarea,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-aliases input {
-    border-bottom-color: #999;
-  }
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label input:focus,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description input:focus,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label textarea:focus,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description textarea:focus,
-  html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-aliases input:focus {
-    border-color: #386fdf;
-  }
-  html:not(.disable-dark-skin) ul.tagadata li.tagadata-choice .tagadata-label input:focus {
-    background: #181818;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementgroupview-property {
-    background: #404040;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementgroupview .wikibase-statementgroupview-property {
-    border-color: #666;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementlistview {
-    border-color: #666;
-    background: #282828;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementview {
-    border-bottom-color: #444;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementlistview > .wikibase-toolbar-wrapper {
-    background: #404040;
-    margin-bottom: -0.1px;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit,
-  html:not(.disable-dark-skin) .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {
-    background: #3b404c;
-  }
-  html:not(.disable-dark-skin) .valueview-ineditmode .valueview-input {
-    background: #181818;
-    border-color: #777;
-  }
-  html:not(.disable-dark-skin) .ui-suggester-input.ui-entityselector-input.ui-entityselector-input-recognized {
-    border-color: #0bb38e;
-  }
-  html:not(.disable-dark-skin) .ui-inputextender-extension-close {
-    filter: invert(1);
-  }
-  html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-curr.ui-state-disabled .ui-listrotator-label {
-    color: #76acff;
-  }
-  html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-curr.ui-state-active {
-    background: #222;
-    color: #d8d8d8;
-  }
-  html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-curr {
-    border-color: #777;
-  }
-  html:not(.disable-dark-skin) .ui-listrotator .ui-state-active .ui-listrotator-label,
-  html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-label.ui-state-default:hover {
-    color: #d8d8d8;
-  }
-  html:not(.disable-dark-skin) .ui-listrotator-menu {
-    list-style: none;
-  }
-  html:not(.disable-dark-skin) .ui-listrotator-menu li.ui-state-active {
-    background: #444;
-  }
-  html:not(.disable-dark-skin) .ui-state-hover,
-  html:not(.disable-dark-skin) .ui-widget-content .ui-state-hover,
-  html:not(.disable-dark-skin) .ui-widget-header .ui-state-hover,
-  html:not(.disable-dark-skin) .ui-state-focus,
-  html:not(.disable-dark-skin) .ui-widget-content .ui-state-focus,
-  html:not(.disable-dark-skin) .ui-widget-header .ui-state-focus {
-    background: #282828;
-    border-color: #999;
-    color: #76acff;
-  }
-  html:not(.disable-dark-skin) .wb-propertypage .wikibase-propertyview-datatype {
-    background: #383838;
-    border-color: #777;
-  }
-  html:not(.disable-dark-skin) .wb-preferred .wikibase-statementview-mainsnak {
-    background: #242;
-  }
-  html:not(.disable-dark-skin) .wb-deprecated .wikibase-statementview-mainsnak {
-    background: #422;
-  }
-  html:not(.disable-dark-skin) .wikibase-referenceview {
-    background: #303030;
-    border: 1px solid #444;
-  }
-  html:not(.disable-dark-skin) .wikibase-referenceview.wb-edit {
-    background-color: #2b303d;
-  }
-  html:not(.disable-dark-skin) .wikibase-referenceview.wb-edit > .wikibase-referenceview-heading {
-    background: #3b404c;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementview div.thumb img,
-  html:not(.disable-dark-skin) .wikibase-statementview div.thumb audio,
-  html:not(.disable-dark-skin) .wikibase-statementview div.thumb video,
-  html:not(.disable-dark-skin) .wikibase-statementview div a.mw-kartographer-map {
-    border-color: #666;
-  }
-  html:not(.disable-dark-skin) .wikibase-statementview div.thumb img {
-    background: #fff;
-  }
-  html:not(.disable-dark-skin) .ui-toggler.ui-state-default {
-    color: #76acff;
-  }
-  html:not(.disable-dark-skin) .wb-icon {
-    filter: invert(1) brightness(0.7);
-  }
-  html:not(.disable-dark-skin) .wbqc-report,
-  html:not(.disable-dark-skin) .wbqc-parameter-report {
-    border-top-color: #777;
-  }
-  html:not(.disable-dark-skin) .wbqc-report .wbqc-ancillary-messages {
-    color: #aaa;
-  }
-  html:not(.disable-dark-skin) .wikibase-snakview-unsupportedsnaktype,
-  html:not(.disable-dark-skin) .wikibase-snakview-variation-valuesnak-unsupporteddatavalue,
-  html:not(.disable-dark-skin) .wikibase-snakview-variation-valuesnak-datavaluetypemismatch,
-  html:not(.disable-dark-skin) .wikibase-snakview-variation-valuesnak-nonewvaluefordeletedproperty,
-  html:not(.disable-dark-skin) span.wikibase-snakview-variation-somevaluesnak,
-  html:not(.disable-dark-skin) span.wikibase-snakview-variation-novaluesnak {
-    color: #999;
-  }
-  html:not(.disable-dark-skin) .wikibase-sitelinkgroupview .wikibase-sitelinkgroupview-heading-container {
-    background: #404040;
-  }
-  html:not(.disable-dark-skin) .wikibase-sitelinkgroupview {
-    border-color: #666;
-    background: #282828;
-  }
-  html:not(.disable-dark-skin) .wikibase-sitelinkgroupview > .mw-collapsible-toggle,
-  html:not(.disable-dark-skin) .wikibase-sitelinkgroupview > .mw-collapsible-toggle-expanded {
-    filter: invert(1) brightness(0.8);
-  }
-  html:not(.disable-dark-skin) .wikibase-sitelinklistview .wikibase-sitelinkview .wikibase-sitelinkview-siteid-container {
-    background: #444;
-    border-color: #666;
-  }
-  html:not(.disable-dark-skin) .wikibase-sitelinkview input:focus {
-    background: #222;
-  }
-  html:not(.disable-dark-skin) .wb-badge-empty {
-    filter: invert(1);
-  }
+html:not(.disable-dark-skin) h1 .wikibase-title-id {color:#aaa;}
+html:not(.disable-dark-skin) .skin-vector .wikibase-title .wb-language-fallback-indicator {color:#d8d8d8;}
+html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-entitytermsview-heading .wikibase-entitytermsview-heading-aliases ul {color:#aaa;}
+html:not(.disable-dark-skin) .wb-help-field-hint {filter:invert(1) brightness(0.8);}
+html:not(.disable-dark-skin) .ui-entityselector-list li,
+html:not(.disable-dark-skin) .ui-entityselector-list li.ui-state-hover {border-top-color:#777;}
+html:not(.disable-dark-skin) .ui-entityselector-list .ui-entityselector-more,
+html:not(.disable-dark-skin) .wikibase-entitysearch-list .wb-entitysearch-suggestions {background:#282828;}
+html:not(.disable-dark-skin) #searchInput {background-color:rgba(0, 0, 0, 0.5);color:#d8d8d8;}
+html:not(.disable-dark-skin) .wikibase-entitytermsview .wikibase-toolbar-container {background:rgba(48, 48, 48, 0.5);}
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview {background:#282828;border-color:#666;}
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {background:#383838;border-right-color:#282828;}
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview.wb-edit .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {background:#444;}
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview.wb-edit {border-color:#2c59b3;}
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label input,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description input,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label textarea,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description textarea,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-aliases input {border-bottom-color:#999;}
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label input:focus,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description input:focus,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-label textarea:focus,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-description textarea:focus,
+html:not(.disable-dark-skin) .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-listview .wikibase-entitytermsforlanguageview .wikibase-entitytermsforlanguageview-aliases input:focus {border-color:#386fdf;}
+html:not(.disable-dark-skin) ul.tagadata li.tagadata-choice .tagadata-label input:focus {background:#181818;}
+html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementgroupview-property {background:#404040;}
+html:not(.disable-dark-skin) .wikibase-statementgroupview .wikibase-statementgroupview-property {border-color:#666;}
+html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementlistview {border-color:#666;background:#282828;}
+html:not(.disable-dark-skin) .wikibase-statementview {border-bottom-color:#444;}
+html:not(.disable-dark-skin) .wikibase-statementlistview > .wikibase-toolbar-wrapper {background:#404040;margin-bottom:-0.1px;}
+html:not(.disable-dark-skin) .wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit,
+html:not(.disable-dark-skin) .wikibase-statementgroupview-property.wb-edit + .wikibase-statementlistview > .wikibase-toolbar-wrapper {background:#3b404c;}
+html:not(.disable-dark-skin) .valueview-ineditmode .valueview-input {background:#181818;border-color:#777;}
+html:not(.disable-dark-skin) .ui-suggester-input.ui-entityselector-input.ui-entityselector-input-recognized {border-color:#0bb38e;}
+html:not(.disable-dark-skin) .ui-inputextender-extension-close {filter:invert(1);}
+html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-curr.ui-state-disabled .ui-listrotator-label {color:#76acff;}
+html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-curr.ui-state-active {background:#222;color:#d8d8d8;}
+html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-curr {border-color:#777;}
+html:not(.disable-dark-skin) .ui-listrotator .ui-state-active .ui-listrotator-label,
+html:not(.disable-dark-skin) .ui-listrotator .ui-listrotator-label.ui-state-default:hover {color:#d8d8d8;}
+html:not(.disable-dark-skin) .ui-listrotator-menu {list-style:none;}
+html:not(.disable-dark-skin) .ui-listrotator-menu li.ui-state-active {background:#444;}
+html:not(.disable-dark-skin) .ui-state-hover,
+html:not(.disable-dark-skin) .ui-widget-content .ui-state-hover,
+html:not(.disable-dark-skin) .ui-widget-header .ui-state-hover,
+html:not(.disable-dark-skin) .ui-state-focus,
+html:not(.disable-dark-skin) .ui-widget-content .ui-state-focus,
+html:not(.disable-dark-skin) .ui-widget-header .ui-state-focus {background:#282828;border-color:#999;color:#76acff;}
+html:not(.disable-dark-skin) .wb-propertypage .wikibase-propertyview-datatype {background:#383838;border-color:#777;}
+html:not(.disable-dark-skin) .wb-preferred .wikibase-statementview-mainsnak {background:#242;}
+html:not(.disable-dark-skin) .wb-deprecated .wikibase-statementview-mainsnak {background:#422;}
+html:not(.disable-dark-skin) .wikibase-referenceview {background:#303030;border:1px solid #444;}
+html:not(.disable-dark-skin) .wikibase-referenceview.wb-edit {background-color:#2b303d;}
+html:not(.disable-dark-skin) .wikibase-referenceview.wb-edit > .wikibase-referenceview-heading {background:#3b404c;}
+html:not(.disable-dark-skin) .wikibase-statementview div.thumb img,
+html:not(.disable-dark-skin) .wikibase-statementview div.thumb audio,
+html:not(.disable-dark-skin) .wikibase-statementview div.thumb video,
+html:not(.disable-dark-skin) .wikibase-statementview div a.mw-kartographer-map {border-color:#666;}
+html:not(.disable-dark-skin) .wikibase-statementview div.thumb img {background:#fff;}
+html:not(.disable-dark-skin) .ui-toggler.ui-state-default {color:#76acff;}
+html:not(.disable-dark-skin) .wb-icon {filter:invert(1) brightness(0.7);}
+html:not(.disable-dark-skin) .wbqc-report,
+html:not(.disable-dark-skin) .wbqc-parameter-report {border-top-color:#777;}
+html:not(.disable-dark-skin) .wbqc-report .wbqc-ancillary-messages {color:#aaa;}
+html:not(.disable-dark-skin) .wikibase-snakview-unsupportedsnaktype,
+html:not(.disable-dark-skin) .wikibase-snakview-variation-valuesnak-unsupporteddatavalue,
+html:not(.disable-dark-skin) .wikibase-snakview-variation-valuesnak-datavaluetypemismatch,
+html:not(.disable-dark-skin) .wikibase-snakview-variation-valuesnak-nonewvaluefordeletedproperty,
+html:not(.disable-dark-skin) span.wikibase-snakview-variation-somevaluesnak,
+html:not(.disable-dark-skin) span.wikibase-snakview-variation-novaluesnak {color:#999;}
+html:not(.disable-dark-skin) .wikibase-sitelinkgroupview .wikibase-sitelinkgroupview-heading-container {background:#404040;}
+html:not(.disable-dark-skin) .wikibase-sitelinkgroupview {border-color:#666;background:#282828;}
+html:not(.disable-dark-skin) .wikibase-sitelinkgroupview > .mw-collapsible-toggle,
+html:not(.disable-dark-skin) .wikibase-sitelinkgroupview > .mw-collapsible-toggle-expanded {filter:invert(1) brightness(0.8);}
+html:not(.disable-dark-skin) .wikibase-sitelinklistview .wikibase-sitelinkview .wikibase-sitelinkview-siteid-container {background:#444;border-color:#666;}
+html:not(.disable-dark-skin) .wikibase-sitelinkview input:focus {background:#222;}
+html:not(.disable-dark-skin) .wb-badge-empty {filter:invert(1);}
 }

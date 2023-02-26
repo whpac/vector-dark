@@ -1,19 +1,13 @@
 @media only screen {
-  html.enable-dark-skin .ns-talk #bodyContent dl {
-    border-color: #505000;
-  }
-  html.enable-dark-skin .ns-talk #bodyContent dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl dl dl {
-    background: #383800;
-  }
-  html.enable-dark-skin .ns-talk #bodyContent dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl dl,
-  html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl dl dl dl {
-    background: #282828;
-  }
+html.enable-dark-skin .ns-talk #bodyContent dl {border-color:#505000;}
+html.enable-dark-skin .ns-talk #bodyContent dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl dl dl {background:#383800;}
+html.enable-dark-skin .ns-talk #bodyContent dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl dl,
+html.enable-dark-skin .ns-talk #bodyContent dl dl dl dl dl dl dl dl dl dl {background:#282828;}
 }
