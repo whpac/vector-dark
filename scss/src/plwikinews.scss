@@ -1,0 +1,24 @@
+// Style dla strony głównej pl.wikinews 
+.mw-parser-output .wikinews,
+	.mw-parser-output .categories-bar {background:#012540; border:1px solid #155788;}
+.mw-parser-output .wikinews .links,
+	.mw-parser-output .wikinews .categories {background:transparent;}
+.mw-parser-output .featured {background:#444; border:none;}
+.mw-parser-output .featured .image {border-left-color:#888;}
+.mw-parser-output .featured .date {color:#bbb}
+.mw-parser-output .sidebar > .widget,
+	.mw-parser-output .article-widget {background:#222; border:1px solid #444;}
+.mw-parser-output .sidebar > .widget h2,
+	.mw-parser-output .article-widget .header {border-bottom-color:#777; color:#fff;}
+table.wikitable td,
+	table.prettytable td {background:transparent;}
+.mw-parser-output .recent {border-color:#777;}
+.mw-parser-output .recent .column:not(:first-of-type) {border-color:#777;}
+.mw-parser-output .article-box:not(:first-of-type) {border-color:#777;}
+.mw-parser-output .article-box .date {color:#aaa;}
+.mw-parser-output .badge a {color:inherit !important;}
+.mw-parser-output .frame {border-color:#777;}
+.mw-parser-output .frame h2 {border-bottom-color:#777;}
+
+div.NavFrame {border-color:#777;}
+div.NavFrame div.NavHead {background:#444;}

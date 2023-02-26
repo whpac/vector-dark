@@ -1,10 +1,26 @@
 @media only screen {
-	/* Gadżet wyszukiwanie i zamiana */
-	html.enable-dark-skin #srBox {background:#222; border-color:#666;}
-	html.enable-dark-skin #srBox .label,
-		html.enable-dark-skin #srBox label {color:#d8d8d8;}
-	html.enable-dark-skin #srBox input[type="text"] {background:#222; border-color:#777;}
-	html.enable-dark-skin #srBox a {color:#d8d8d8; background:#383862; border-color:#777;}
-	html.enable-dark-skin #srBox a:hover {background:#202039;}
-	html.enable-dark-skin #srBox a:focus {background:#6464a2; color:#fff;}
+  html.enable-dark-skin #srBox {
+    background: #222;
+    border-color: #666;
+  }
+  html.enable-dark-skin #srBox .label,
+  html.enable-dark-skin #srBox label {
+    color: #d8d8d8;
+  }
+  html.enable-dark-skin #srBox input[type=text] {
+    background: #222;
+    border-color: #777;
+  }
+  html.enable-dark-skin #srBox a {
+    color: #d8d8d8;
+    background: #383862;
+    border-color: #777;
+  }
+  html.enable-dark-skin #srBox a:hover {
+    background: #202039;
+  }
+  html.enable-dark-skin #srBox a:focus {
+    background: #6464a2;
+    color: #fff;
+  }
 }

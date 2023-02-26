@@ -1,0 +1,5 @@
+@use '../default-mode';
+
+@include default-mode.dark {
+    @import '../src/user_colors';
+}

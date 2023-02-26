@@ -1,6 +1,0 @@
-@media only screen {
-	/* Przenieś do brudnopisu */
-	html:not(.disable-dark-skin) .moveToSandboxDialog .ui-widget-content {border:none;}
-	html:not(.disable-dark-skin) .moveToSandboxDialog .ui-widget-content.text {border:1px solid #888; background:#222;}
-	html:not(.disable-dark-skin) .moveToSandboxDialog .ui-widget-content.text:hover {border-color:#666;}
-}

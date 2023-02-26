@@ -1,15 +1,26 @@
-@media only screen{
-	/* Gadżet kolorujący nazwy użytkowników */
-	html.enable-dark-skin a.nick_admin,
-		html.enable-dark-skin a.nick_admin:visited {color:#7f7;}
-	html.enable-dark-skin a.nick_bot,
-		html.enable-dark-skin a.nick_bot:visited {color:#6ff;}
-	html.enable-dark-skin a.nick_friend,
-		html.enable-dark-skin a.nick_friend:visited {color:#7d7;}
-	html.enable-dark-skin a.nick_ip,
-		html.enable-dark-skin a.nick_ip:visited {color:#f99;}
-	html.enable-dark-skin a.nick_dynamic_ip,
-		html.enable-dark-skin a.nick_dynamic_ip:visited {color:#fae;}
-	html.enable-dark-skin a.nick_steward,
-		html.enable-dark-skin a.nick_steward:visited {color:#fb0;}
+@media only screen {
+  html.enable-dark-skin a.nick_admin,
+  html.enable-dark-skin a.nick_admin:visited {
+    color: #7f7;
+  }
+  html.enable-dark-skin a.nick_bot,
+  html.enable-dark-skin a.nick_bot:visited {
+    color: #6ff;
+  }
+  html.enable-dark-skin a.nick_friend,
+  html.enable-dark-skin a.nick_friend:visited {
+    color: #7d7;
+  }
+  html.enable-dark-skin a.nick_ip,
+  html.enable-dark-skin a.nick_ip:visited {
+    color: #f99;
+  }
+  html.enable-dark-skin a.nick_dynamic_ip,
+  html.enable-dark-skin a.nick_dynamic_ip:visited {
+    color: #fae;
+  }
+  html.enable-dark-skin a.nick_steward,
+  html.enable-dark-skin a.nick_steward:visited {
+    color: #fb0;
+  }
 }

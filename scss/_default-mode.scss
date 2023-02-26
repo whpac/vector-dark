@@ -1,0 +1,22 @@
+// File with mixins supporting the "default light" and
+// "default dark" mode approach. All mode-specific classes
+// are defined here.
+
+$-light-mode: 'disable-dark-skin';
+$-dark-mode: 'enable-dark-skin';
+
+@mixin dark {
+    @media only screen {
+        html:not(.#{$-light-mode}) {
+            @content;
+        }
+    }
+}
+
+@mixin light {
+    @media only screen {
+        html.#{$-dark-mode} {
+            @content;
+        }
+    }
+}

@@ -1,13 +1,12 @@
 <?php
 header('Content-Type:text/css');
 
-$default_css = 'vector.css';
+$default_css = 'core.css';
 $additional_css = [
-    'core' => 'vector.css',
+    'core' => 'core.css',
     'popups' => 'popups.css',
     'user_colors' => 'user_colors.css',
     'talk_colors' => 'talk_colors.css',
-    'sandbox' => 'sandbox.css',
     'commons' => 'commons.css',
     'plwikinews' => 'plwikinews.css',
     'wikidata' => 'wikidata.css',

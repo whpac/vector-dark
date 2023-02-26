@@ -1,0 +1,5 @@
+@use '../default-mode';
+
+@include default-mode.light {
+    @import '../src/commons';
+}

@@ -1,0 +1,12 @@
+// Gadżet Alternatywny sposób kolorowania stron dyskusji 
+.ns-talk #bodyContent dl {border-color:#505000;}
+.ns-talk #bodyContent dl,
+	.ns-talk #bodyContent dl dl dl,
+	.ns-talk #bodyContent dl dl dl dl dl,
+	.ns-talk #bodyContent dl dl dl dl dl dl dl,
+	.ns-talk #bodyContent dl dl dl dl dl dl dl dl dl {background:#383800;}
+.ns-talk #bodyContent dl dl,
+	.ns-talk #bodyContent dl dl dl dl,
+	.ns-talk #bodyContent dl dl dl dl dl dl,
+	.ns-talk #bodyContent dl dl dl dl dl dl dl dl,
+	.ns-talk #bodyContent dl dl dl dl dl dl dl dl dl dl {background:#282828;}

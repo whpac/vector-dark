@@ -1,11 +1,28 @@
 @media only screen {
-	/* Gadżet Popups */
-	html.enable-dark-skin .navpopup {background:#222; border-color:#777;}
-	html.enable-dark-skin .navpopup hr {border-color:#666 !important;}
-	html.enable-dark-skin .navpopup .popup_drop:hover {background:#444;}
-	html.enable-dark-skin .navpopup .popup_menu {background:#282828; border-color:#555;}
-	html.enable-dark-skin .navpopup .popup_drop:hover .popup_menu, .popup_drop .popup_menu:hover {background:#282828;}
-	html.enable-dark-skin .navpopup .popup_history_row_even {background:#383838;}
-	html.enable-dark-skin .navpopup ins.popupDiff {background:#005a47;}
-	html.enable-dark-skin .navpopup del.popupDiff {background:#7a0600;}
+  html.enable-dark-skin .navpopup {
+    background: #222;
+    border-color: #777;
+  }
+  html.enable-dark-skin .navpopup hr {
+    border-color: #666 !important;
+  }
+  html.enable-dark-skin .navpopup .popup_drop:hover {
+    background: #444;
+  }
+  html.enable-dark-skin .navpopup .popup_menu {
+    background: #282828;
+    border-color: #555;
+  }
+  html.enable-dark-skin .navpopup .popup_drop:hover .popup_menu, html.enable-dark-skin .popup_drop .popup_menu:hover {
+    background: #282828;
+  }
+  html.enable-dark-skin .navpopup .popup_history_row_even {
+    background: #383838;
+  }
+  html.enable-dark-skin .navpopup ins.popupDiff {
+    background: #005a47;
+  }
+  html.enable-dark-skin .navpopup del.popupDiff {
+    background: #7a0600;
+  }
 }
