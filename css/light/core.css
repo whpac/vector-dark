@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @media only screen {
-html.enable-dark-skin .mw-ui-icon-element {color:transparent !important;}
+.mw-ui-icon-element {color:transparent !important;}
+ul {list-style-image:unset;list-style-type:"• ";}
+ul > li::marker {font-weight:900;}
 html.enable-dark-skin.overlay-enabled {background:#333;}
 html.enable-dark-skin,
 html.enable-dark-skin body {background-color:#222;color:#d8d8d8;color-scheme:dark;}
@@ -716,8 +718,6 @@ html.enable-dark-skin h6 {color:white;border-bottom-color:#777;}
 html.enable-dark-skin.client-js .mw-content-ltr .mw-editsection-bracket:first-of-type, html.enable-dark-skin.client-js .mw-content-rtl .mw-editsection-bracket:not(:first-of-type), html.enable-dark-skin.client-js .mw-content-rtl .mw-editsection-bracket:first-of-type, html.enable-dark-skin.client-js .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
 html.enable-dark-skin .mw-editsection-divider,
 html.enable-dark-skin .mw-editsection {color:#999;}
-html.enable-dark-skin ul {list-style-image:unset;list-style-type:"• ";}
-html.enable-dark-skin ul > li::marker {font-weight:900;}
 html.enable-dark-skin table.global-nav {filter:invert(1) hue-rotate(180deg);}
 html.enable-dark-skin .global-nav td:hover,
 html.enable-dark-skin .global-nav td:focus {background:none !important;}
