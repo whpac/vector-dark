@@ -1,4 +1,12 @@
-.mw-ui-icon-element {color:transparent !important} // Powielenie reguły z domyślego arkusza, tym razem z !important 
+// Style do zastosowania niezależnie od motywu
+@at-root {
+	// Powielenie reguły z domyślego arkusza, tym razem z !important
+	.mw-ui-icon-element {color:transparent !important}
+
+	// Listy wypunktowane
+	ul {list-style-image:unset; list-style-type:'• ';}
+	ul > li::marker {font-weight:900;}
+}
 
 &.overlay-enabled {background:#333;}
 &,
@@ -791,10 +799,6 @@ h1,
 	&.client-js .mw-content-ltr .mw-editsection-bracket:not(:first-of-type),
 	.mw-editsection-divider,
 	.mw-editsection {color:#999;}
-
-// Listy wypunktowane 
-ul {list-style-image:unset; list-style-type:'• ';}
-ul > li::marker {font-weight:900;}
 
 table.global-nav {filter:invert(1) hue-rotate(180deg);} // Karty do nawigacji na stronach pomocowych 
 .global-nav td:hover,
